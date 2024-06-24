@@ -57,6 +57,11 @@
       # Workaround for https://github.com/NixOS/nix/issues/9574
       nix-path = config.nix.nixPath;
     };
+    gc = {
+      automatic = true;
+      dates = "weekly";
+      options = "--delete-older-than 7d";
+    };
     # Opinionated: disable channels
     # channel.enable = false;
 
@@ -178,12 +183,6 @@
       rebuild = "sudo nixos-rebuild switch";
     };
   };
-
-  # nix.gc = {
-  #	automatic = true;
-  #  dates = "weekly";
-  #  options = "--delete-older-than 7d";
-  #};
 
   fonts = {
     packages = with pkgs; [
