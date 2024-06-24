@@ -33,5 +33,6 @@
     nil
     imv
     bc
+    uwufetch
   ];
 }
