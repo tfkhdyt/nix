@@ -108,7 +108,7 @@
         drop_shadow = false;
       };
       exec-once = [
-        "waybar"
+        "sleep 3 && waybar"
         "lxqt-policykit-agent"
       ];
       general = {

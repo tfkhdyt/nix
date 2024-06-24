@@ -14,7 +14,7 @@ in {
     inherit git yazi bash tealdeer yt-dlp fzf zoxide mpv alacritty waybar;
     
     home-manager.enable = true;
-    hyprlock.enable = true;
+    hyprlock.enable = false;
     fastfetch.enable = true;
     aria2.enable = true;
     bottom.enable = true;

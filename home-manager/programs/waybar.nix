@@ -112,7 +112,7 @@
       wireplumber = {
         format = "{icon} {volume}%";
         format-muted = " Muted";
-        on-click = "$HOME/scripts/volume.sh mute";
+        on-click = "pwvucontrol";
         format-icons = [
           ""
           ""
