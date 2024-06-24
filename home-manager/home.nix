@@ -669,7 +669,7 @@
         general = {
           before_sleep_cmd = "loginctl lock-session";
           after_sleep_cmd = "hyprctl dispatch dpms on";
-          lock_cmd = "hyprlock";
+          lock_cmd = "pgrep hyprlock || hyprlock";
         };
 
         listener = [
