@@ -75,7 +75,7 @@
         # workspace navigation
         "$mainMod, TAB, workspace, previous"
         # powermenu
-        # "$mainMod, backslash, exec, powermenu.sh"
+        "$mainMod, backslash, exec, $scriptDir/powermenu"
         # mpd
         # "$mainMod, slash, exec, $scriptDir/start-mpd"
         "$mainMod, S, togglespecialworkspace, magic"
