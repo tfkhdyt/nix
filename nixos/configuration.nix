@@ -2,6 +2,7 @@
 # Use this to configure your system environment (it replaces /etc/nixos/configuration.nix)
 {
   inputs,
+  outputs,
   lib,
   config,
   pkgs,
@@ -89,6 +90,10 @@
     dconf.enable = true;
     starship.enable = true;
     firefox.enable = true;
+    neovim = {
+      enable = true;
+      defaultEditor = true;
+    };
   };
 
   services = {
@@ -124,10 +129,6 @@
         CREATE DATABASE nixcloud;
         GRANT ALL PRIVILEGES ON DATABASE nixcloud TO nixcloud;
       '';
-    };
-    neovim = {
-      enable = true;
-      defaultEditor = true;
     };
     openssh.enable = true;
   };
@@ -178,11 +179,11 @@
     };
   };
 
-  nix.gc = {
-  	automatic = true;
-    dates = "weekly";
-    options = "--delete-older-than 7d";
-  };
+  # nix.gc = {
+  #	automatic = true;
+  #  dates = "weekly";
+  #  options = "--delete-older-than 7d";
+  #};
 
   fonts = {
     packages = with pkgs; [
