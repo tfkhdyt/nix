@@ -209,7 +209,7 @@
     extraSpecialArgs = { inherit inputs outputs; };
     users = {
       # Import your home-manager configuration
-      tfkhdyt = import ../home-manager/home.nix;
+      tfkhdyt = import ../home-manager;
     };
   };
 }
