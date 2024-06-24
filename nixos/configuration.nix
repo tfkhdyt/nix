@@ -58,11 +58,6 @@
       # Workaround for https://github.com/NixOS/nix/issues/9574
       nix-path = config.nix.nixPath;
     };
-    gc = {
-      automatic = true;
-      dates = "weekly";
-      options = "--delete-older-than 7d";
-    };
     # Opinionated: disable channels
     # channel.enable = false;
 
@@ -99,6 +94,12 @@
     neovim = {
       enable = true;
       defaultEditor = true;
+    };
+    nh = {
+      enable = true;
+      clean.enable = true;
+      clean.extraArgs = "--keep-since 4d --keep 3";
+      flake = "/home/tfkhdyt/nix";
     };
   };
 
