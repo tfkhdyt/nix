@@ -72,6 +72,7 @@
       j4-dmenu-desktop
       brave
       gnumake
+      nil
     ];
     pointerCursor = {
       gtk.enable = true;
