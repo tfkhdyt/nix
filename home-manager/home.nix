@@ -42,7 +42,7 @@
     username = "tfkhdyt";
     homeDirectory = "/home/tfkhdyt";
     packages = with pkgs; [
-      beekeeper-studio
+      # beekeeper-studio
       dbmate
       gimp
       go
