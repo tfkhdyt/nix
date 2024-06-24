@@ -1,11 +1,9 @@
-let
-  pipewire = import ./pipewire.nix;
-in {
+{
   imports = [
     ./postgresql.nix
   ];
   services = {
-    inherit pipewire;
+    pipewire = import ./pipewire.nix;
 
     printing.enable = true; # Enable CUPS to print documents.
     blueman.enable = true;

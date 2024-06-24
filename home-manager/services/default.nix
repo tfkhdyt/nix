@@ -1,12 +1,10 @@
-let 
-  hypridle = import ./hypridle.nix;
-  hyprpaper = import ./hyprpaper.nix;
-in {
+{
   imports = [
     ./dunst.nix
   ];
   services = {
-    inherit hypridle hyprpaper;
+    hypridle = import ./hypridle.nix;
+    hyprpaper = import ./hyprpaper.nix;
     
     ssh-agent.enable = true;
   };

@@ -1,9 +1,7 @@
-let
-  neovim = import ./neovim.nix;
-  nh = import ./nh.nix;
-in {
+{
   programs = {
-    inherit neovim nh;
+    neovim = import ./neovim.nix;
+    nh = import ./nh.nix;
 
     dconf.enable = true;
     starship.enable = true;
