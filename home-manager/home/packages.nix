@@ -33,6 +33,5 @@
     nil
     imv
     bc
-    amber-lang
   ];
 }
