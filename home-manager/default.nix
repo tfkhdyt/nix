@@ -6,6 +6,5 @@
     ./programs
     ./services
     ./wayland
-    ./systemd
   ];
 }
