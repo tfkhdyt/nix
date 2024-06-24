@@ -1,17 +1,12 @@
-{
+let
+  neovim = import ./neovim.nix;
+  nh = import ./nh.nix;
+in {
   programs = {
+    inherit neovim nh;
+
     dconf.enable = true;
     starship.enable = true;
     firefox.enable = true;
-    neovim = {
-      enable = true;
-      defaultEditor = true;
-    };
-    nh = {
-      enable = true;
-      clean.enable = true;
-      clean.extraArgs = "--keep-since 4d --keep 3";
-      flake = "/home/tfkhdyt/nix";
-    };
   };
 }

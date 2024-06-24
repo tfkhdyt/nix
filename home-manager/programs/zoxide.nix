@@ -1,6 +1,4 @@
 {
-  programs.zoxide = {
-    enable = true;
-    enableBashIntegration = true;
-  };
+  enable = true;
+  enableBashIntegration = true;
 }
