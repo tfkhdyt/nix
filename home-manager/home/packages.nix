@@ -32,5 +32,7 @@
     gnumake
     nil
     imv
+    bc
+    amber-lang
   ];
 }
