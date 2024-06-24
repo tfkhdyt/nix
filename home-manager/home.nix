@@ -60,7 +60,7 @@
       tokei
       trashy
       upscayl
-      vscodium
+      vscodium-fhs
       watchexec
       xh
       rustup
