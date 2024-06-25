@@ -173,8 +173,8 @@
       color: #B2E4D5;
       font-size: 16px;
       border-radius: 10px;
-      padding-left: 3px;
-      padding-right: 3px;
+      padding-left: 10px;
+      padding-right: 10px;
     }
 
     #workspaces button.active {
