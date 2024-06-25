@@ -91,7 +91,7 @@
         format = "{icon}";
         format-icons = {
           activated = "󰅶";
-          deactivated = "󰣇";
+          deactivated = "󱄅";
         };
       };
       "hyprland/window" = {
@@ -173,6 +173,8 @@
       color: #B2E4D5;
       font-size: 16px;
       border-radius: 10px;
+      padding-left: 3px;
+      padding-right: 3px;
     }
 
     #workspaces button.active {
