@@ -25,7 +25,16 @@
         system = "x86_64-linux";
         specialArgs = {inherit inputs outputs;};
         # > Our main nixos configuration file <
-        modules = [./nixos/configuration.nix];
+        modules = [
+          ./nixos/configuration.nix
+          home-manager.nixosModules.home-manager
+          {
+            home-manager = {
+              users.tfkhdyt = import ./home-manager;
+              extraSpecialArgs = { inherit inputs outputs; };
+            };
+          }
+        ];
       };
     };
   };
