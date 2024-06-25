@@ -8,8 +8,8 @@
     };
 
     iconTheme = {
-      package = pkgs.gnome.adwaita-icon-theme;
-      name = "Adwaita";
+      package = pkgs.gnome.papirus-icon-theme;
+      name = "Papirus-Dark";
     };
 
     font = {

@@ -1,9 +1,9 @@
 { pkgs, ... }: {
   services.dunst = {
     enable = true;
-    iconTheme = {
-      name = "Adwaita";
-      package = pkgs.gnome.adwaita-icon-theme;
+     iconTheme = {
+      package = pkgs.gnome.papirus-icon-theme;
+      name = "Papirus-Dark";
     };
     settings = {
       global = {
