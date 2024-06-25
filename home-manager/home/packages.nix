@@ -34,7 +34,7 @@
     imv
     bc
     gopls 
-    staticcheck 
+    go-tools 
     gomodifytags 
     impl
   ];
