@@ -8,7 +8,7 @@
     };
 
     iconTheme = {
-      package = pkgs.gnome.papirus-icon-theme;
+      package = pkgs.papirus-icon-theme;
       name = "Papirus-Dark";
     };
 
