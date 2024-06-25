@@ -12,7 +12,7 @@
     waybar = import ./waybar.nix;
 
     home-manager.enable = true;
-    hyprlock.enable = false;
+    hyprlock.enable = true;
     fastfetch.enable = true;
     aria2.enable = true;
     bottom.enable = true;
