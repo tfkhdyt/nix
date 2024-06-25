@@ -10,9 +10,9 @@
     mpv = import ./mpv.nix;
     alacritty = import ./alacritty.nix;
     waybar = import ./waybar.nix;
+    hyprlock = import ./hyprlock.nix;
 
     home-manager.enable = true;
-    hyprlock.enable = true;
     fastfetch.enable = true;
     aria2.enable = true;
     bottom.enable = true;
