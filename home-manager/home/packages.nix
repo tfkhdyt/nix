@@ -33,5 +33,9 @@
     nil
     imv
     bc
+    gopls 
+    staticcheck 
+    gomodifytags 
+    impl
   ];
 }
