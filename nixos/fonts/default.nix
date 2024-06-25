@@ -5,6 +5,7 @@
       noto-fonts-cjk
       noto-fonts-emoji
       corefonts
+      inter
       (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
     ];
     fontconfig = {
