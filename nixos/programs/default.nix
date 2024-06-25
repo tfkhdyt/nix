@@ -6,5 +6,6 @@
     dconf.enable = true;
     starship.enable = true;
     firefox.enable = true;
+    nm-applet.enable = true;
   };
 }
