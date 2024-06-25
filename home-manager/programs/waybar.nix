@@ -1,5 +1,6 @@
 {
   enable = true;
+  systemd.enable = true;
   settings = {
     mainBar = {
       margin-top = 5;
