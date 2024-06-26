@@ -1,6 +1,6 @@
 { pkgs, ... }: {
    home.packages = with pkgs; [
-    # beekeeper-studio
+    beekeeper-studio
     dbmate
     gimp
     go
