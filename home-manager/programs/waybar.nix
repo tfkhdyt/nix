@@ -1,6 +1,9 @@
 {
   enable = true;
-  systemd.enable = true;
+  systemd = {
+    enable = true;
+    target = "hyprland-session.target";
+  };
   settings = {
     mainBar = {
       margin-top = 5;
