@@ -17,6 +17,5 @@
     pwvucontrol
     lxqt.lxqt-policykit
     openssl
-    postgresql
   ];
 }
