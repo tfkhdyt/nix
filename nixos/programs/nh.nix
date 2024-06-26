@@ -1,6 +1,6 @@
 {
   enable = true;
   clean.enable = true;
-  clean.extraArgs = "--keep 5";
+  clean.extraArgs = "--keep 3";
   flake = "/home/tfkhdyt/nix";
 }
