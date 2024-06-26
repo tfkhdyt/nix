@@ -37,5 +37,6 @@
     gomodifytags 
     impl
     nix-init
+    zed-editor
   ];
 }
