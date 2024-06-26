@@ -37,5 +37,6 @@
     go-tools 
     gomodifytags 
     impl
+    nix-init
   ];
 }
