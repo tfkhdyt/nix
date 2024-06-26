@@ -1,5 +1,4 @@
 {
-  imports = [ ./vscodium.nix ];
   programs = {
     git = import ./git.nix;
     yazi = import ./yazi.nix;
