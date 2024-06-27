@@ -11,6 +11,7 @@
     alacritty = import ./alacritty.nix;
     waybar = import ./waybar.nix;
     hyprlock = import ./hyprlock.nix;
+    nixvim = import ./nixvim.nix;
 
     home-manager.enable = true;
     fastfetch.enable = true;

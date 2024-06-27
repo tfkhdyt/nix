@@ -6,5 +6,6 @@
     ./programs
     ./services
     ./wayland
+    <nixvim>.homeManagerModules.nixvim
   ];
 }
