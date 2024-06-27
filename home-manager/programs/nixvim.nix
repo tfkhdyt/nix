@@ -13,14 +13,43 @@
     mapleader = " ";
   };
   keymaps = [
-     {
+    {
       action = "<cmd>NvimTreeToggle<CR>";
       key = "<Leader>e";
       options = {
         silent = true;
       };
     }
+    {
+      action = "<cmd>w<CR>";
+      key = "<C-s>";
+    }
+    {
+      action = "<C-w>h";
+      key = "<C-h>";
+    }
+    {
+      action = "<C-w>l";
+      key = "<C-l>";
+    }
+    {
+      action = "<C-w>j";
+      key = "<C-j>";
+    }
+    {
+      action = "<C-w>k";
+      key = "<C-k>";
+    }
   ];
+  opts = {
+    cursorline = true;
+    shiftwidth = 4;
+    tabstop = 4;
+  };
+  extraConfigLua = ''
+    vim.wo.relativenumber = true;
+    vim.wo.number = true;
+  '';
   plugins = {
     lualine = {
       enable = true;
@@ -47,6 +76,10 @@
         eslint.enable = true;
         jsonls.enable = true;
       };
+    };
+    treesitter = {
+      enable = true;
+      indent = true;
     };
   };
 }
