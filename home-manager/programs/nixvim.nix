@@ -98,12 +98,14 @@
       settings.config = {
         project.enable = true;
         header = [
+          ""
           "████████╗███████╗██╗  ██╗██╗  ██╗██████╗ ██╗   ██╗████████╗"
           "╚══██╔══╝██╔════╝██║ ██╔╝██║  ██║██╔══██╗╚██╗ ██╔╝╚══██╔══╝"
           "   ██║   █████╗  █████╔╝ ███████║██║  ██║ ╚████╔╝    ██║   "
           "   ██║   ██╔══╝  ██╔═██╗ ██╔══██║██║  ██║  ╚██╔╝     ██║   "
           "   ██║   ██║     ██║  ██╗██║  ██║██████╔╝   ██║      ██║   "
           "   ╚═╝   ╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝    ╚═╝      ╚═╝ 	"
+          ""
         ];
       };
     };
@@ -126,10 +128,7 @@
       };
     };
     treesitter-context.enable = true;
-    treesitter-refactor = {
-      enable = true;
-      highlightCurrentScope.enable = true;
-    };
+    treesitter-refactor.enable = true;
     treesitter-textobjects.enable = true;
     lsp-format.enable = true;
     lsp-lines.enable = true;
