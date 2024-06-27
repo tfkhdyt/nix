@@ -1,13 +1,20 @@
 {
   enable = true;
   defaultEditor = true;
-  clipboard.providers.wl-copy.enable = true;
+  clipboard = {
+    register = "unnamedplus";
+    providers.wl-copy.enable = true;
+  };
   colorschemes.gruvbox.enable = true;
   diagnostics = {
+    underline = true;
     virtual_lines = {
-      only_current_line = true;
+      spacing = 4;
+      source = "if_many";
+      prefix = "●";
     };
     virtual_text = true;
+    severity_sort = true;
   };
   globals = {
     mapleader = " ";
@@ -43,8 +50,8 @@
   ];
   opts = {
     cursorline = true;
-    shiftwidth = 4;
-    tabstop = 4;
+    shiftwidth = 2;
+    tabstop = 2;
   };
   extraConfigLua = ''
     vim.wo.relativenumber = true;
@@ -81,5 +88,30 @@
       enable = true;
       indent = true;
     };
+    fzf-lua = {
+      enable = true;
+      keymaps = {
+        "<Leader><Space>" = {
+          action = "git_files";
+          options = {
+            desc = "Fzf-Lua Git Files";
+            silent = true;
+          };
+          # settings = {
+          #   previewers = {
+          #  cat = {
+          #    cmd = "/nix/store/i7qhgc0bs725qw3wdanznfkdna4z2ns2-coreutils-9.5/bin/cat";
+          #  };
+          #   };
+          #   winopts = {
+          #  height = 0.5;
+          #   };
+          # };
+        };
+        "<leader>/" = "live_grep";
+      };
+    };
+    dashboard.enable = true;
+    lspsaga.enable = true;
   };
 }
