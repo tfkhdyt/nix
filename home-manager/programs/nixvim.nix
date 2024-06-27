@@ -168,20 +168,26 @@
     treesitter-textobjects.enable = true;
     lsp-lines = {
       enable = true;
-      currentLine = true;
+      currentLine = false;
     };
     lspkind.enable = true;
     cmp = {
       enable = true;
       settings = {
+        sources = [
+          { name = "nvim_lsp"; }
+          # { name = "luasnip"; }
+          { name = "path"; }
+          { name = "buffer"; }
+        ];
         mapping = {
           "<C-Space>" = "cmp.mapping.complete()";
           "<C-d>" = "cmp.mapping.scroll_docs(-4)";
           "<C-e>" = "cmp.mapping.close()";
           "<C-f>" = "cmp.mapping.scroll_docs(4)";
           "<CR>" = "cmp.config.disable";
-          # "<S-Tab>" = "cmp.mapping(cmp.mapping.select_prev_item(), {'i', 's'})";
-          # "<Tab>" = "cmp.mapping(cmp.mapping.select_next_item(), {'i', 's'})";
+          "<Up>" = "cmp.mapping(cmp.mapping.select_prev_item(), {'i', 's'})";
+          "<Down>" = "cmp.mapping(cmp.mapping.select_next_item(), {'i', 's'})";
           "<Tab>" = "cmp.mapping.confirm({ select = true })";
         };
       };
@@ -189,7 +195,6 @@
     cmp-nvim-lsp.enable = true;
     cmp-buffer.enable = true;
     cmp-path.enable = true;
-    cmp-cmdline.enable = true;
     conform-nvim = {
       enable = true;
       formatAfterSave = ''
@@ -220,7 +225,10 @@
     trouble.enable = true;
     ts-autotag.enable = true;
     wakatime.enable = true;
-    leap.enable = true;
+    leap = {
+      enable = true;
+      addDefaultMappings = true;
+    };
     indent-blankline = {
       enable = true;
       settings = {
