@@ -1,7 +1,5 @@
 {
-  imports = [
-    ./postgresql.nix
-  ];
+  imports = [ ./postgresql.nix ];
   services = {
     pipewire = import ./pipewire.nix;
 

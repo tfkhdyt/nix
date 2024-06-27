@@ -20,84 +20,90 @@
           "windowsOut, 1, 7, overshot, slide"
           "layers, 1, 7, overshot, popin 75%"
           "windowsMove, 1, 5, default"
-          "border, 1, 2, default"              
-          "borderangle, 1, 2, default"         
-          "fade, 1, 7, overshot"               
+          "border, 1, 2, default"
+          "borderangle, 1, 2, default"
+          "fade, 1, 7, overshot"
           "workspaces, 1, 7, overshot, fade"
         ];
-      };      
+      };
       binds.allow_workspace_cycles = true;
       "$mainMod" = "SUPER";
       "$scriptDir" = "/home/tfkhdyt/scripts";
-      bind = [
-        "$mainMod, Return, exec, alacritty"
-        "$mainMod SHIFT, Q, killactive"
-        "$mainMod SHIFT, M, exit"
-        # "$mainMod, E, exec, thunar"
-        # "$mainMod, C, exec, vsc.sh"
-        "$mainMod, V, togglefloating"
-        "$mainMod, R, exec, j4-dmenu-desktop --dmenu='bemenu -i' --term='alacritty'"
-        "$mainMod, P, pin"
-        "$mainMod, J, togglesplit"
-        # "$mainMod, B, exec, gio launch /usr/share/applications/brave-browser.desktop"
-        "$mainMod, left, movefocus, l"
-        "$mainMod, right, movefocus, r"
-        "$mainMod, up, movefocus, u"
-        "$mainMod, down, movefocus, d"
-        "ALT, TAB, cyclenext"
-        "$mainMod SHIFT, left, movewindow, l"
-        "$mainMod SHIFT, right, movewindow, r"
-        "$mainMod SHIFT, up, movewindow, u"
-        "$mainMod SHIFT, down, movewindow, d"
-        "$mainMod, mouse_down, workspace, e+1"
-        "$mainMod, mouse_up, workspace, e-1"
-        "$mainMod, F, fullscreen"
-        ", xf86audiomicmute, exec, $scriptDir/mic.sh"
-        ", xf86audioraisevolume, exec, $scriptDir/volume.sh up"
-        ", xf86audiolowervolume, exec, $scriptDir/volume.sh down"
-        ", xf86audiomute, exec, $scriptDir/volume.sh mute"
-        ", XF86MonBrightnessUp, exec, $scriptDir/brightness.sh up"
-        ", XF86MonBrightnessDown, exec, $scriptDir/brightness.sh down"
-        ", xf86audiomicmute, exec, $scriptDir/mic.sh"
-        ", xf86audioraisevolume, exec, $scriptDir/volume.sh up"
-        ", xf86audiolowervolume, exec, $scriptDir/volume.sh down"
-        ", xf86audiomute, exec, $scriptDir/volume.sh mute"
-        ", XF86MonBrightnessUp, exec, $scriptDir/brightness.sh up"
-        ", XF86MonBrightnessDown, exec, $scriptDir/brightness.sh down"
-        # screenshots
-        ", Print, exec, $scriptDir/full-screenshot.sh"
-        "$mainMod, Print, exec, $scriptDir/active-window-screenshot.sh"
-        "SHIFT, Print, exec, $scriptDir/selection-screenshot.sh"
-        # clipboard screenshots
-        "CTRL, Print, exec, $scriptDir/full-screenshot.sh copy"
-        "CTRL $mainMod, Print, exec, $scriptDir/active-window-screenshot.sh copy"
-        "CTRL SHIFT, Print, exec, $scriptDir/selection-screenshot.sh copy"
-        # workspace navigation
-        "$mainMod, TAB, workspace, previous"
-        # powermenu
-        "$mainMod, backslash, exec, $scriptDir/powermenu"
-        # mpd
-        # "$mainMod, slash, exec, $scriptDir/start-mpd"
-        "$mainMod, S, togglespecialworkspace, magic"
-        "$mainMod SHIFT, S, movetoworkspace, special:magic"
-        "$mainMod, comma, movecurrentworkspacetomonitor, -1"
-        "$mainMod, period, movecurrentworkspacetomonitor, +1"
-      ] ++ (
-        # workspaces
-        # binds $mod + [shift +] {1..10} to [move to] workspace {1..10}
-        builtins.concatLists (builtins.genList (
-            x: let
-              ws = let
-                c = (x + 1) / 10;
+      bind =
+        [
+          "$mainMod, Return, exec, alacritty"
+          "$mainMod SHIFT, Q, killactive"
+          "$mainMod SHIFT, M, exit"
+          # "$mainMod, E, exec, thunar"
+          # "$mainMod, C, exec, vsc.sh"
+          "$mainMod, V, togglefloating"
+          "$mainMod, R, exec, j4-dmenu-desktop --dmenu='bemenu -i' --term='alacritty'"
+          "$mainMod, P, pin"
+          "$mainMod, J, togglesplit"
+          # "$mainMod, B, exec, gio launch /usr/share/applications/brave-browser.desktop"
+          "$mainMod, left, movefocus, l"
+          "$mainMod, right, movefocus, r"
+          "$mainMod, up, movefocus, u"
+          "$mainMod, down, movefocus, d"
+          "ALT, TAB, cyclenext"
+          "$mainMod SHIFT, left, movewindow, l"
+          "$mainMod SHIFT, right, movewindow, r"
+          "$mainMod SHIFT, up, movewindow, u"
+          "$mainMod SHIFT, down, movewindow, d"
+          "$mainMod, mouse_down, workspace, e+1"
+          "$mainMod, mouse_up, workspace, e-1"
+          "$mainMod, F, fullscreen"
+          ", xf86audiomicmute, exec, $scriptDir/mic.sh"
+          ", xf86audioraisevolume, exec, $scriptDir/volume.sh up"
+          ", xf86audiolowervolume, exec, $scriptDir/volume.sh down"
+          ", xf86audiomute, exec, $scriptDir/volume.sh mute"
+          ", XF86MonBrightnessUp, exec, $scriptDir/brightness.sh up"
+          ", XF86MonBrightnessDown, exec, $scriptDir/brightness.sh down"
+          ", xf86audiomicmute, exec, $scriptDir/mic.sh"
+          ", xf86audioraisevolume, exec, $scriptDir/volume.sh up"
+          ", xf86audiolowervolume, exec, $scriptDir/volume.sh down"
+          ", xf86audiomute, exec, $scriptDir/volume.sh mute"
+          ", XF86MonBrightnessUp, exec, $scriptDir/brightness.sh up"
+          ", XF86MonBrightnessDown, exec, $scriptDir/brightness.sh down"
+          # screenshots
+          ", Print, exec, $scriptDir/full-screenshot.sh"
+          "$mainMod, Print, exec, $scriptDir/active-window-screenshot.sh"
+          "SHIFT, Print, exec, $scriptDir/selection-screenshot.sh"
+          # clipboard screenshots
+          "CTRL, Print, exec, $scriptDir/full-screenshot.sh copy"
+          "CTRL $mainMod, Print, exec, $scriptDir/active-window-screenshot.sh copy"
+          "CTRL SHIFT, Print, exec, $scriptDir/selection-screenshot.sh copy"
+          # workspace navigation
+          "$mainMod, TAB, workspace, previous"
+          # powermenu
+          "$mainMod, backslash, exec, $scriptDir/powermenu"
+          # mpd
+          # "$mainMod, slash, exec, $scriptDir/start-mpd"
+          "$mainMod, S, togglespecialworkspace, magic"
+          "$mainMod SHIFT, S, movetoworkspace, special:magic"
+          "$mainMod, comma, movecurrentworkspacetomonitor, -1"
+          "$mainMod, period, movecurrentworkspacetomonitor, +1"
+        ]
+        ++ (
+          # workspaces
+          # binds $mod + [shift +] {1..10} to [move to] workspace {1..10}
+          builtins.concatLists (
+            builtins.genList (
+              x:
+              let
+                ws =
+                  let
+                    c = (x + 1) / 10;
+                  in
+                  builtins.toString (x + 1 - (c * 10));
               in
-                builtins.toString (x + 1 - (c * 10));
-            in [
-              "$mainMod, ${ws}, workspace, ${toString (x + 1)}"
-              "$mainMod SHIFT, ${ws}, movetoworkspace, ${toString (x + 1)}"
-            ]
+              [
+                "$mainMod, ${ws}, workspace, ${toString (x + 1)}"
+                "$mainMod SHIFT, ${ws}, movetoworkspace, ${toString (x + 1)}"
+              ]
+            ) 10
           )
-          10)
-      );
+        );
       bindm = [
         "$mainMod, mouse:272, movewindow"
         "$mainMod, mouse:273, resizewindow"
@@ -107,15 +113,13 @@
         blur.enabled = false;
         drop_shadow = false;
       };
-      exec-once = [
-        "lxqt-policykit-agent"
-      ];
+      exec-once = [ "lxqt-policykit-agent" ];
       general = {
         gaps_in = 5;
         gaps_out = "2,28,10,28";
         border_size = 5;
         "col.active_border" = "rgb(E4C1F9) rgb(B5EAD7) 45deg";
-        "col.inactive_border"= "rgb(1f2335)";
+        "col.inactive_border" = "rgb(1f2335)";
         layout = "dwindle";
       };
       input = {
@@ -152,7 +156,7 @@
         "9,monitor:eDP-1"
         "10,monitor:eDP-1"
       ];
-      windowrulev2 = [];
+      windowrulev2 = [ ];
     };
     extraConfig = ''
       # submap

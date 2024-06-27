@@ -1,6 +1,7 @@
-{ lib
-, buildGoModule
-, fetchFromGitHub
+{
+  lib,
+  buildGoModule,
+  fetchFromGitHub,
 }:
 
 buildGoModule rec {
@@ -16,7 +17,10 @@ buildGoModule rec {
 
   vendorHash = "sha256-fEZzX+ecSWKITXczcwm5BGw5OWuixa4XKrEx8z0pxXQ=";
 
-  ldflags = [ "-s" "-w" ];
+  ldflags = [
+    "-s"
+    "-w"
+  ];
 
   meta = with lib; {
     description = "Blazingly fast command line interface for Urban Dictionary";

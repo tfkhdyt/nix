@@ -1,5 +1,6 @@
-{ pkgs, ... }: {
-   home.packages = with pkgs; [
+{ pkgs, ... }:
+{
+  home.packages = with pkgs; [
     beekeeper-studio
     dbmate
     gimp
@@ -33,9 +34,9 @@
     nil
     imv
     bc
-    gopls 
-    go-tools 
-    gomodifytags 
+    gopls
+    go-tools
+    gomodifytags
     impl
     nix-init
     nixfmt-rfc-style

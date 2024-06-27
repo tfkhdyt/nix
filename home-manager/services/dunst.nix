@@ -1,7 +1,8 @@
-{ pkgs, ... }: {
+{ pkgs, ... }:
+{
   services.dunst = {
     enable = true;
-     iconTheme = {
+    iconTheme = {
       package = pkgs.papirus-icon-theme;
       name = "Papirus-Dark";
     };

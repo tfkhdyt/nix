@@ -3,10 +3,10 @@
   settings = {
     font = {
       size = 13;
-        bold.family = "JetBrainsMono NF";
-        bold_italic.family = "JetBrainsMono NF";
-        italic.family = "JetBrainsMono NF";
-        normal.family = "JetBrainsMono NF";
+      bold.family = "JetBrainsMono NF";
+      bold_italic.family = "JetBrainsMono NF";
+      italic.family = "JetBrainsMono NF";
+      normal.family = "JetBrainsMono NF";
     };
     keyboard.bindings = [
       {
@@ -47,8 +47,14 @@
         white = "#c0caf5";
       };
       indexed_colors = [
-        { index = 16; color = "#ff9e64"; }
-        { index = 17; color = "#db4b4b"; }
+        {
+          index = 16;
+          color = "#ff9e64";
+        }
+        {
+          index = 17;
+          color = "#db4b4b";
+        }
       ];
     };
   };

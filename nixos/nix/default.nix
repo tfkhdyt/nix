@@ -1,8 +1,9 @@
-{ config, ... }: {
-   # nix = let
+{ config, ... }:
+{
+  # nix = let
   nix = {
     # flakeInputs = lib.filterAttrs (_: lib.isType "flake") inputs;
-  # in {
+    # in {
     settings = {
       # Enable flakes and new 'nix' command
       experimental-features = "nix-command flakes";
