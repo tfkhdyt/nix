@@ -112,6 +112,11 @@
       };
     };
     dashboard.enable = true;
-    lspsaga.enable = true;
+    bufferline = {
+      enable = true;
+      diagnostics = true;
+      hover.enabled = true;
+      indicator.style = "underline";
+    };
   };
 }
