@@ -92,10 +92,6 @@
       key = "<leader>ca";
       action = "<cmd>lua vim.lsp.buf.code_action()<CR>";
     }
-    {
-      key = "<leader>xx";
-      action = "<cmd>Trouble diagnostics toggle<cr>";
-    }
   ];
   opts = {
     cursorline = true;
@@ -190,7 +186,7 @@
     conform-nvim = {
       enable = true;
       formatAfterSave = {
-        lspFallback = true;
+        lsp_format = "fallback";
       };
       formattersByFt = {
         javascript = [ "prettierd" ];
@@ -206,11 +202,5 @@
         "_" = [ "trim_whitespace" ];
       };
     };
-    nvim-autopairs.enable = true;
-    trouble.enable = true;
-    ts-autotag.enable = true;
-    wakatime.enable = true;
-    leap.enable = true;
-    indent-blankline.enable = true;
   };
 }
