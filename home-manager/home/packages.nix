@@ -40,5 +40,6 @@
     impl
     nix-init
     nixfmt-rfc-style
+    zathura
   ];
 }
