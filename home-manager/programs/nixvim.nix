@@ -166,8 +166,11 @@
     treesitter-context.enable = true;
     treesitter-refactor.enable = true;
     treesitter-textobjects.enable = true;
-    lsp-format.enable = true;
-    lsp-lines.enable = true;
+    lsp-lines = {
+      enable = true;
+      currentLine = true;
+    };
+    lspkind.enable = true;
     cmp = {
       enable = true;
       settings = {
@@ -189,9 +192,16 @@
     cmp-cmdline.enable = true;
     conform-nvim = {
       enable = true;
-      formatAfterSave = {
-        lspFallback = true;
-      };
+      formatAfterSave = ''
+        function()
+        	return {
+        		lsp_fallback = true
+        	}
+        end
+      '';
+      # {
+      #      lspFallback = true;
+      #    };
       formattersByFt = {
         javascript = [ "prettierd" ];
         typescript = [ "prettierd" ];
@@ -211,6 +221,31 @@
     ts-autotag.enable = true;
     wakatime.enable = true;
     leap.enable = true;
-    indent-blankline.enable = true;
+    indent-blankline = {
+      enable = true;
+      settings = {
+        indent = {
+          char = "│";
+          tab_char = "│";
+        };
+        scope = {
+          show_start = false;
+          show_end = false;
+        };
+        exclude.filetypes = [
+          "help"
+          "alpha"
+          "dashboard"
+          "nvim-tree"
+          "Trouble"
+          "trouble"
+          "lazy"
+          "mason"
+          "notify"
+          "toggleterm"
+          "lazyterm"
+        ];
+      };
+    };
   };
 }
