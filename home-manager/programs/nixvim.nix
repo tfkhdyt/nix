@@ -52,6 +52,34 @@
       action = "<C-w>k";
       key = "<C-k>";
     }
+    {
+      action = "<cmd>noh<CR>";
+      key = "<Esc>";
+    }
+    {
+      action = "<cmd>BufferLineCyclePrev<cr>";
+      key = "<S-h>";
+    }
+    {
+      action = "<cmd>BufferLineCycleNext<cr>";
+      key = "<S-l>";
+    }
+    {
+      key = "<leader>bo";
+      action = "<Cmd>BufferLineCloseOthers<CR>";
+    }
+    {
+      key = "<leader>br";
+      action = "<Cmd>BufferLineCloseRight<CR>";
+    }
+    {
+      key = "<leader>bl";
+      action = "<Cmd>BufferLineCloseLeft<CR>";
+    }
+    {
+      key = "<leader>bd";
+      action = "<Cmd>bd<CR>";
+    }
   ];
   opts = {
     cursorline = true;
@@ -97,23 +125,15 @@
       enable = true;
       settings.config = {
         project.enable = true;
-        header = [
-          ""
-          "████████╗███████╗██╗  ██╗██╗  ██╗██████╗ ██╗   ██╗████████╗"
-          "╚══██╔══╝██╔════╝██║ ██╔╝██║  ██║██╔══██╗╚██╗ ██╔╝╚══██╔══╝"
-          "   ██║   █████╗  █████╔╝ ███████║██║  ██║ ╚████╔╝    ██║   "
-          "   ██║   ██╔══╝  ██╔═██╗ ██╔══██║██║  ██║  ╚██╔╝     ██║   "
-          "   ██║   ██║     ██║  ██╗██║  ██║██████╔╝   ██║      ██║   "
-          "   ╚═╝   ╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝    ╚═╝      ╚═╝ 	"
-          ""
-        ];
       };
     };
     bufferline = {
       enable = true;
       diagnostics = true;
-      hover.enabled = true;
-      indicator.style = "underline";
+      hover = {
+        enabled = true;
+        reveal = [ "close" ];
+      };
     };
     telescope = {
       enable = true;
