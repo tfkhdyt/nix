@@ -1,6 +1,6 @@
 {
   programs = {
-    neovim = import ./neovim.nix;
+    # neovim = import ./neovim.nix;
     nh = import ./nh.nix;
 
     dconf.enable = true;
