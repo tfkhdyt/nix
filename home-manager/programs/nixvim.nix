@@ -30,6 +30,11 @@
     {
       action = "<cmd>w<CR>";
       key = "<C-s>";
+      mode = [
+        "n"
+        "v"
+        "i"
+      ];
     }
     {
       action = "<C-w>h";
@@ -88,35 +93,44 @@
       enable = true;
       indent = true;
     };
-    fzf-lua = {
+    dashboard = {
       enable = true;
-      keymaps = {
-        "<Leader><Space>" = {
-          action = "git_files";
-          options = {
-            desc = "Fzf-Lua Git Files";
-            silent = true;
-          };
-          # settings = {
-          #   previewers = {
-          #  cat = {
-          #    cmd = "/nix/store/i7qhgc0bs725qw3wdanznfkdna4z2ns2-coreutils-9.5/bin/cat";
-          #  };
-          #   };
-          #   winopts = {
-          #  height = 0.5;
-          #   };
-          # };
-        };
-        "<leader>/" = "live_grep";
+      settings.config = {
+        project.enable = true;
+        header = ''
+          ████████╗███████╗██╗  ██╗██╗  ██╗██████╗ ██╗   ██╗████████╗
+          ╚══██╔══╝██╔════╝██║ ██╔╝██║  ██║██╔══██╗╚██╗ ██╔╝╚══██╔══╝
+             ██║   █████╗  █████╔╝ ███████║██║  ██║ ╚████╔╝    ██║   
+             ██║   ██╔══╝  ██╔═██╗ ██╔══██║██║  ██║  ╚██╔╝     ██║   
+             ██║   ██║     ██║  ██╗██║  ██║██████╔╝   ██║      ██║   
+             ╚═╝   ╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝    ╚═╝      ╚═╝ '';
       };
     };
-    dashboard.enable = true;
     bufferline = {
       enable = true;
       diagnostics = true;
       hover.enabled = true;
       indicator.style = "underline";
     };
+    telescope = {
+      enable = true;
+      keymaps = {
+        "<leader><space>" = {
+          action = "git_files";
+          options = {
+            desc = "Telescope Git Files";
+          };
+        };
+        "<leader>/" = "live_grep";
+      };
+    };
+    treesitter-context.enable = true;
+    treesitter-refactor = {
+      enable = true;
+      highlightCurrentScope.enable = true;
+    };
+    treesitter-textobjects.enable = true;
+    lsp-format.enable = true;
+    lsp-lines.enable = true;
   };
 }
