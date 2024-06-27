@@ -80,6 +80,18 @@
       key = "<leader>bd";
       action = "<Cmd>bd<CR>";
     }
+    {
+      key = "<leader>|";
+      action = "<C-w>v";
+    }
+    {
+      key = "<leader>-";
+      action = "<C-w>s";
+    }
+    {
+      key = "<leader>ca";
+      action = "<cmd>lua vim.lsp.buf.code_action()<CR>";
+    }
   ];
   opts = {
     cursorline = true;
@@ -152,5 +164,43 @@
     treesitter-textobjects.enable = true;
     lsp-format.enable = true;
     lsp-lines.enable = true;
+    cmp = {
+      enable = true;
+      settings = {
+        mapping = {
+          "<C-Space>" = "cmp.mapping.complete()";
+          "<C-d>" = "cmp.mapping.scroll_docs(-4)";
+          "<C-e>" = "cmp.mapping.close()";
+          "<C-f>" = "cmp.mapping.scroll_docs(4)";
+          "<CR>" = "cmp.config.disable";
+          # "<S-Tab>" = "cmp.mapping(cmp.mapping.select_prev_item(), {'i', 's'})";
+          # "<Tab>" = "cmp.mapping(cmp.mapping.select_next_item(), {'i', 's'})";
+          "<Tab>" = "cmp.mapping.confirm({ select = true })";
+        };
+      };
+    };
+    cmp-nvim-lsp.enable = true;
+    cmp-buffer.enable = true;
+    cmp-path.enable = true;
+    cmp-cmdline.enable = true;
+    conform-nvim = {
+      enable = true;
+      formatAfterSave = {
+        lsp_format = "fallback";
+      };
+      formattersByFt = {
+        javascript = [ "prettierd" ];
+        typescript = [ "prettierd" ];
+        javascriptreact = [ "prettierd" ];
+        typescriptreact = [ "prettierd" ];
+        nix = [ "nixfmt" ];
+        go = [
+          "gofumpt"
+          "goimports-reviser"
+          "golines"
+        ];
+        "_" = [ "trim_whitespace" ];
+      };
+    };
   };
 }

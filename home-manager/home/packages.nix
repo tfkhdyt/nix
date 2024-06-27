@@ -41,5 +41,9 @@
     nix-init
     nixfmt-rfc-style
     zathura
+    gofumpt
+    goimports-reviser
+    prettierd
+    golines
   ];
 }
