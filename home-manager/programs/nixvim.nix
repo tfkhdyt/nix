@@ -6,16 +6,16 @@
     providers.wl-copy.enable = true;
   };
   colorschemes.gruvbox.enable = true;
-  diagnostics = {
-    underline = true;
-    virtual_lines = {
-      spacing = 4;
-      source = "if_many";
-      prefix = "●";
-    };
-    virtual_text = true;
-    severity_sort = true;
-  };
+  # diagnostics = {
+  #   underline = true;
+  #   virtual_lines = {
+  #     spacing = 4;
+  #     source = "if_many";
+  #     prefix = "●";
+  #   };
+  #   virtual_text = true;
+  #   severity_sort = true;
+  # };
   globals = {
     mapleader = " ";
   };
@@ -195,6 +195,7 @@
     cmp-nvim-lsp.enable = true;
     cmp-buffer.enable = true;
     cmp-path.enable = true;
+    cmp-nvim-lsp-signature-help.enable = true;
     conform-nvim = {
       enable = true;
       formatAfterSave = ''
