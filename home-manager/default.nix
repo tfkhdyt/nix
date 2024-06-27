@@ -1,3 +1,4 @@
+{ inputs, ... }:
 {
   imports = [
     ./nixpkgs
@@ -6,6 +7,6 @@
     ./programs
     ./services
     ./wayland
-    <nixvim>.homeManagerModules.nixvim
+    inputs.nixvim.homeManagerModules.nixvim
   ];
 }
