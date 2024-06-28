@@ -111,10 +111,6 @@
       action = "<cmd>Telescope lsp_type_definitions<CR>";
     }
     {
-      key = "<C-k>";
-      action = "<cmd>lua vim.lsp.buf.signature_help()<CR>";
-    }
-    {
       key = "<leader>ss";
       action = "<cmd>Telescope lsp_document_symbols<CR>";
     }
