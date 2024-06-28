@@ -1,5 +1,8 @@
 {
-  imports = [ ./tmux.nix ];
+  imports = [
+    ./tmux.nix
+    ./nixvim.nix
+  ];
   programs = {
     git = import ./git.nix;
     yazi = import ./yazi.nix;
@@ -12,7 +15,6 @@
     alacritty = import ./alacritty.nix;
     waybar = import ./waybar.nix;
     hyprlock = import ./hyprlock.nix;
-    nixvim = import ./nixvim.nix;
 
     home-manager.enable = true;
     fastfetch.enable = true;
