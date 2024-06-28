@@ -114,16 +114,34 @@
       key = "<leader>ss";
       action = "<cmd>Telescope lsp_document_symbols<CR>";
     }
+    {
+      key = "<A-j>";
+      action = ":m .-2<CR>==";
+      mode = [ "n" ];
+    }
+    {
+      key = "<A-k>";
+      action = ":m .+1<CR>==";
+      mode = [ "n" ];
+    }
+    {
+      key = "<A-j>";
+      action = ":m '<-2<CR>gv=gv";
+      mode = [ "v" ];
+    }
+    {
+      key = "<A-j>";
+      action = ":m '>+1<CR>gv=gv";
+      mode = [ "v" ];
+    }
   ];
   opts = {
     cursorline = true;
     shiftwidth = 2;
     tabstop = 2;
+    relativenumber = true;
+    number = true;
   };
-  extraConfigLua = ''
-    vim.wo.relativenumber = true;
-    vim.wo.number = true;
-  '';
   plugins = {
     lualine = {
       enable = true;
@@ -206,8 +224,9 @@
           { name = "nvim_lsp"; }
           # { name = "luasnip"; }
           { name = "path"; }
-          { name = "buffer"; }
           { name = "nvim_lsp_signature_help"; }
+          { name = "codeium"; }
+          { name = "buffer"; }
         ];
         mapping = {
           "<C-Space>" = "cmp.mapping.complete()";
@@ -285,5 +304,6 @@
         ];
       };
     };
+    codeium-nvim.enable = true;
   };
 }
