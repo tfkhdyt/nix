@@ -104,7 +104,7 @@
       }
       {
         key = "<leader>xx";
-        action = "<cmd>Telescope diagnostics<cr>";
+        action = "<cmd>Trouble diagnostics toggle<cr>";
       }
       {
         key = "gd";
@@ -268,13 +268,14 @@
         };
       };
       nvim-autopairs.enable = true;
-      trouble.enable = true;
+      trouble = {
+        enable = true;
+        settings.auto_close = true;
+      };
       ts-autotag.enable = true;
       wakatime.enable = true;
-      leap = {
-        enable = true;
-        addDefaultMappings = true;
-      };
+      flash.enable = true;
+      twilight.enable = true;
       indent-blankline = {
         enable = true;
         settings = {
@@ -282,10 +283,7 @@
             char = "│";
             tab_char = "│";
           };
-          scope = {
-            show_start = false;
-            show_end = false;
-          };
+          scope.enabled = true;
           exclude.filetypes = [
             "help"
             "alpha"
@@ -302,6 +300,13 @@
         };
       };
       codeium-nvim.enable = true;
+      navic = {
+        enable = true;
+        click = true;
+        depthLimit = 3;
+        highlight = true;
+      };
+      lastplace.enable = true;
     };
   };
 }
