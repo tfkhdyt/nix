@@ -154,11 +154,10 @@
       tabstop = 2;
       relativenumber = true;
       number = true;
-      foldcolumn = "1";
+      foldcolumn = "0";
       foldlevel = 99;
       foldlevelstart = 99;
       foldenable = true;
-      fillchars = "eob: ,fold: ,foldopen:,foldsep: ,foldclose:";
     };
     plugins = {
       lualine = {
@@ -327,7 +326,6 @@
       dressing.enable = true;
       nix.enable = true;
       nvim-ufo.enable = true;
-      statuscol.enable = true;
     };
   };
 }
