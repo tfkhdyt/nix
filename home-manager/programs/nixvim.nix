@@ -88,11 +88,11 @@
     }
     {
       key = "<leader>xx";
-      action = "<cmd>Trouble diagnostics toggle<cr>";
+      action = "<cmd>Telescope diagnostics<cr>";
     }
     {
       key = "gd";
-      action = "<cmd>lua vim.lsp.buf.definition()<CR>";
+      action = "<cmd>Telescope lsp_definitions<CR>";
     }
     {
       key = "gD";
@@ -100,15 +100,23 @@
     }
     {
       key = "gi";
-      action = "<cmd>lua vim.lsp.buf.implementation()<CR>";
+      action = "<cmd>Telescope lsp_implementations<CR>";
     }
     {
       key = "gr";
-      action = "<cmd>lua vim.lsp.buf.references()<CR>";
+      action = "<cmd>Telescope lsp_references<CR>";
+    }
+    {
+      key = "gt";
+      action = "<cmd>Telescope lsp_type_definitions<CR>";
     }
     {
       key = "<C-k>";
-      action = "<cmd>lua vim.lsp.buf.implementation()<CR>";
+      action = "<cmd>lua vim.lsp.buf.signature_help()<CR>";
+    }
+    {
+      key = "<leader>ss";
+      action = "<cmd>Telescope lsp_document_symbols<CR>";
     }
   ];
   opts = {
