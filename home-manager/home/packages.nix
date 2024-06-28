@@ -10,7 +10,7 @@
     lefthook
     nodejs_20
     oha
-    nodePackages.pnpm
+    pnpm
     podman
     podman-compose
     postman
