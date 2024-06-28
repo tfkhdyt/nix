@@ -14,7 +14,7 @@
       set -ga update-environment TERM_PROGRAM
     '';
     sensibleOnTop = true;
-    escapeTime = 250;
+    escapeTime = 10;
     plugins = with pkgs; [ tmuxPlugins.gruvbox ];
   };
 }
