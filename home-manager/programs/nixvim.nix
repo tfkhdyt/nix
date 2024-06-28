@@ -154,7 +154,7 @@
       tabstop = 2;
       relativenumber = true;
       number = true;
-      foldcolumn = "0";
+      foldcolumn = "1";
       foldlevel = 99;
       foldlevelstart = 99;
       foldenable = true;
@@ -327,6 +327,7 @@
       dressing.enable = true;
       nix.enable = true;
       nvim-ufo.enable = true;
+      statuscol.enable = true;
     };
   };
 }
