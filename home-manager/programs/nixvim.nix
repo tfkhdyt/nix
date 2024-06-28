@@ -136,7 +136,7 @@
     };
     nvim-tree = {
       enable = true;
-      autoReloadOnWrite = true;
+      autoReloadOnWrite = false;
       disableNetrw = true;
       hijackCursor = true;
       diagnostics.enable = true;
