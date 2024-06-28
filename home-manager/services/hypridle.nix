@@ -1,16 +1,19 @@
+let
+  lockCmd = "pgrep hyprlock || hyprlock";
+in
 {
   enable = true;
   settings = {
     general = {
-      before_sleep_cmd = "hyprlock";
+      before_sleep_cmd = lockCmd;
       after_sleep_cmd = "hyprctl dispatch dpms on";
-      lock_cmd = "hyprlock";
+      lock_cmd = lockCmd;
     };
 
     listener = [
       {
         timeout = 300;
-        on-timeout = "hyprlock";
+        on-timeout = lockCmd;
       }
       {
         timeout = 380;
