@@ -202,6 +202,7 @@
           enabled = true;
           reveal = [ "close" ];
         };
+        showBufferCloseIcons = false;
       };
       telescope = {
         enable = true;
