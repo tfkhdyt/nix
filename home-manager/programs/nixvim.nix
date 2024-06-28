@@ -139,6 +139,14 @@
           "o"
         ];
       }
+      {
+        key = "zR";
+        action = "<cmd>lua require('ufo').openAllFolds()<CR>";
+      }
+      {
+        key = "zM";
+        action = "<cmd>lua require('ufo').closeAllFolds()<CR>";
+      }
     ];
     opts = {
       cursorline = true;
@@ -146,6 +154,10 @@
       tabstop = 2;
       relativenumber = true;
       number = true;
+      foldcolumn = 1;
+      foldlevel = 99;
+      foldlevelstart = 99;
+      foldenable = true;
     };
     plugins = {
       lualine = {
@@ -198,10 +210,6 @@
       bufferline = {
         enable = true;
         diagnostics = true;
-        hover = {
-          enabled = true;
-          reveal = [ "close" ];
-        };
         showBufferCloseIcons = false;
       };
       telescope = {
@@ -315,6 +323,9 @@
       };
       codeium-nvim.enable = true;
       lastplace.enable = true;
+      dressing.enable = true;
+      nix.enable = true;
+      nvim-ufo.enable = true;
     };
   };
 }
