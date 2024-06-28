@@ -83,8 +83,32 @@
       action = "<cmd>lua vim.lsp.buf.code_action()<CR>";
     }
     {
+      key = "<leader>cr";
+      action = "<cmd>lua vim.lsp.buf.rename()<CR>";
+    }
+    {
       key = "<leader>xx";
       action = "<cmd>Trouble diagnostics toggle<cr>";
+    }
+    {
+      key = "gd";
+      action = "<cmd>lua vim.lsp.buf.definition()<CR>";
+    }
+    {
+      key = "gD";
+      action = "<cmd>lua vim.lsp.buf.declaration()<CR>";
+    }
+    {
+      key = "gi";
+      action = "<cmd>lua vim.lsp.buf.implementation()<CR>";
+    }
+    {
+      key = "gr";
+      action = "<cmd>lua vim.lsp.buf.references()<CR>";
+    }
+    {
+      key = "<C-k>";
+      action = "<cmd>lua vim.lsp.buf.implementation()<CR>";
     }
   ];
   opts = {
