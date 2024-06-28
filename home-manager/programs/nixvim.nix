@@ -6,16 +6,6 @@
     providers.wl-copy.enable = true;
   };
   colorschemes.gruvbox.enable = true;
-  # diagnostics = {
-  #   underline = true;
-  #   virtual_lines = {
-  #     spacing = 4;
-  #     source = "if_many";
-  #     prefix = "●";
-  #   };
-  #   virtual_text = true;
-  #   severity_sort = true;
-  # };
   globals = {
     mapleader = " ";
   };
@@ -140,6 +130,16 @@
     dashboard = {
       enable = true;
       settings.config = {
+        header = [
+          ""
+          "████████╗███████╗██╗  ██╗██╗  ██╗██████╗ ██╗   ██╗████████╗"
+          "╚══██╔══╝██╔════╝██║ ██╔╝██║  ██║██╔══██╗╚██╗ ██╔╝╚══██╔══╝"
+          "   ██║   █████╗  █████╔╝ ███████║██║  ██║ ╚████╔╝    ██║   "
+          "   ██║   ██╔══╝  ██╔═██╗ ██╔══██║██║  ██║  ╚██╔╝     ██║   "
+          "   ██║   ██║     ██║  ██╗██║  ██║██████╔╝   ██║      ██║   "
+          "   ╚═╝   ╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝    ╚═╝      ╚═╝   "
+          ""
+        ];
         project.enable = true;
       };
     };
