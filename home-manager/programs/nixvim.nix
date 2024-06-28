@@ -130,6 +130,15 @@
         key = "<leader>ss";
         action = "<cmd>Telescope lsp_document_symbols<CR>";
       }
+      {
+        key = "s";
+        action = "function() require('flash').jump() end";
+        mode = [
+          "n"
+          "x"
+          "o"
+        ];
+      }
     ];
     opts = {
       cursorline = true;
@@ -283,7 +292,11 @@
             char = "│";
             tab_char = "│";
           };
-          scope.enabled = true;
+          scope = {
+            enabled = true;
+            show_start = false;
+            show_end = false;
+          };
           exclude.filetypes = [
             "help"
             "alpha"
@@ -300,12 +313,6 @@
         };
       };
       codeium-nvim.enable = true;
-      navic = {
-        enable = true;
-        click = true;
-        depthLimit = 3;
-        highlight = true;
-      };
       lastplace.enable = true;
     };
   };
