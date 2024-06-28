@@ -132,7 +132,7 @@
       }
       {
         key = "s";
-        action = "function() require('flash').jump() end";
+        action = "<cmd>lua require('flash').jump()<cr>";
         mode = [
           "n"
           "x"
