@@ -186,6 +186,11 @@
           eslint.enable = true;
           jsonls.enable = true;
           marksman.enable = true;
+          astro.enable = true;
+          cssls.enable = true;
+          html.enable = true;
+          svelte.enable = true;
+          tailwindcss.enable = true;
         };
       };
       treesitter = {
