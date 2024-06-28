@@ -158,6 +158,7 @@
       foldlevel = 99;
       foldlevelstart = 99;
       foldenable = true;
+      fillchars = "[[eob: ,fold: ,foldopen:,foldsep: ,foldclose:]]";
     };
     plugins = {
       lualine = {
