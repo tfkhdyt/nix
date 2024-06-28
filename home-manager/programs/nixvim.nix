@@ -19,13 +19,28 @@
         };
       }
       {
-        action = "<cmd>w<CR>";
+        action = "<cmd>w<CR><esc>";
         key = "<C-s>";
         mode = [
           "n"
-          "v"
+          "x"
           "i"
+          "s"
         ];
+      }
+      {
+        key = "<";
+        action = "<gv";
+        mode = [ "v" ];
+      }
+      {
+        key = ">";
+        action = ">gv";
+        mode = [ "v" ];
+      }
+      {
+        action = "<C-w>q";
+        key = "<C-q>";
       }
       {
         action = "<C-w>h";
@@ -137,6 +152,7 @@
         diagnostics.enable = true;
         filesystemWatchers.enable = true;
         git.enable = true;
+        updateFocusedFile.enable = true;
       };
       surround.enable = true;
       lsp = {
