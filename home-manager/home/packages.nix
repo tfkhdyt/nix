@@ -45,5 +45,6 @@
     goimports-reviser
     prettierd
     golines
+    mdformat
   ];
 }

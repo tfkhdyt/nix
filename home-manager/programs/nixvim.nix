@@ -185,6 +185,7 @@
           emmet-ls.enable = true;
           eslint.enable = true;
           jsonls.enable = true;
+          marksman.enable = true;
         };
       };
       treesitter = {
@@ -282,6 +283,7 @@
             "goimports-reviser"
             "golines"
           ];
+          markdown = [ "mdformat" ];
           "_" = [ "trim_whitespace" ];
         };
       };
