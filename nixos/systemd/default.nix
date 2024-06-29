@@ -9,8 +9,8 @@
       serviceConfig = {
         Type = "oneshot";
         ExecStart = [
-          "bash -c 'echo 40 | tee /sys/class/power_supply/BAT*/charge_start_threshold'"
-          "bash -c 'echo 50 | tee /sys/class/power_supply/BAT*/charge_stop_threshold'"
+          "echo 40 | tee /sys/class/power_supply/BAT*/charge_start_threshold"
+          "echo 50 | tee /sys/class/power_supply/BAT*/charge_stop_threshold"
         ];
         RemainAfterExit = true;
       };
