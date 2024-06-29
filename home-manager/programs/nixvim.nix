@@ -84,7 +84,7 @@
       }
       {
         key = "<leader>bd";
-        action = "<Cmd>bd<CR>";
+        action = "<Cmd>lua MiniBufremove.delete()<CR>";
       }
       {
         key = "<leader>|";
@@ -333,6 +333,12 @@
       dressing.enable = true;
       nix.enable = true;
       nvim-ufo.enable = true;
+      mini = {
+        enable = true;
+        modules = {
+          bufremove = { };
+        };
+      };
     };
   };
 }
