@@ -150,6 +150,10 @@
         key = "zM";
         action = "<cmd>lua require('ufo').closeAllFolds()<CR>";
       }
+      {
+        key = "<leader>gg";
+        action = "<cmd>LazyGit<CR>";
+      }
     ];
     opts = {
       cursorline = true;
@@ -342,6 +346,7 @@
           bufremove = { };
         };
       };
+      lazygit.enable = true;
     };
   };
 }
