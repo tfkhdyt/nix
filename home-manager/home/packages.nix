@@ -46,6 +46,5 @@
     prettierd
     golines
     mdformat
-    steam
   ];
 }
