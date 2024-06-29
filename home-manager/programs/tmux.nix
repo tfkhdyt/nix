@@ -12,6 +12,8 @@
       set -g allow-passthrough on
       set -ga update-environment TERM
       set -ga update-environment TERM_PROGRAM
+      bind-key -n Home send Escape "OH"
+      bind-key -n End send Escape "OF"
     '';
     sensibleOnTop = true;
     escapeTime = 10;
