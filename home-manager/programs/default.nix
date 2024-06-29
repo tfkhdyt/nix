@@ -23,6 +23,5 @@
     bun.enable = true;
     lazygit.enable = true;
     obs-studio.enable = true;
-    steam.enable = true;
   };
 }
