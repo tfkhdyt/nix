@@ -9,7 +9,10 @@
     };
     colorschemes.gruvbox.enable = true;
     globals.mapleader = " ";
-    extraPlugins = with pkgs; [ vimPlugins.vim-move ];
+    extraPlugins = with pkgs; [
+      vimPlugins.vim-move
+      vimPlugins.nvim-snippets
+    ];
     keymaps = [
       {
         action = "<cmd>NvimTreeToggle<CR>";
@@ -243,11 +246,11 @@
         settings = {
           sources = [
             { name = "nvim_lsp"; }
-            # { name = "luasnip"; }
             { name = "path"; }
             { name = "nvim_lsp_signature_help"; }
             { name = "codeium"; }
             { name = "buffer"; }
+            { name = "snippets"; }
           ];
           mapping = {
             "<C-Space>" = "cmp.mapping.complete()";
