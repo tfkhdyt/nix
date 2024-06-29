@@ -46,5 +46,6 @@
     prettierd
     golines
     mdformat
+    gpu-screen-recorder-gtk
   ];
 }
