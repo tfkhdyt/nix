@@ -8,5 +8,7 @@
     firefox.enable = true;
     nm-applet.enable = true;
     steam.enable = true;
+    thunar.enable = true;
+    adb.enable = true;
   };
 }

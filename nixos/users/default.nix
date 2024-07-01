@@ -5,6 +5,7 @@
     extraGroups = [
       "networkmanager"
       "wheel"
+      "adbusers"
     ];
   };
 }
