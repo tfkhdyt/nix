@@ -7,6 +7,30 @@
       register = "unnamedplus";
       providers.wl-copy.enable = true;
     };
+    diagnostics = {
+      underline = true;
+      update_in_insert = false;
+    };
+    extraConfigLuaPost = ''
+      vim.fn.sign_define('DiagnosticSignError', { text = '', texthl = 'DiagnosticSignError' })
+      vim.fn.sign_define('DiagnosticSignWarn', { text = '', texthl = 'DiagnosticSignWarn' })
+      vim.fn.sign_define('DiagnosticSignInfo', { text = '', texthl = 'DiagnosticSignInfo' })
+      vim.fn.sign_define('DiagnosticSignHint', { text = '', texthl = 'DiagnosticSignHint' })
+
+      vim.lsp.handlers['textDocument/hover'] = function(_, result, ctx, config)
+        config = config or {}
+        config.focus_id = ctx.method
+        if not (result and result.contents) then
+          return
+        end
+        local markdown_lines = vim.lsp.util.convert_input_to_markdown_lines(result.contents)
+        markdown_lines = vim.lsp.util.trim_empty_lines(markdown_lines)
+        if vim.tbl_isempty(markdown_lines) then
+          return
+        end
+        return vim.lsp.util.open_floating_preview(markdown_lines, 'markdown', config)
+      end
+    '';
     colorschemes.gruvbox.enable = true;
     globals.mapleader = " ";
     extraPlugins = with pkgs; [
@@ -106,6 +130,10 @@
         action = "<cmd>lua vim.lsp.buf.rename()<CR>";
       }
       {
+        key = "<leader>cf";
+        action = "<cmd>lua require('conform').format({ timeout_ms = 3000, lsp_format = 'fallback' })<CR>";
+      }
+      {
         key = "<leader>xx";
         action = "<cmd>Trouble diagnostics toggle<cr>";
       }
@@ -165,6 +193,8 @@
       foldlevel = 99;
       foldlevelstart = 99;
       foldenable = true;
+      breakindent = true;
+      breakindentopt = "shift:2";
     };
     plugins = {
       lualine = {
@@ -240,10 +270,6 @@
       treesitter-context.enable = true;
       treesitter-refactor.enable = true;
       treesitter-textobjects.enable = true;
-      lsp-lines = {
-        enable = true;
-        currentLine = false;
-      };
       lspkind.enable = true;
       cmp = {
         enable = true;
@@ -252,7 +278,7 @@
             { name = "nvim_lsp"; }
             { name = "path"; }
             { name = "nvim_lsp_signature_help"; }
-            { name = "codeium"; }
+            # { name = "codeium"; }
             { name = "buffer"; }
             { name = "snippets"; }
           ];
@@ -274,21 +300,16 @@
       cmp-nvim-lsp-signature-help.enable = true;
       conform-nvim = {
         enable = true;
-        formatAfterSave = ''
-          function()
-          	return {
-          		lsp_fallback = true
-          	}
-          end
-        '';
-        # {
-        #      lspFallback = true;
-        #    };
+        formatOnSave = {
+          lspFallback = true;
+          timeoutMs = 3000;
+        };
         formattersByFt = {
           javascript = [ "prettierd" ];
           typescript = [ "prettierd" ];
           javascriptreact = [ "prettierd" ];
           typescriptreact = [ "prettierd" ];
+          astro = [ "prettierd" ];
           nix = [ "nixfmt" ];
           go = [
             "gofumpt"
@@ -335,7 +356,7 @@
           ];
         };
       };
-      codeium-nvim.enable = true;
+      codeium-nvim.enable = false;
       lastplace.enable = true;
       dressing.enable = true;
       nix.enable = true;
