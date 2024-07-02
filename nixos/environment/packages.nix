@@ -11,7 +11,7 @@
     sd
     gcc13
     redis
-    wl-clipboard-rs
+    wl-clipboard
     alsa-utils
     brightnessctl
     libnotify
