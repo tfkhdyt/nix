@@ -18,5 +18,6 @@
     ./i18n
     ./system
     ./systemd
+    ./virtualization
   ];
 }
