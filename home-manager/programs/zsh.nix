@@ -8,7 +8,7 @@
       "main"
       "brackets"
       "pattern"
-      "cursor"
+      # "cursor"
       "line"
     ];
   };
