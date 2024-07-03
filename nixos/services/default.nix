@@ -1,5 +1,8 @@
 {
-  imports = [ ./postgresql.nix ];
+  imports = [
+    ./postgresql.nix
+    ./mariadb.nix
+  ];
   services = {
     pipewire = import ./pipewire.nix;
     tlp = import ./tlp.nix;
@@ -8,5 +11,6 @@
     blueman.enable = true;
     openssh.enable = true;
     fwupd.enable = true;
+    httpd.enable = true;
   };
 }

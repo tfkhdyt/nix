@@ -18,5 +18,6 @@
     pwvucontrol
     lxqt.lxqt-policykit
     openssl
+    php
   ];
 }
