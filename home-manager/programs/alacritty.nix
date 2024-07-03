@@ -17,7 +17,7 @@
     ];
     window = {
       dynamic_padding = true;
-      dynamic_title = true;
+      dynamic_title = false;
       opacity = 0.85;
     };
     selection.save_to_clipboard = true;
