@@ -1,6 +1,7 @@
 {
   enable = true;
   enableBashIntegration = true;
+  enableZshIntegration = true;
   theme = {
     manager = {
       cwd.fg = "#7aa2f7"; # Blue

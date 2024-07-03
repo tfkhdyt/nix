@@ -15,6 +15,7 @@
     alacritty = import ./alacritty.nix;
     waybar = import ./waybar.nix;
     hyprlock = import ./hyprlock.nix;
+    zsh = import ./zsh.nix;
 
     home-manager.enable = true;
     fastfetch.enable = true;

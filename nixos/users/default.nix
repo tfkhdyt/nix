@@ -1,3 +1,4 @@
+{ pkgs }:
 {
   users.users.tfkhdyt = {
     isNormalUser = true;
@@ -7,5 +8,6 @@
       "wheel"
       "adbusers"
     ];
+    shell = pkgs.zsh;
   };
 }
