@@ -17,12 +17,11 @@
     speedtest-cli
     syncthing
     tokei
-    trashy
+    trash-cli
     upscayl
     vscodium-fhs
     watchexec
     xh
-    rustup
     unzip
     python3
     grimblast
