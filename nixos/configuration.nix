@@ -2,7 +2,7 @@
 # Use this to configure your system environment (it replaces /etc/nixos/configuration.nix)
 {
   imports = [
-    ./hardware-configuration.nix
+    ../hardware/thinkpad-t470.nix
     ./boot
     ./nixpkgs
     ./nix
