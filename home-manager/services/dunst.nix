@@ -9,8 +9,8 @@
     settings = {
       global = {
         corner_radius = 16;
-        frame_color = "#89b4fa";
-        separator_color = "frame";
+        # frame_color = "#89b4fa";
+        # separator_color = "frame";
         follow = "mouse";
         width = "(0, 600)";
         height = 100;
@@ -29,7 +29,7 @@
         frame_width = 2;
         gap_size = 7;
         sort = "yes";
-        font = "JetBrainsMono NFP 12";
+        # font = "JetBrainsMono NFP 12";
         alignment = "left";
         vertical_alignment = "center";
         show_age_threshold = 60;
@@ -39,22 +39,22 @@
         hide_duplicate_count = false;
         show_indicators = "yes";
       };
-      urgency_low = {
-        background = "#1e1e2e";
-        foreground = "#cdd6f4";
-        highlight = "#cdd6f4";
-      };
-      urgency_normal = {
-        background = "#1e1e2e";
-        foreground = "#cdd6f4";
-        highlight = "#cdd6f4";
-      };
-      urgency_critical = {
-        background = "#1e1e2e";
-        foreground = "#cdd6f4";
-        frame_color = "#fab387";
-        highlight = "#fab387";
-      };
+      # urgency_low = {
+      #   background = "#1e1e2e";
+      #   foreground = "#cdd6f4";
+      #   highlight = "#cdd6f4";
+      # };
+      # urgency_normal = {
+      #   background = "#1e1e2e";
+      #   foreground = "#cdd6f4";
+      #   highlight = "#cdd6f4";
+      # };
+      # urgency_critical = {
+      #   background = "#1e1e2e";
+      #   foreground = "#cdd6f4";
+      #   frame_color = "#fab387";
+      #   highlight = "#fab387";
+      # };
     };
   };
 }

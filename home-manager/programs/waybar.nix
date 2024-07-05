@@ -150,8 +150,8 @@
       padding-right: 10px;
       border-radius: 10px;
       transition: none;
-      color: #1f2335;
-      background-color: #FFCCB6;
+      color: #EBDBB2;
+      background-color: #D65D0E;
     }
 
     tooltip {
@@ -167,14 +167,12 @@
       margin-left: 8px;
       font-size: 4px;
       margin-bottom: 0px;
-      background: #1f2335;
-      transition: none;
+      background: #282828;
     }
 
     #workspaces button {
-      transition: none;
-      background: #1f2335;
-      color: #B2E4D5;
+      background: #282828;
+      color: #EBDBB2;
       font-size: 16px;
       border-radius: 10px;
       padding-left: 10px;
@@ -182,22 +180,18 @@
     }
 
     #workspaces button.active {
-      background: #B2E4D5;
-      color: #1f2335;
+      background: #458588;
+      color: #282828;
     }
 
     #workspaces button.urgent {
-      background-color: #c53b53;
-      color: #b4f9f8;
+      background-color: #EBDBB2;
+      color: #756D59;
     }
 
     #workspaces button:hover {
-      transition: none;
-      box-shadow: inherit;
-      text-shadow: inherit;
-      color: #ffc777;
-      border-color: #a9b1d6;
-      color: #a9b1d6;
+      background-color: #EBDBB2;
+      color: #458588;
     }
 
     #cpu {
@@ -232,8 +226,8 @@
       padding-right: 10px;
       border-radius: 10px;
       transition: none;
-      color: #FFB7C5;
-      background: #1f2335;
+      color: #EBDBB2;
+      background: #282828;
     }
 
     #battery {
@@ -245,14 +239,14 @@
       margin-bottom: 0px;
       border-radius: 10px;
       transition: none;
-      color: #1f2335;
-      background: #FFB6C1;
+      color: #EBDBB2;
+      background: #CC241D;
     }
 
     #battery.charging,
     #battery.plugged {
-      color: #1f2335;
-      background: #FFB6C1;
+      color: #EBDBB2;
+      background: #CC241D;
     }
 
     #battery.critical:not(.charging) {
@@ -280,8 +274,8 @@
       margin-bottom: 0px;
       border-radius: 10px;
       transition: none;
-      color: #1f2335;
-      background: #E4C1F9;
+      color: #EBDBB2;
+      background: #B16286;
     }
 
     #backlight {
@@ -292,8 +286,8 @@
       margin-bottom: 0px;
       border-radius: 10px;
       transition: none;
-      color: #161320;
-      background: #FFECB3;
+      color: #282828;
+      background: #D79921;
     }
 
     #network {
@@ -304,8 +298,8 @@
       margin-bottom: 0px;
       border-radius: 10px;
       transition: none;
-      color: #1f2335;
-      background: #B5EAD7;
+      color: #282828;
+      background: #689D6A;
     }
 
     #tray {
@@ -316,8 +310,8 @@
       padding-right: 10px;
       border-radius: 10px;
       transition: none;
-      color: #B5E8E0;
-      background: #1f2335;
+      color: #949494;
+      background: #282828;
     }
 
     #clock {
@@ -328,8 +322,8 @@
       margin-bottom: 0px;
       border-radius: 10px;
       transition: none;
-      color: #1f2335;
-      background: #AEECEF;
+      color: #282828;
+      background: #EBDBB2;
     }
   '';
 }

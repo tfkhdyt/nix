@@ -19,5 +19,6 @@
     ./system
     ./systemd
     ./virtualization
+    ./stylix
   ];
 }

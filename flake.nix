@@ -20,16 +20,12 @@
       url = "github:oxalica/rust-overlay";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    stylix.url = "github:danth/stylix";
   };
 
   outputs =
-    {
-      self,
-      nixpkgs,
-      home-manager,
-      rust-overlay,
-      ...
-    }@inputs:
+    { self, nixpkgs, ... }@inputs:
     let
       inherit (self) outputs;
     in
@@ -45,7 +41,7 @@
           # > Our main nixos configuration file <
           modules = [
             ./nixos/configuration.nix
-            home-manager.nixosModules.home-manager
+            inputs.home-manager.nixosModules.home-manager
             {
               home-manager = {
                 users.tfkhdyt = import ./home-manager;
@@ -57,10 +53,11 @@
             (
               { pkgs, ... }:
               {
-                nixpkgs.overlays = [ rust-overlay.overlays.default ];
+                nixpkgs.overlays = [ inputs.rust-overlay.overlays.default ];
                 environment.systemPackages = [ pkgs.rust-bin.stable.latest.default ];
               }
             )
+            inputs.stylix.nixosModules.stylix
           ];
         };
       };

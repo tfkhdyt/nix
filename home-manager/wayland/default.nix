@@ -118,8 +118,8 @@
         gaps_in = 5;
         gaps_out = "2,28,10,28";
         border_size = 5;
-        "col.active_border" = "rgb(E4C1F9) rgb(B5EAD7) 45deg";
-        "col.inactive_border" = "rgb(1f2335)";
+        # "col.active_border" = "rgb(E4C1F9) rgb(B5EAD7) 45deg";
+        # "col.inactive_border" = "rgb(1f2335)";
         layout = "dwindle";
       };
       input = {
