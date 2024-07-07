@@ -2,6 +2,7 @@
   imports = [
     ./tmux.nix
     ./nixvim.nix
+    ./mpv.nix
   ];
   programs = {
     git = import ./git.nix;
@@ -11,7 +12,6 @@
     yt-dlp = import ./yt-dlp.nix;
     fzf = import ./fzf.nix;
     zoxide = import ./zoxide.nix;
-    mpv = import ./mpv.nix;
     alacritty = import ./alacritty.nix;
     waybar = import ./waybar.nix;
     hyprlock = import ./hyprlock.nix;
