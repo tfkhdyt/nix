@@ -181,7 +181,7 @@
 
     #workspaces button.active {
       background: #458588;
-      color: #282828;
+      color: #EBDBB2;
     }
 
     #workspaces button.urgent {
@@ -191,7 +191,7 @@
 
     #workspaces button:hover {
       background-color: #EBDBB2;
-      color: #458588;
+      color: #282828;
     }
 
     #cpu {
