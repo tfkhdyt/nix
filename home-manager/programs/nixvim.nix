@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, lib, ... }:
 {
   programs.nixvim = {
     enable = true;
@@ -33,10 +33,7 @@
     '';
     colorschemes.gruvbox.enable = true;
     globals.mapleader = " ";
-    extraPlugins = with pkgs; [
-      vimPlugins.vim-move
-      vimPlugins.nvim-snippets
-    ];
+    extraPlugins = with pkgs; [ vimPlugins.vim-move ];
     keymaps = [
       {
         action = "<cmd>NvimTreeToggle<CR>";
@@ -197,6 +194,7 @@
       breakindentopt = "shift:2";
       signcolumn = "yes";
       numberwidth = 4;
+      pumheight = 7;
     };
     plugins = {
       lualine = {
@@ -282,7 +280,7 @@
             { name = "nvim_lsp_signature_help"; }
             # { name = "codeium"; }
             { name = "buffer"; }
-            { name = "snippets"; }
+            { name = "luasnip"; }
           ];
           mapping = {
             "<C-Space>" = "cmp.mapping.complete()";
@@ -416,6 +414,9 @@
           };
         };
       };
+      luasnip.enable = true;
+      cmp_luasnip.enable = true;
+      friendly-snippets.enable = true;
     };
   };
 }
