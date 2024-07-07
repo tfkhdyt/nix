@@ -19,5 +19,7 @@
     lxqt.lxqt-policykit
     openssl
     php
+    podman-tui
+    podman-compose
   ];
 }
