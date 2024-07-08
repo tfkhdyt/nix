@@ -46,5 +46,6 @@
     golines
     mdformat
     gpu-screen-recorder-gtk
+    pdftk
   ];
 }
