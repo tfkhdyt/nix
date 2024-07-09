@@ -195,6 +195,9 @@
       signcolumn = "yes";
       numberwidth = 4;
       pumheight = 7;
+      ignorecase = true;
+      smartcase = true;
+      linebreak = true;
     };
     plugins = {
       lualine = {
