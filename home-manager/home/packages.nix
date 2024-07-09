@@ -47,5 +47,7 @@
     mdformat
     gpu-screen-recorder-gtk
     pdftk
+    cloudflared
+    imagemagick
   ];
 }
