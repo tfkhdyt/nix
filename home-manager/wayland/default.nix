@@ -3,7 +3,10 @@
     enable = true;
     systemd = {
       enable = true;
-      variables = [ "--all" ];
+      variables = [
+        "--systemd"
+        "--all"
+      ];
     };
     xwayland.enable = true;
     settings = {
