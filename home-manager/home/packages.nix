@@ -49,5 +49,6 @@
     pdftk
     cloudflared
     imagemagick
+    rarcrack
   ];
 }
