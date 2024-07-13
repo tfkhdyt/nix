@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, lib, ... }:
 {
   stylix = {
     enable = true;
@@ -41,5 +41,8 @@
       size = 24;
     };
     opacity.terminal = 0.85;
+    targets = {
+      nixvim.enable = lib.mkForce false;
+    };
   };
 }
