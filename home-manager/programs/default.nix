@@ -24,5 +24,6 @@
     bun.enable = true;
     lazygit.enable = true;
     obs-studio.enable = true;
+    java.enable = true;
   };
 }

@@ -49,6 +49,7 @@
     pdftk
     cloudflared
     imagemagick
-    rarcrack
+    watchman
+    android-studio
   ];
 }
