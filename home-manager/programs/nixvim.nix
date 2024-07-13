@@ -1,4 +1,4 @@
-{ pkgs, lib, ... }:
+{ pkgs, ... }:
 {
   programs.nixvim = {
     enable = true;
@@ -219,7 +219,12 @@
       lsp = {
         enable = true;
         servers = {
-          gopls.enable = true;
+          gopls = {
+            enable = true;
+            extraOptions = {
+              gopls.semanticTokens = true;
+            };
+          };
           nil-ls.enable = true;
           tsserver.enable = true;
           emmet-ls.enable = true;
@@ -235,7 +240,10 @@
       };
       treesitter = {
         enable = true;
-        indent = true;
+        settings = {
+          highlight.enable = true;
+          indent.enable = true;
+        };
       };
       dashboard = {
         enable = true;
@@ -312,6 +320,7 @@
           typescript = [ "prettierd" ];
           javascriptreact = [ "prettierd" ];
           typescriptreact = [ "prettierd" ];
+          svelte = [ "prettierd" ];
           astro = [ "prettierd" ];
           nix = [ "nixfmt" ];
           go = [
