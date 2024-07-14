@@ -269,12 +269,7 @@
       telescope = {
         enable = true;
         keymaps = {
-          "<leader><space>" = {
-            action = "git_files";
-            options = {
-              desc = "Telescope Git Files";
-            };
-          };
+          "<leader><space>" = "find_files";
           "<leader>/" = "live_grep";
         };
       };
@@ -429,6 +424,9 @@
       luasnip.enable = true;
       cmp_luasnip.enable = true;
       friendly-snippets.enable = true;
+      notify.enable = true;
+      noice.enable = true;
+      nvim-colorizer.enable = true;
     };
   };
 }
