@@ -49,7 +49,5 @@
     pdftk
     cloudflared
     imagemagick
-    watchman
-    android-studio
   ];
 }
