@@ -214,7 +214,15 @@
           nil-ls.enable = true;
           tsserver.enable = true;
           emmet-ls.enable = true;
-          eslint.enable = true;
+          eslint = {
+            enable = true;
+            onAttach.function = ''
+              vim.api.nvim_create_autocmd("BufWritePre", {
+                buffer = bufnr,
+                command = "EslintFixAll",
+              })
+            '';
+          };
           jsonls.enable = true;
           marksman.enable = true;
           astro.enable = true;
