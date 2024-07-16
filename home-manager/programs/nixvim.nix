@@ -16,22 +16,6 @@
       vim.fn.sign_define('DiagnosticSignWarn', { text = '', texthl = 'DiagnosticSignWarn' })
       vim.fn.sign_define('DiagnosticSignInfo', { text = '', texthl = 'DiagnosticSignInfo' })
       vim.fn.sign_define('DiagnosticSignHint', { text = '', texthl = 'DiagnosticSignHint' })
-
-      vim.lsp.handlers['textDocument/hover'] = function(_, result, ctx, config)
-        config = config or {}
-        config.focus_id = ctx.method
-        if not (result and result.contents) then
-          vim.notify('No information available')
-          return
-        end
-        local markdown_lines = vim.lsp.util.convert_input_to_markdown_lines(result.contents)
-        markdown_lines = vim.lsp.util.trim_empty_lines(markdown_lines)
-        if vim.tbl_isempty(markdown_lines) then
-          -- vim.notify('No information available')
-          return
-        end
-        return vim.lsp.util.open_floating_preview(markdown_lines, 'markdown', config)
-      end
     '';
     colorschemes.gruvbox.enable = true;
     globals.mapleader = " ";
@@ -237,7 +221,16 @@
           cssls.enable = true;
           html.enable = true;
           svelte.enable = true;
-          tailwindcss.enable = true;
+          tailwindcss = {
+            enable = true;
+            filetypes = [
+              "typescriptreact"
+              "javascriptreact"
+              "astro"
+              "svelte"
+              "html"
+            ];
+          };
         };
       };
       treesitter = {
@@ -426,8 +419,19 @@
       luasnip.enable = true;
       cmp_luasnip.enable = true;
       friendly-snippets.enable = true;
-      notify.enable = true;
-      noice.enable = true;
+      notify.enable = false;
+      noice = {
+        enable = true;
+        routes = [
+          {
+            filter = {
+              event = "notify";
+              find = "No information available";
+            };
+            opts.skip = true;
+          }
+        ];
+      };
       nvim-colorizer.enable = true;
     };
   };
