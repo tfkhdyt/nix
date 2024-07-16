@@ -23,7 +23,6 @@
     watchexec
     xh
     unzip
-    python3
     grimblast
     ueberzugpp
     bemenu
@@ -39,15 +38,14 @@
     impl
     nix-init
     nixfmt-rfc-style
-    zathura
     gofumpt
     goimports-reviser
     prettierd
     golines
     mdformat
-    gpu-screen-recorder-gtk
     pdftk
     cloudflared
     imagemagick
+    swayimg
   ];
 }
