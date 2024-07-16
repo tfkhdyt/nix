@@ -47,5 +47,6 @@
     cloudflared
     imagemagick
     swayimg
+    okular
   ];
 }

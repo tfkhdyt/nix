@@ -25,5 +25,6 @@
     lazygit.enable = true;
     obs-studio.enable = true;
     java.enable = false;
+    zathura.enable = true;
   };
 }
