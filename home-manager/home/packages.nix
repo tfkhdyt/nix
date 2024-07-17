@@ -47,6 +47,6 @@
     cloudflared
     imagemagick
     swayimg
-    okular
+    turso-cli
   ];
 }
