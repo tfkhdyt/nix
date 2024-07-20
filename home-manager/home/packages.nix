@@ -48,5 +48,6 @@
     imagemagick
     swayimg
     turso-cli
+    hyperfine
   ];
 }
