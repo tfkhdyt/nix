@@ -49,5 +49,6 @@
     swayimg
     turso-cli
     hyperfine
+    pm2
   ];
 }
