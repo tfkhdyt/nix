@@ -36,9 +36,9 @@
       };
     };
     cursor = {
-      package = pkgs.bibata-cursors;
-      name = "Bibata-Modern-Classic";
-      size = 24;
+      package = pkgs.apple-cursor;
+      name = "macOS-Monterey";
+      size = 32;
     };
     opacity.terminal = 0.85;
     targets = {
