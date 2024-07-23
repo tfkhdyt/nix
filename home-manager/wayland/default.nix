@@ -160,6 +160,16 @@
         "10,monitor:eDP-1"
       ];
       windowrulev2 = [ ];
+      debug.disable_logs = false;
+      env = [
+        "XCURSOR_THEME,macOS-Monterey"
+        "GDK_BACKEND,wayland,x11,*"
+        "QT_QPA_PLATFORM,wayland;xcb"
+        "SDL_VIDEODRIVER,wayland"
+        "QT_AUTO_SCREEN_SCALE_FACTOR,1"
+        "QT_QPA_PLATFORM,wayland;xcb"
+        "QT_WAYLAND_DISABLE_WINDOWDECORATION,1"
+      ];
     };
     extraConfig = ''
       # submap
