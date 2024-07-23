@@ -21,5 +21,6 @@
     php
     podman-tui
     podman-compose
+    gnome-disk-utility
   ];
 }
