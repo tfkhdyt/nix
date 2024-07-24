@@ -10,7 +10,11 @@
 
     firewall = {
       enable = true;
-      allowedTCPPorts = [ 8081 ];
+      allowedTCPPorts = [
+        8081
+        4321
+      ];
+      checkReversePath = "loose";
     };
   };
 }
