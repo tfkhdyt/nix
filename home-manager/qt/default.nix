@@ -1,10 +1,11 @@
-{ pkgs, ... }:
+{ lib, ... }:
 {
   qt = {
     enable = true;
-    # style = {
-    #   package = pkgs.adwaita-qt;
-    #   name = "adwaita-dark";
-    # };
+    platformTheme = lib.mkForce "gtk3";
+    style = {
+      # package = pkgs.adwaita-qt;
+      name = "adwaita-dark";
+    };
   };
 }
