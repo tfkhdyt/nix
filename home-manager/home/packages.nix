@@ -50,5 +50,7 @@
     turso-cli
     hyperfine
     pm2
+    entr
+    lazydocker
   ];
 }
