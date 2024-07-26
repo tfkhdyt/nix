@@ -213,7 +213,10 @@
           };
           nil-ls.enable = true;
           tsserver.enable = true;
-          emmet-ls.enable = true;
+          emmet-ls = {
+            enable = true;
+            filetypes = [ "html" ];
+          };
           eslint = {
             enable = true;
             onAttach.function = ''
@@ -289,7 +292,7 @@
             { name = "nvim_lsp_signature_help"; }
             # { name = "codeium"; }
             { name = "buffer"; }
-            { name = "luasnip"; }
+            # { name = "luasnip"; }
           ];
           mapping = {
             "<C-Space>" = "cmp.mapping.complete()";
@@ -424,9 +427,9 @@
           };
         };
       };
-      luasnip.enable = true;
-      cmp_luasnip.enable = true;
-      friendly-snippets.enable = true;
+      # luasnip.enable = true;
+      # cmp_luasnip.enable = true;
+      # friendly-snippets.enable = true;
       notify.enable = false;
       noice = {
         enable = true;
