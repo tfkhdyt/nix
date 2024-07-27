@@ -445,5 +445,9 @@
       };
       nvim-colorizer.enable = true;
     };
+    performance.combinePlugins = {
+      enable = true;
+      standalonePlugins = [ "nvim-treesitter-textobjects" ];
+    };
   };
 }
