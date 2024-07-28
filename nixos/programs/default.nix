@@ -1,4 +1,5 @@
 {
+  imports = [ ./thunar.nix ];
   programs = {
     # neovim = import ./neovim.nix;
     nh = import ./nh.nix;
@@ -8,7 +9,6 @@
     firefox.enable = true;
     nm-applet.enable = true;
     steam.enable = true;
-    thunar.enable = true;
     adb.enable = true;
     zsh.enable = true;
     evince.enable = true;

@@ -52,5 +52,6 @@
     pm2
     entr
     lazydocker
+    file-roller
   ];
 }
