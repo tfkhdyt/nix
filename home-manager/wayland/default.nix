@@ -146,6 +146,7 @@
       monitor = [
         ",preferred,1920x0,1"
         "desc:ViewSonic Corporation VX2479 Series X9N233300922,1920x1080@100,0x0,1"
+        # "HDMI-A-2,preferred,0x0,1"
       ];
       workspace = [
         "1,monitor:HDMI-A-2,default:true"
@@ -159,7 +160,7 @@
         "9,monitor:eDP-1"
         "10,monitor:eDP-1"
       ];
-      windowrulev2 = [ ];
+      windowrulev2 = [ "float,title:(Authentication Required)" ];
       debug.disable_logs = false;
       env = [
         "XCURSOR_THEME,macOS-Monterey"
