@@ -53,5 +53,6 @@
     entr
     lazydocker
     file-roller
+    urban-cli
   ];
 }
