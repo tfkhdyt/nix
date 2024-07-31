@@ -160,8 +160,11 @@
         "9,monitor:eDP-1"
         "10,monitor:eDP-1"
       ];
-      windowrulev2 = [ "float,title:(Authentication Required)" ];
-      debug.disable_logs = false;
+      windowrulev2 = [
+        "float,title:(Authentication Required)"
+        "float,title:^(Open files?|All files|Open folder|Install from VSIX|Bitwarden)$"
+      ];
+      debug.disable_logs = true;
       env = [
         "XCURSOR_THEME,macOS-Monterey"
         "GDK_BACKEND,wayland,x11,*"
