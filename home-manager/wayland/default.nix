@@ -162,7 +162,7 @@
       ];
       windowrulev2 = [
         "float,title:(Authentication Required)"
-        "float,title:^(Open files?|All files|Open folder|Install from VSIX|Bitwarden)$"
+        "float,title:^(Open Files?|All Files|Open Folder|Install from VSIX|Bitwarden)$"
       ];
       debug.disable_logs = true;
       env = [
