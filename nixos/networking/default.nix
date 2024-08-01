@@ -4,8 +4,12 @@
 
     hostName = "nixos"; # Define your hostname.
     nameservers = [
-      "1.1.1.1"
-      "8.8.8.8"
+      "94.140.14.14" # adguard
+      "94.140.15.15"
+      "3.0.86.126" # puredns
+      "3.1.94.218"
+      "1.1.1.1" # cloudflare
+      "8.8.8.8" # google
     ];
 
     firewall = {
