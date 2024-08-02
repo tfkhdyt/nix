@@ -445,9 +445,16 @@
       };
       nvim-colorizer.enable = true;
     };
-    performance.combinePlugins = {
-      enable = true;
-      standalonePlugins = [ "nvim-treesitter-textobjects" ];
+    performance = {
+      combinePlugins = {
+        enable = true;
+        standalonePlugins = [ "nvim-treesitter-textobjects" ];
+      };
+      byteCompileLua = {
+        enable = true;
+        nvimRuntime = true;
+        plugins = false;
+      };
     };
   };
 }
