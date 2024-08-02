@@ -1,14 +1,14 @@
 { pkgs, ... }:
 {
   hardware = {
-    opengl = {
+    graphics = {
       enable = true;
       extraPackages = with pkgs; [
         intel-media-driver # LIBVA_DRIVER_NAME=iHD
         intel-vaapi-driver # LIBVA_DRIVER_NAME=i965 (older but works better for Firefox/Chromium)
         libvdpau-va-gl
       ];
-      driSupport32Bit = true;
+      # driSupport32Bit = true;
     };
     pulseaudio.enable = false;
     bluetooth.enable = true;
