@@ -16,7 +16,7 @@
     postman
     speedtest-cli
     syncthing
-    tokei
+    scc
     trash-cli
     upscayl
     vscodium-fhs
@@ -54,5 +54,6 @@
     lazydocker
     file-roller
     urban-cli
+    ffmpeg-full
   ];
 }
