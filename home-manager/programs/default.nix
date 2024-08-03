@@ -3,6 +3,7 @@
     ./tmux.nix
     ./nixvim.nix
     ./mpv.nix
+    ./vscode.nix
   ];
   programs = {
     git = import ./git.nix;

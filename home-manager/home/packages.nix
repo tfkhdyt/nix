@@ -19,7 +19,6 @@
     scc
     trash-cli
     upscayl
-    vscodium-fhs
     watchexec
     xh
     unzip

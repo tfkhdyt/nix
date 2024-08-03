@@ -1,7 +1,10 @@
+{ inputs, ... }:
 {
   nixpkgs = {
     # You can add overlays here
     overlays = [
+
+      inputs.nix-vscode-extensions.overlays.default
       # If you want to use overlays exported from other flakes:
       # neovim-nightly-overlay.overlays.default
 
