@@ -85,15 +85,42 @@
         "editor.defaultFormatter" = "svelte.svelte-vscode";
       };
       "javascript.inlayHints.functionLikeReturnTypes.enabled" = true;
-      "javascript.inlayHints.parameterNames.enabled" = "literals";
+      "javascript.inlayHints.parameterNames.enabled" = "all";
       "javascript.inlayHints.parameterTypes.enabled" = true;
       "javascript.inlayHints.propertyDeclarationTypes.enabled" = true;
       "typescript.inlayHints.functionLikeReturnTypes.enabled" = true;
-      "typescript.inlayHints.parameterNames.enabled" = "literals";
+      "typescript.inlayHints.parameterNames.enabled" = "all";
       "typescript.inlayHints.parameterTypes.enabled" = true;
       "typescript.inlayHints.propertyDeclarationTypes.enabled" = true;
       "editor.linkedEditing" = true;
+      "workbench.colorTheme" = "Gruvbox Dark Hard";
+      "workbench.iconTheme" = "material-icon-theme";
+      "workbench.startupEditor" = "none";
+      "errorLens.gutterIconsEnabled" = true;
+      "errorLens.gutterIconSet" = "defaultOutline";
     };
-    extensions = with pkgs.vscode-marketplace; [ adonisjs.vscode-edge ];
+    extensions = with pkgs.vscode-marketplace; [
+      jripouteau.adonis-vscode-extension
+      astro-build.astro-vscode
+      formulahendry.auto-complete-tag
+      usernamehw.errorlens
+      dbaeumer.vscode-eslint
+      waderyan.gitblame
+      golang.go
+      jdinhlife.gruvbox
+      pkief.material-icon-theme
+      cardinal90.multi-cursor-case-preserve
+      christian-kohler.npm-intellisense
+      christian-kohler.path-intellisense
+      esbenp.prettier-vscode
+      supermaven.supermaven
+      svelte.svelte-vscode
+      bradlc.vscode-tailwindcss
+      meganrogge.template-string-converter
+      rangav.vscode-thunder-client
+      wakatime.vscode-wakatime
+      redhat.vscode-yaml
+      tamasfe.even-better-toml
+    ];
   };
 }
