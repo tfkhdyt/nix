@@ -289,7 +289,7 @@
           sources = [
             { name = "nvim_lsp"; }
             { name = "path"; }
-            { name = "nvim_lsp_signature_help"; }
+            # { name = "nvim_lsp_signature_help"; }
             # { name = "codeium"; }
             { name = "buffer"; }
             # { name = "luasnip"; }
@@ -302,7 +302,7 @@
             "<CR>" = "cmp.config.disable";
             "<Up>" = "cmp.mapping(cmp.mapping.select_prev_item(), {'i', 's'})";
             "<Down>" = "cmp.mapping(cmp.mapping.select_next_item(), {'i', 's'})";
-            "<Tab>" = "cmp.mapping.confirm({ select = true })";
+            "<Tab>" = "cmp.mapping.confirm()";
           };
         };
       };
@@ -430,7 +430,7 @@
       # luasnip.enable = true;
       # cmp_luasnip.enable = true;
       # friendly-snippets.enable = true;
-      notify.enable = false;
+      notify.enable = true;
       noice = {
         enable = true;
         routes = [
