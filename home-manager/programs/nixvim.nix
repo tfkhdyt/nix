@@ -430,7 +430,7 @@
       # luasnip.enable = true;
       # cmp_luasnip.enable = true;
       # friendly-snippets.enable = true;
-      notify.enable = true;
+      notify.enable = false;
       noice = {
         enable = true;
         routes = [

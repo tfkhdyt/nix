@@ -22,6 +22,8 @@
     };
 
     stylix.url = "github:danth/stylix";
+
+    nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
   };
 
   outputs =
@@ -42,6 +44,13 @@
           modules = [
             ./nixos/configuration.nix
             inputs.home-manager.nixosModules.home-manager
+            (
+              { pkgs, ... }:
+              {
+                nixpkgs.overlays = [ inputs.rust-overlay.overlays.default ];
+                environment.systemPackages = [ pkgs.rust-bin.stable.latest.default ];
+              }
+            )
             {
               home-manager = {
                 users.tfkhdyt = import ./home-manager;
@@ -50,13 +59,6 @@
                 };
               };
             }
-            (
-              { pkgs, ... }:
-              {
-                nixpkgs.overlays = [ inputs.rust-overlay.overlays.default ];
-                environment.systemPackages = [ pkgs.rust-bin.stable.latest.default ];
-              }
-            )
             inputs.stylix.nixosModules.stylix
           ];
         };
