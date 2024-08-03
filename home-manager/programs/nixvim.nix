@@ -302,7 +302,7 @@
             "<CR>" = "cmp.config.disable";
             "<Up>" = "cmp.mapping(cmp.mapping.select_prev_item(), {'i', 's'})";
             "<Down>" = "cmp.mapping(cmp.mapping.select_next_item(), {'i', 's'})";
-            "<Tab>" = "cmp.mapping.confirm()";
+            "<Tab>" = "cmp.mapping.confirm({ select = true })";
           };
         };
       };
