@@ -8,6 +8,7 @@
     # italic.family = "JetBrainsMono NF";
     # normal.family = "JetBrainsMono NF";
     # };
+    env.TERM = "xterm-256color";
     keyboard.bindings = [
       {
         action = "CreateNewWindow";
