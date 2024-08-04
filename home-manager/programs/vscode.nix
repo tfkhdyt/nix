@@ -143,6 +143,7 @@
       wakatime.vscode-wakatime
       redhat.vscode-yaml
       tamasfe.even-better-toml
+      moalamri.inline-fold
     ];
   };
 }
