@@ -45,7 +45,7 @@
     pdftk
     cloudflared
     imagemagick
-    swayimg
+    # swayimg
     turso-cli
     hyperfine
     pm2
@@ -54,5 +54,7 @@
     file-roller
     urban-cli
     ffmpeg-full
+    xfce.ristretto
+    # qpdfview
   ];
 }

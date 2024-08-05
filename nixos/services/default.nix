@@ -12,5 +12,6 @@
     openssh.enable = true;
     fwupd.enable = true;
     httpd.enable = true;
+    tumbler.enable = true;
   };
 }
