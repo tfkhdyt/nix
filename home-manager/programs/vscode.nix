@@ -10,7 +10,10 @@
       };
       editor = {
         fontSize = 16;
-        minimap.autohide = true;
+        minimap = {
+          autohide = true;
+          renderCharacters = false;
+        };
         inlayHints = {
           fontSize = 12;
           padding = true;
@@ -95,6 +98,9 @@
       "[svelte]" = {
         editor.defaultFormatter = "svelte.svelte-vscode";
       };
+      "[markdown]" = {
+        editor.defaultFormatter = "esbenp.prettier-vscode";
+      };
       redhat.telemetry.enabled = false;
       search.exclude = {
         "**/bower_components" = true;
@@ -144,6 +150,9 @@
       redhat.vscode-yaml
       tamasfe.even-better-toml
       moalamri.inline-fold
+      yzhang.markdown-all-in-one
+      yoavbls.pretty-ts-errors
+      ttoowa.in-your-face-incredible
     ];
   };
 }
