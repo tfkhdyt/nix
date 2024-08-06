@@ -291,7 +291,7 @@
             { name = "path"; }
             # { name = "nvim_lsp_signature_help"; }
             # { name = "codeium"; }
-            { name = "buffer"; }
+            # { name = "buffer"; }
             # { name = "luasnip"; }
           ];
           mapping = {
