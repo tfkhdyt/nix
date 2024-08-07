@@ -4,7 +4,7 @@
     beekeeper-studio
     dbmate
     gimp
-    go
+    # go
     gping
     kondo
     lefthook

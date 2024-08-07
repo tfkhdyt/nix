@@ -27,5 +27,10 @@
     obs-studio.enable = true;
     java.enable = false;
     zathura.enable = true;
+    go = {
+      enable = true;
+      goPath = "go";
+      goBin = ".local/bin/";
+    };
   };
 }
