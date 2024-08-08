@@ -17,6 +17,7 @@
     waybar = import ./waybar.nix;
     hyprlock = import ./hyprlock.nix;
     zsh = import ./zsh.nix;
+    go = import ./go.nix;
 
     home-manager.enable = true;
     fastfetch.enable = true;
@@ -27,10 +28,5 @@
     obs-studio.enable = true;
     java.enable = false;
     zathura.enable = true;
-    go = {
-      enable = true;
-      goPath = "go";
-      goBin = ".local/bin/";
-    };
   };
 }
