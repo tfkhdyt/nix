@@ -8,7 +8,7 @@
     starship.enable = true;
     firefox.enable = true;
     nm-applet.enable = true;
-    steam.enable = true;
+    steam.enable = false;
     adb.enable = true;
     zsh.enable = true;
     evince.enable = false;
