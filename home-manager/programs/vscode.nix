@@ -28,6 +28,7 @@
         quickSuggestions.strings = "on";
         codeActionsOnSave.source.fixAll = "always";
         linkedEditing = true;
+        fontFamily = "'JetBrainsMono NFP', 'Droid Sans Mono', 'monospace', monospace";
       };
       go = {
         inlayHints = {

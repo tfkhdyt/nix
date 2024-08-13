@@ -28,7 +28,7 @@
             ];
           }
         );
-        name = "RobotoMono Nerd Font Propo";
+        name = "JetBrainsMono NF";
       };
       emoji = {
         package = pkgs.noto-fonts-emoji;
