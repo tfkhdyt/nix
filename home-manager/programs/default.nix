@@ -18,6 +18,7 @@
     hyprlock = import ./hyprlock.nix;
     zsh = import ./zsh.nix;
     go = import ./go.nix;
+    kitty = import ./kitty.nix;
 
     home-manager.enable = true;
     fastfetch.enable = true;

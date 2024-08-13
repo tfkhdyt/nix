@@ -34,13 +34,13 @@
       "$scriptDir" = "/home/tfkhdyt/scripts";
       bind =
         [
-          "$mainMod, Return, exec, alacritty"
+          "$mainMod, Return, exec, kitty"
           "$mainMod SHIFT, Q, killactive"
           "$mainMod SHIFT, M, exit"
           # "$mainMod, E, exec, thunar"
           # "$mainMod, C, exec, vsc.sh"
           "$mainMod, V, togglefloating"
-          "$mainMod, R, exec, j4-dmenu-desktop --dmenu='bemenu -i' --term='alacritty'"
+          "$mainMod, R, exec, j4-dmenu-desktop --dmenu='bemenu -i' --term='kitty'"
           "$mainMod, P, pin"
           "$mainMod, J, togglesplit"
           # "$mainMod, B, exec, gio launch /usr/share/applications/brave-browser.desktop"
