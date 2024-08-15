@@ -55,5 +55,6 @@
     xfce.ristretto
     # qpdfview
     slack
+    lazysql
   ];
 }
