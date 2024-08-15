@@ -56,5 +56,6 @@
     ffmpeg-full
     xfce.ristretto
     # qpdfview
+    slack
   ];
 }
