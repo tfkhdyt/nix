@@ -17,6 +17,7 @@
     gnumake
     gofumpt
     goimports-reviser
+    golangci-lint
     golines
     gomodifytags
     gopls
