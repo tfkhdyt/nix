@@ -14,6 +14,7 @@
   stylix.targets = {
     waybar.enable = false;
     vscode.enable = false;
+    kitty.variant256Colors = true;
   };
   systemd.user.sessionVariables = {
     QT_QPA_PLATFORMTHEME = lib.mkForce "gtk3";
