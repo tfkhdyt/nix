@@ -1,60 +1,72 @@
 { pkgs, ... }:
 {
   home.packages = with pkgs; [
-    beekeeper-studio
-    dbmate
-    gimp
-    # go
-    gping
-    kondo
-    lefthook
-    nodejs_20
-    oha
-    pnpm
-    postman
-    speedtest-cli
-    syncthing
-    scc
-    trash-cli
-    upscayl
-    watchexec
-    xh
-    unzip
-    grimblast
-    ueberzugpp
-    bemenu
-    j4-dmenu-desktop
-    brave
-    gnumake
-    nil
-    # imv
+    # beekeeper-studio
     bc
-    gopls
-    go-tools
-    gomodifytags
-    impl
-    nix-init
-    nixfmt-rfc-style
+    bemenu
+    brave
+
+    cloudflared
+
+    dbmate
+
+    ffmpeg-full
+    file-roller
+
+    gimp
+    gnumake
     gofumpt
     goimports-reviser
-    prettierd
     golines
-    mdformat
-    pdftk
-    cloudflared
-    imagemagick
-    # swayimg
-    turso-cli
+    gomodifytags
+    gopls
+    go-tools
+    gping
+    grimblast
+
     hyperfine
-    pm2
-    entr
+
+    imagemagick
+    impl
+
+    j4-dmenu-desktop
+
+    kondo
+
     lazydocker
-    file-roller
-    urban-cli
-    ffmpeg-full
-    xfce.ristretto
-    # qpdfview
-    slack
     lazysql
+    lefthook
+
+    mdformat
+
+    nil
+    nixfmt-rfc-style
+    nix-init
+    nodejs_20
+
+    oha
+
+    pdftk
+    pm2
+    pnpm
+    postman
+    prettierd
+
+    scc
+    slack
+    speedtest-cli
+    syncthing
+
+    trash-cli
+    turso-cli
+
+    unzip
+    upscayl
+    urban-cli
+
+    watchexec
+
+    xfce.ristretto
+    xh
   ];
 }
