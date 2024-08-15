@@ -11,8 +11,6 @@
     nodejs_20
     oha
     pnpm
-    podman
-    podman-compose
     postman
     speedtest-cli
     syncthing
@@ -29,7 +27,7 @@
     brave
     gnumake
     nil
-    imv
+    # imv
     bc
     gopls
     go-tools
