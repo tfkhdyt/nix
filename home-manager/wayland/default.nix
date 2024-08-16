@@ -20,7 +20,7 @@
         ];
         animation = [
           "windows, 1, 7, overshot, popin 75%"
-          "windowsOut, 1, 7, overshot, slide"
+          "windowsOut, 1, 7, overshot, popin 75%"
           "layers, 1, 7, overshot, popin 75%"
           "windowsMove, 1, 5, default"
           "border, 1, 2, default"
