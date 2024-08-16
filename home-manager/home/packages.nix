@@ -9,6 +9,7 @@
     cloudflared
 
     dbmate
+    discord
 
     ffmpeg-full
     file-roller
