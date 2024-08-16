@@ -269,8 +269,10 @@
       };
       bufferline = {
         enable = true;
-        diagnostics = true;
-        showBufferCloseIcons = false;
+        settings.options = {
+          diagnostics = "nvim_lsp";
+          show_buffer_close_icons = false;
+        };
       };
       telescope = {
         enable = true;
