@@ -42,7 +42,6 @@
 
     nil
     nixfmt-rfc-style
-    nix-init
     nodejs_20
 
     oha
