@@ -10,6 +10,7 @@
 
     dbmate
     discord
+    duckstation
 
     ffmpeg-full
     file-roller
