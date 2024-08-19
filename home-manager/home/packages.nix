@@ -48,6 +48,7 @@
 
     oha
 
+    pcsx2
     pdftk
     pm2
     pnpm
