@@ -15,6 +15,7 @@
     ffmpeg-full
     file-roller
 
+    ghc
     gimp
     gnumake
     gofumpt
@@ -27,6 +28,7 @@
     gping
     grimblast
 
+    haskell-language-server
     hyperfine
 
     imagemagick

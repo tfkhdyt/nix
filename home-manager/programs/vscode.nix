@@ -120,6 +120,7 @@
           }
         ];
       };
+      "haskell.serverExecutablePath" = "/home/tfkhdyt/.nix-profile/bin/haskell-language-server-wrapper";
     };
     extensions = with pkgs.vscode-marketplace; [
       jripouteau.adonis-vscode-extension
@@ -148,6 +149,8 @@
       yoavbls.pretty-ts-errors
       ttoowa.in-your-face-incredible
       emeraldwalk.runonsave
+      haskell.haskell
+      justusadam.language-haskell
     ];
   };
 }
