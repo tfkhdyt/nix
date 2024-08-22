@@ -27,11 +27,14 @@
       url = "github:nix-community/nix-vscode-extensions";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    zen-browser.url = "github:MarceColl/zen-browser-flake";
   };
 
   outputs =
     { self, nixpkgs, ... }@inputs:
     let
+      system = "x86_64-linux";
       inherit (self) outputs;
     in
     {
@@ -39,7 +42,7 @@
       # Available through 'nixos-rebuild --flake .#your-hostname'
       nixosConfigurations = {
         nixos = nixpkgs.lib.nixosSystem {
-          system = "x86_64-linux";
+          inherit system;
           specialArgs = {
             inherit inputs outputs;
           };
@@ -51,7 +54,10 @@
               { pkgs, ... }:
               {
                 nixpkgs.overlays = [ inputs.rust-overlay.overlays.default ];
-                environment.systemPackages = [ pkgs.rust-bin.stable.latest.default ];
+                environment.systemPackages = [
+                  pkgs.rust-bin.stable.latest.default
+                  inputs.zen-browser.packages."${system}".default
+                ];
               }
             )
             {
