@@ -40,7 +40,11 @@
         "staticcheck" = "/home/tfkhdyt/.nix-profile/bin/staticcheck";
       };
       "go.lintTool" = "golangci-lint";
-      "go.formatTool" = "gofumpt";
+      "gopls" = {
+        "formatting.gofumpt" = true;
+        "ui.semanticTokens" = true;
+      };
+      # "go.formatTool" = "gofumpt";
       "typescript.preferGoToSourceDefinition" = true;
       "typescript.inlayHints.functionLikeReturnTypes.enabled" = true;
       "typescript.inlayHints.parameterNames.enabled" = "all";
@@ -121,6 +125,8 @@
         ];
       };
       "haskell.serverExecutablePath" = "/home/tfkhdyt/.nix-profile/bin/haskell-language-server-wrapper";
+      "gitblame.inlineMessageEnabled" = true;
+      "gitblame.inlineMessageFormat" = "\${author.name} (\${time.ago}) - \${commit.summary}";
     };
     extensions = with pkgs.vscode-marketplace; [
       jripouteau.adonis-vscode-extension
@@ -151,6 +157,7 @@
       emeraldwalk.runonsave
       haskell.haskell
       justusadam.language-haskell
+      oderwat.indent-rainbow
     ];
   };
 }
