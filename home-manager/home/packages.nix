@@ -28,6 +28,7 @@
     gping
     grimblast
 
+    handbrake
     haskell-language-server
     hyperfine
 
@@ -70,6 +71,7 @@
     urban-cli
 
     watchexec
+    wl-screenrec
 
     xfce.ristretto
     xh
