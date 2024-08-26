@@ -4,6 +4,7 @@
     ./nixvim.nix
     ./mpv.nix
     ./vscode.nix
+    ./lazygit.nix
   ];
   programs = {
     git = import ./git.nix;
@@ -25,7 +26,6 @@
     aria2.enable = true;
     bottom.enable = true;
     bun.enable = true;
-    lazygit.enable = true;
     obs-studio.enable = true;
     java.enable = false;
     zathura.enable = true;
