@@ -15,7 +15,7 @@
       "editor.wordWrap" = "on";
       "editor.wrappingIndent" = "indent";
       "editor.formatOnSave" = true;
-      "editor.tabSize" = 2;
+      "editor.tabSize" = 4;
       "editor.mouseWheelScrollSensitivity" = 2;
       "editor.cursorSmoothCaretAnimation" = "on";
       "editor.quickSuggestions" = {
@@ -91,6 +91,9 @@
       "[markdown]" = {
         "editor.defaultFormatter" = "esbenp.prettier-vscode";
       };
+      "[go]" = {
+        "editor.tabSize" = 4;
+      };
       "redhat.telemetry.enabled" = false;
       "search.exclude" = {
         "**/bower_components" = true;
@@ -158,6 +161,7 @@
       haskell.haskell
       justusadam.language-haskell
       oderwat.indent-rainbow
+      renesaarsoo.sql-formatter-vsc
     ];
   };
 }
