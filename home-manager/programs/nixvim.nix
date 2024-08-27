@@ -314,25 +314,27 @@
       cmp-nvim-lsp-signature-help.enable = true;
       conform-nvim = {
         enable = true;
-        formatOnSave = {
-          lspFallback = true;
-          timeoutMs = 3000;
-        };
-        formattersByFt = {
-          javascript = [ "prettierd" ];
-          typescript = [ "prettierd" ];
-          javascriptreact = [ "prettierd" ];
-          typescriptreact = [ "prettierd" ];
-          svelte = [ "prettierd" ];
-          astro = [ "prettierd" ];
-          nix = [ "nixfmt" ];
-          go = [
-            "gofumpt"
-            "goimports-reviser"
-            "golines"
-          ];
-          markdown = [ "mdformat" ];
-          "_" = [ "trim_whitespace" ];
+        settings = {
+          format_on_save = {
+            lsp_format = "fallback";
+            timeout_ms = 3000;
+          };
+          formatters_by_ft = {
+            javascript = [ "prettierd" ];
+            typescript = [ "prettierd" ];
+            javascriptreact = [ "prettierd" ];
+            typescriptreact = [ "prettierd" ];
+            svelte = [ "prettierd" ];
+            astro = [ "prettierd" ];
+            nix = [ "nixfmt" ];
+            go = [
+              "gofumpt"
+              "goimports-reviser"
+              "golines"
+            ];
+            markdown = [ "mdformat" ];
+            "_" = [ "trim_whitespace" ];
+          };
         };
       };
       nvim-autopairs.enable = true;
