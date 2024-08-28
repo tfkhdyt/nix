@@ -27,6 +27,7 @@
         "source.fixAll" = "always";
         "source.organizeImports" = "always";
       };
+      "editor.detectIndentation" = false;
       "go.inlayHints.assignVariableTypes" = true;
       "go.inlayHints.constantValues" = true;
       "go.inlayHints.parameterNames" = true;
@@ -91,8 +92,8 @@
       "[markdown]" = {
         "editor.defaultFormatter" = "esbenp.prettier-vscode";
       };
-      "[go]" = {
-        "editor.tabSize" = 4;
+      "[css]" = {
+        "editor.defaultFormatter" = "esbenp.prettier-vscode";
       };
       "redhat.telemetry.enabled" = false;
       "search.exclude" = {
@@ -162,6 +163,7 @@
       justusadam.language-haskell
       oderwat.indent-rainbow
       renesaarsoo.sql-formatter-vsc
+      bmewburn.vscode-intelephense-client
     ];
   };
 }
