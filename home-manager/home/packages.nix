@@ -12,24 +12,28 @@
     discord
     duckstation
 
+    erlang
+
     ffmpeg-full
     file-roller
 
+    genact
     ghc
     gimp
+    gleam
     gnumake
-    gofumpt
-    goimports-reviser
-    golangci-lint
-    golines
-    gomodifytags
-    gopls
-    go-tools
+    # gofumpt
+    # goimports-reviser
+    # golangci-lint
+    # golines
+    # gomodifytags
+    # gopls
+    # go-tools
     gping
     grimblast
 
     handbrake
-    haskell-language-server
+    # haskell-language-server
     hyperfine
 
     imagemagick

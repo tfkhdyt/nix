@@ -27,18 +27,18 @@
         "source.fixAll" = "always";
         "source.organizeImports" = "always";
       };
-      "editor.detectIndentation" = false;
+      # "editor.detectIndentation" = false;
       "go.inlayHints.assignVariableTypes" = true;
       "go.inlayHints.constantValues" = true;
       "go.inlayHints.parameterNames" = true;
       "go.inlayHints.rangeVariableTypes" = true;
       "go.alternateTools" = {
-        "gofumpt" = "/home/tfkhdyt/.nix-profile/bin/gofumpt";
-        "golangci-lint" = "/home/tfkhdyt/.nix-profile/bin/golangci-lint";
-        "gomodifytags" = "/home/tfkhdyt/.nix-profile/bin/gomodifytags";
-        "gopls" = "/home/tfkhdyt/.nix-profile/bin/gopls";
-        "impl" = "/home/tfkhdyt/.nix-profile/bin/impl";
-        "staticcheck" = "/home/tfkhdyt/.nix-profile/bin/staticcheck";
+        "gofumpt" = "${pkgs.gofumpt}/bin/gofumpt";
+        "golangci-lint" = "${pkgs.golangci-lint}/bin/golangci-lint";
+        "gomodifytags" = "${pkgs.gomodifytags}/bin/gomodifytags";
+        "gopls" = "${pkgs.gopls}/bin/gopls";
+        "impl" = "${pkgs.impl}/bin/impl";
+        "staticcheck" = "${pkgs.go-tools}/bin/staticcheck";
       };
       "go.lintTool" = "golangci-lint";
       "gopls" = {
@@ -119,18 +119,19 @@
       "emeraldwalk.runonsave" = {
         "commands" = [
           {
-            "cmd" = "goimports-reviser -rm-unused -set-alias -format -use-cache -output write \${file}";
+            "cmd" = "${pkgs.goimports-reviser}/bin/goimports-reviser -rm-unused -set-alias -format -use-cache -output write \${file}";
             "match" = "\\.go$";
           }
           {
-            "cmd" = "golines \${file} -w";
+            "cmd" = "${pkgs.golines}/bin/golines \${file} -w";
             "match" = "\\.go$";
           }
         ];
       };
-      "haskell.serverExecutablePath" = "/home/tfkhdyt/.nix-profile/bin/haskell-language-server-wrapper";
+      "haskell.serverExecutablePath" = "${pkgs.haskell-language-server}/bin/haskell-language-server-wrapper";
       "gitblame.inlineMessageEnabled" = true;
       "gitblame.inlineMessageFormat" = "\${author.name} (\${time.ago}) - \${commit.summary}";
+      "gleam.path" = "${pkgs.gleam}/bin/gleam";
     };
     extensions = with pkgs.vscode-marketplace; [
       jripouteau.adonis-vscode-extension
@@ -164,6 +165,7 @@
       oderwat.indent-rainbow
       renesaarsoo.sql-formatter-vsc
       bmewburn.vscode-intelephense-client
+      gleam.gleam
     ];
   };
 }
