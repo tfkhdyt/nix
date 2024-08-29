@@ -28,7 +28,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    zen-browser.url = "github:MarceColl/zen-browser-flake";
+    # zen-browser.url = "github:MarceColl/zen-browser-flake";
   };
 
   outputs =
@@ -56,7 +56,7 @@
                 nixpkgs.overlays = [ inputs.rust-overlay.overlays.default ];
                 environment.systemPackages = [
                   pkgs.rust-bin.stable.latest.default
-                  inputs.zen-browser.packages."${system}".default
+                  # inputs.zen-browser.packages."${system}".default
                 ];
               }
             )
