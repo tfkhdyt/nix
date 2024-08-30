@@ -20,6 +20,7 @@
     zsh = import ./zsh.nix;
     go = import ./go.nix;
     kitty = import ./kitty.nix;
+    firefox = import ./firefox.nix;
 
     home-manager.enable = true;
     fastfetch.enable = true;
