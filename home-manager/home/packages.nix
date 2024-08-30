@@ -20,7 +20,7 @@
     genact
     ghc
     gimp
-    gleam
+    # gleam
     gnumake
     # gofumpt
     # goimports-reviser

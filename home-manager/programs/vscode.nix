@@ -128,10 +128,10 @@
           }
         ];
       };
-      "haskell.serverExecutablePath" = "${pkgs.haskell-language-server}/bin/haskell-language-server-wrapper";
+      # "haskell.serverExecutablePath" = "${pkgs.haskell-language-server}/bin/haskell-language-server-wrapper";
       "gitblame.inlineMessageEnabled" = true;
       "gitblame.inlineMessageFormat" = "\${author.name} (\${time.ago}) - \${commit.summary}";
-      "gleam.path" = "${pkgs.gleam}/bin/gleam";
+      # "gleam.path" = "${pkgs.gleam}/bin/gleam";
     };
     extensions = with pkgs.vscode-marketplace; [
       jripouteau.adonis-vscode-extension
@@ -160,12 +160,12 @@
       yoavbls.pretty-ts-errors
       ttoowa.in-your-face-incredible
       emeraldwalk.runonsave
-      haskell.haskell
-      justusadam.language-haskell
+      # haskell.haskell
+      # justusadam.language-haskell
       oderwat.indent-rainbow
       renesaarsoo.sql-formatter-vsc
       bmewburn.vscode-intelephense-client
-      gleam.gleam
+      # gleam.gleam
     ];
   };
 }
