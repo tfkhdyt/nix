@@ -133,6 +133,7 @@
       "gitblame.inlineMessageFormat" = "\${author.name} (\${time.ago}) - \${commit.summary}";
       # "gleam.path" = "${pkgs.gleam}/bin/gleam";
       "workbench.sideBar.location" = "right";
+      "java.jdt.ls.java.home" = "${pkgs.jdk.home}";
     };
     extensions = with pkgs.vscode-marketplace; [
       jripouteau.adonis-vscode-extension
@@ -167,6 +168,9 @@
       renesaarsoo.sql-formatter-vsc
       bmewburn.vscode-intelephense-client
       # gleam.gleam
+      redhat.java
+      vscjava.vscode-java-dependency
+      vscjava.vscode-java-debug
     ];
   };
 }

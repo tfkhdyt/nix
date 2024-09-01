@@ -28,7 +28,10 @@
     bottom.enable = true;
     bun.enable = true;
     obs-studio.enable = true;
-    java.enable = false;
+    java = {
+      enable = true;
+      # package = pkgs.jdk17;
+    };
     zathura.enable = true;
   };
 }
