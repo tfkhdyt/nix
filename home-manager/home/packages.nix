@@ -59,6 +59,7 @@
     pdftk
     pm2
     pnpm
+    pocketbase
     postman
     prettierd
 
