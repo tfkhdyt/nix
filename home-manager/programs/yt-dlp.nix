@@ -6,6 +6,6 @@
     embed-subs = true;
     embed-chapters = true;
     console-title = true;
-    o = "%(title).60s.%(ext)s";
+    output = "%(title).60s.%(ext)s";
   };
 }
