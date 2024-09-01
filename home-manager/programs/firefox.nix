@@ -3,7 +3,6 @@
   profiles.tfkhdyt = {
     id = 0;
     settings = {
-      "geo.provider.use_geoclue" = false;
       "datareporting.policy.dataSubmissionEnabled" = false;
       "datareporting.healthreport.uploadEnabled" = false;
       "toolkit.telemetry.unified" = false;
@@ -21,11 +20,6 @@
       "browser.newtabpage.activity-stream.feeds.telemetry" = false;
       "browser.newtabpage.activity-stream.telemetry" = false;
       "app.shield.optoutstudies.enabled" = false;
-      "app.normandy.enabled" = false;
-      "app.normandy.api_url" = "";
-      "captivedetect.canonicalURL" = "";
-      "network.captive-portal-service.enabled" = false;
-      "network.connectivity-service.enabled" = false;
       "browser.safebrowsing.downloads.remote.enabled" = false;
       "network.prefetch-next" = false;
       "network.dns.disablePrefetch" = true;
@@ -34,9 +28,6 @@
       "network.predictor.enable-prefetch" = false;
       "network.http.speculative-parallel-limit" = 0;
       "browser.places.speculativeConnect.enabled" = false;
-      "network.proxy.socks_remote_dns" = true;
-      "network.file.disable_unc_paths" = true;
-      "network.gio.supported-protocols" = "";
       "browser.urlbar.speculativeConnect.enabled" = false;
       "browser.urlbar.quicksuggest.enabled" = false;
       "browser.urlbar.suggest.quicksuggest.nonsponsored" = false;
@@ -49,11 +40,6 @@
       "browser.urlbar.pocket.featureGate" = false;
       "browser.urlbar.weather.featureGate" = false;
       "browser.urlbar.yelp.featureGate" = false;
-      "network.auth.subresource-http-auth-allow" = 1;
-      "security.ssl.require_safe_negotiation" = true;
-      "security.tls.enable_0rtt_data" = false;
-      "security.OCSP.enabled" = 1;
-      "security.OCSP.require" = true;
       "browser.ctrlTab.sortByRecentlyUsed" = true;
       "browser.aboutConfig.showWarning" = false;
       "browser.download.useDownloadDir" = false;
