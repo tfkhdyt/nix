@@ -132,6 +132,7 @@
       "gitblame.inlineMessageEnabled" = true;
       "gitblame.inlineMessageFormat" = "\${author.name} (\${time.ago}) - \${commit.summary}";
       # "gleam.path" = "${pkgs.gleam}/bin/gleam";
+      "workbench.sideBar.location" = "right";
     };
     extensions = with pkgs.vscode-marketplace; [
       jripouteau.adonis-vscode-extension
