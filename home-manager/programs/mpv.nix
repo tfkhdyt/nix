@@ -5,11 +5,11 @@
     config = {
       slang = "ind";
       save-position-on-quit = true;
-      hwdec = "auto-safe";
-      vo = "gpu";
-      profile = "gpu-hq";
-      gpu-context = "wayland";
-      sub-font = "Noto Sans";
+      # hwdec = "auto-safe";
+      # vo = "gpu";
+      # profile = "gpu-hq";
+      # gpu-context = "wayland";
+      sub-font = "Inter Variable";
       sub-font-size = 40;
       sub-border-color = "#000000";
       sub-border-size = 1.25;
