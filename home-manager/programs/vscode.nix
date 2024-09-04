@@ -21,6 +21,9 @@
       "editor.quickSuggestions" = {
         "strings" = "on";
       };
+      "editor.quickSuggestionsDelay" = 500;
+      "editor.hover.delay" = 100;
+      "editor.hover.hidingDelay" = 100;
       "editor.linkedEditing" = true;
       "editor.fontFamily" = "'JetBrainsMono NFP', 'Droid Sans Mono', 'monospace', monospace";
       "editor.codeActionsOnSave" = {
@@ -171,6 +174,7 @@
       redhat.java
       vscjava.vscode-java-dependency
       vscjava.vscode-java-debug
+      ms-azuretools.vscode-docker
     ];
   };
 }
