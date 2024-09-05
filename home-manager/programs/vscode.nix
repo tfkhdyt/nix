@@ -22,8 +22,6 @@
         "strings" = "on";
       };
       "editor.quickSuggestionsDelay" = 500;
-      "editor.hover.delay" = 100;
-      "editor.hover.hidingDelay" = 100;
       "editor.linkedEditing" = true;
       "editor.fontFamily" = "'JetBrainsMono NFP', 'Droid Sans Mono', 'monospace', monospace";
       "editor.codeActionsOnSave" = {
@@ -115,7 +113,7 @@
         "env-*" = true;
       };
       "workbench.colorTheme" = "Gruvbox Dark Hard";
-      "workbench.iconTheme" = "material-icon-theme";
+      "workbench.iconTheme" = "vscode-jetbrains-icon-theme-2023-dark";
       "workbench.startupEditor" = "none";
       "errorLens.gutterIconsEnabled" = true;
       "errorLens.gutterIconSet" = "defaultOutline";
@@ -175,6 +173,7 @@
       vscjava.vscode-java-dependency
       vscjava.vscode-java-debug
       ms-azuretools.vscode-docker
+      chadalen.vscode-jetbrains-icon-theme
     ];
   };
 }
