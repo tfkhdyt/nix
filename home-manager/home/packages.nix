@@ -22,6 +22,7 @@
     gimp
     # gleam
     gnumake
+    gobang
     # gofumpt
     # goimports-reviser
     # golangci-lint
@@ -44,7 +45,6 @@
     kondo
 
     lazydocker
-    lazysql
     lefthook
 
     mdformat
