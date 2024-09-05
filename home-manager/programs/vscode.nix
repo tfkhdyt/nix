@@ -21,7 +21,7 @@
       "editor.quickSuggestions" = {
         "strings" = "on";
       };
-      "editor.quickSuggestionsDelay" = 500;
+      "editor.quickSuggestionsDelay" = 300;
       "editor.linkedEditing" = true;
       "editor.fontFamily" = "'JetBrainsMono NFP', 'Droid Sans Mono', 'monospace', monospace";
       "editor.codeActionsOnSave" = {
