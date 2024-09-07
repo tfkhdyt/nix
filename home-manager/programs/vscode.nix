@@ -40,6 +40,7 @@
         "gopls" = "${pkgs.gopls}/bin/gopls";
         "impl" = "${pkgs.impl}/bin/impl";
         "staticcheck" = "${pkgs.go-tools}/bin/staticcheck";
+        "delve" = "${pkgs.delve}/bin/dlv";
       };
       "go.lintTool" = "golangci-lint";
       "gopls" = {
