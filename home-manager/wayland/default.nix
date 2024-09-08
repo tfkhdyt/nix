@@ -161,7 +161,8 @@
         "10,monitor:eDP-1"
       ];
       windowrulev2 = [
-        "float,title:(Authentication Required)"
+        "float,title:(Authentication Required|Picture-in-Picture)"
+        "pin,title:(Authentication Required|Picture-in-Picture)"
         "float,title:^(Open Files?|All Files|Open Folder|Install from VSIX|Bitwarden)$"
       ];
       debug.disable_logs = true;
