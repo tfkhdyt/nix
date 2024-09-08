@@ -47,6 +47,7 @@
     lazydocker
     lefthook
 
+    maven
     mdformat
 
     nil

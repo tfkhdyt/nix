@@ -175,6 +175,7 @@
       vscjava.vscode-java-debug
       ms-azuretools.vscode-docker
       chadalen.vscode-jetbrains-icon-theme
+      vscjava.vscode-maven
     ];
   };
 }
