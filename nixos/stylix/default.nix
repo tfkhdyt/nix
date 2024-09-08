@@ -37,7 +37,7 @@
     };
     cursor = {
       package = pkgs.apple-cursor;
-      name = "macOS-Monterey";
+      name = "macOS";
       size = 32;
     };
     opacity.terminal = 0.85;
