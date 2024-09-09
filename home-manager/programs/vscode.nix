@@ -136,6 +136,7 @@
       # "gleam.path" = "${pkgs.gleam}/bin/gleam";
       "workbench.sideBar.location" = "right";
       "java.jdt.ls.java.home" = "${pkgs.jdk.home}";
+      "breadcrumbs.enabled" = false;
     };
     extensions = with pkgs.vscode-marketplace; [
       jripouteau.adonis-vscode-extension
@@ -176,6 +177,7 @@
       ms-azuretools.vscode-docker
       chadalen.vscode-jetbrains-icon-theme
       vscjava.vscode-maven
+      prateekmahendrakar.prettyxml
     ];
   };
 }
