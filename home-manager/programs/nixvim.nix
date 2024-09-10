@@ -22,7 +22,7 @@
     extraPlugins = with pkgs; [ vimPlugins.vim-move ];
     keymaps = [
       {
-        action = "<cmd>NvimTreeToggle<CR>";
+        action = "<cmd>Neotree toggle<CR>";
         key = "<Leader>e";
         options = {
           silent = true;
@@ -192,7 +192,7 @@
         iconsEnabled = true;
       };
       nvim-tree = {
-        enable = true;
+        enable = false;
         autoReloadOnWrite = false;
         disableNetrw = true;
         hijackCursor = true;
@@ -201,6 +201,7 @@
         git.enable = true;
         updateFocusedFile.enable = true;
       };
+      neo-tree.enable = true;
       surround.enable = true;
       lsp = {
         enable = true;
@@ -242,6 +243,7 @@
               "html"
             ];
           };
+          jdt-language-server.enable = true;
         };
       };
       treesitter = {
@@ -272,6 +274,14 @@
         settings.options = {
           diagnostics = "nvim_lsp";
           show_buffer_close_icons = false;
+          offsets = [
+            {
+              filetype = "neo-tree";
+              text = "Neotree";
+              separator = true;
+              text_align = "left";
+            }
+          ];
         };
       };
       telescope = {
@@ -362,7 +372,7 @@
             "help"
             "alpha"
             "dashboard"
-            "nvim-tree"
+            # "nvim-tree"
             "Trouble"
             "trouble"
             "lazy"
