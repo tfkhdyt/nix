@@ -297,10 +297,36 @@
       lspkind.enable = true;
       cmp = {
         enable = true;
+        autoEnableSources = true;
         settings = {
+          experimental = {
+            ghost_text = true;
+          };
+          performance = {
+            maxViewEntries = 10;
+          };
+          formatting = {
+            fields = [
+              "kind"
+              "abbr"
+              "menu"
+            ];
+          };
+          snippet = {
+            expand = ''
+              function(args)
+                require('luasnip').lsp_expand(args.body)
+              end
+            '';
+          };
           sources = [
             { name = "nvim_lsp"; }
-            { name = "path"; }
+            {
+              name = "path"; # file system paths
+            }
+            {
+              name = "luasnip"; # snippets
+            }
             # { name = "nvim_lsp_signature_help"; }
             # { name = "codeium"; }
             # { name = "buffer"; }
@@ -311,10 +337,49 @@
             "<C-d>" = "cmp.mapping.scroll_docs(-4)";
             "<C-e>" = "cmp.mapping.close()";
             "<C-f>" = "cmp.mapping.scroll_docs(4)";
-            "<CR>" = "cmp.config.disable";
+            # "<CR>" = "cmp.config.disable";
             "<Up>" = "cmp.mapping(cmp.mapping.select_prev_item(), {'i', 's'})";
             "<Down>" = "cmp.mapping(cmp.mapping.select_next_item(), {'i', 's'})";
-            "<Tab>" = "cmp.mapping.confirm({ select = true })";
+            "<CR>" = ''
+              cmp.mapping(function(fallback)
+                local luasnip = require('luasnip')
+                if cmp.visible() then
+                  if luasnip.expandable() then
+                    luasnip.expand()
+                  else
+                    cmp.confirm({
+                      select = true,
+                    })
+                  end
+                else
+                  fallback()
+                end
+              end)
+            '';
+            "<Tab>" = ''
+              cmp.mapping(function(fallback)
+                local luasnip = require('luasnip')
+                if cmp.visible() then
+                  cmp.select_next_item()
+                elseif luasnip.locally_jumpable(1) then
+                  luasnip.jump(1)
+                else
+                  fallback()
+                end
+              end, { "i", "s" })
+            '';
+            "<S-Tab>" = ''
+              cmp.mapping(function(fallback)
+                local luasnip = require('luasnip')
+                if cmp.visible() then
+                  cmp.select_prev_item()
+                elseif luasnip.locally_jumpable(-1) then
+                  luasnip.jump(-1)
+                else
+                  fallback()
+                end
+              end, { "i", "s" })
+            '';
           };
         };
       };
@@ -322,6 +387,7 @@
       cmp-buffer.enable = true;
       cmp-path.enable = true;
       cmp-nvim-lsp-signature-help.enable = true;
+      cmp_luasnip.enable = true;
       conform-nvim = {
         enable = true;
         settings = {
@@ -441,7 +507,7 @@
           };
         };
       };
-      # luasnip.enable = true;
+      luasnip.enable = true;
       # cmp_luasnip.enable = true;
       # friendly-snippets.enable = true;
       notify.enable = false;
@@ -452,6 +518,14 @@
             filter = {
               event = "notify";
               find = "No information available";
+            };
+            opts.skip = true;
+          }
+          {
+            filter = {
+              event = "lsp";
+              kind = "progress";
+              find = "jdtls";
             };
             opts.skip = true;
           }
