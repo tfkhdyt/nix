@@ -119,7 +119,7 @@
       exec-once = [ "lxqt-policykit-agent" ];
       general = {
         gaps_in = 5;
-        gaps_out = "2,28,10,28";
+        gaps_out = "2,15,10,15";
         border_size = 5;
         # "col.active_border" = "rgb(E4C1F9) rgb(B5EAD7) 45deg";
         # "col.inactive_border" = "rgb(1f2335)";
@@ -133,10 +133,20 @@
         accel_profile = "flat";
         sensitivity = -0.2;
       };
+      device = [
+        {
+          name = "inno-x2-v2-1-mouse";
+          sensitivity = -0.95;
+        }
+        {
+          name = "inno-x2-v2-2-mouse";
+          sensitivity = -0.95;
+        }
+      ];
       dwindle = {
         pseudotile = true; # master switch for pseudotiling. Enabling is bound to mainMod + P in the keybinds section below
         preserve_split = true; # you probably want this
-        no_gaps_when_only = true;
+        no_gaps_when_only = false;
         smart_split = false;
       };
       misc = {
@@ -145,7 +155,7 @@
       };
       monitor = [
         ",preferred,1920x0,1"
-        "desc:ViewSonic Corporation VX2479 Series X9N233300922,1920x1080@100,0x0,1"
+        "desc:ViewSonic Corporation VX2479 Series X9N233300922,highrr,0x0,1"
         # "HDMI-A-2,preferred,0x0,1"
       ];
       workspace = [
