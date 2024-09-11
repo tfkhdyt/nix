@@ -15,7 +15,7 @@
       "editor.wordWrap" = "on";
       "editor.wrappingIndent" = "indent";
       "editor.formatOnSave" = true;
-      "editor.tabSize" = 4;
+      "editor.tabSize" = 2;
       "editor.mouseWheelScrollSensitivity" = 2;
       "editor.cursorSmoothCaretAnimation" = "on";
       "editor.quickSuggestions" = {
@@ -97,6 +97,12 @@
       "[css]" = {
         "editor.defaultFormatter" = "esbenp.prettier-vscode";
       };
+      "[go]" = {
+        "editor.tabSize" = 4;
+      };
+      "[java]" = {
+        "editor.tabSize" = 4;
+      };
       "redhat.telemetry.enabled" = false;
       "search.exclude" = {
         "**/bower_components" = true;
@@ -177,7 +183,7 @@
       ms-azuretools.vscode-docker
       chadalen.vscode-jetbrains-icon-theme
       vscjava.vscode-maven
-      prateekmahendrakar.prettyxml
+      thoughtsdump.custom-xml-formatter
     ];
   };
 }
