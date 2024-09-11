@@ -143,6 +143,10 @@
           sensitivity = -0.95;
         }
         {
+          name = "beken-2.4g-wireless-device-1";
+          sensitivity = -0.95;
+        }
+        {
           name = "beken-2.4g-wireless-device-2";
           sensitivity = -0.95;
         }
@@ -150,7 +154,7 @@
       dwindle = {
         pseudotile = true; # master switch for pseudotiling. Enabling is bound to mainMod + P in the keybinds section below
         preserve_split = true; # you probably want this
-        no_gaps_when_only = false;
+        no_gaps_when_only = true;
         smart_split = false;
       };
       misc = {
