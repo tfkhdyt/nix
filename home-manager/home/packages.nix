@@ -81,5 +81,7 @@
 
     xfce.ristretto
     xh
+
+    zoom-us
   ];
 }
