@@ -142,6 +142,10 @@
           name = "inno-x2-v2-2-mouse";
           sensitivity = -0.95;
         }
+        {
+          name = "beken-2.4g-wireless-device-2";
+          sensitivity = -0.95;
+        }
       ];
       dwindle = {
         pseudotile = true; # master switch for pseudotiling. Enabling is bound to mainMod + P in the keybinds section below
