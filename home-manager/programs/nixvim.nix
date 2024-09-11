@@ -188,8 +188,10 @@
     plugins = {
       lualine = {
         enable = true;
-        globalstatus = true;
-        iconsEnabled = true;
+        settings.options = {
+          globalstatus = true;
+          icons_enabled = true;
+        };
       };
       nvim-tree = {
         enable = false;
