@@ -143,6 +143,7 @@
       "workbench.sideBar.location" = "right";
       "java.jdt.ls.java.home" = "${pkgs.jdk.home}";
       "breadcrumbs.enabled" = false;
+      "terminal.integrated.shellIntegration.decorationsEnabled" = "never";
     };
     extensions = with pkgs.vscode-marketplace; [
       jripouteau.adonis-vscode-extension
