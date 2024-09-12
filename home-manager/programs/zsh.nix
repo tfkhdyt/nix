@@ -32,7 +32,7 @@
     # - The first argument to the function ($1) is the base path to start traversal
     # - See the source code (completion.{bash,zsh}) for the details.
     _fzf_compgen_path() {
-      fd --type f --follow . "$1"
+      fd --type f --type d --follow . "$1"
     }
 
     # Use fd to generate the list for directory completion
