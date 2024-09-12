@@ -142,7 +142,7 @@
       # "gleam.path" = "${pkgs.gleam}/bin/gleam";
       "workbench.sideBar.location" = "right";
       "java.jdt.ls.java.home" = "${pkgs.jdk.home}";
-      "breadcrumbs.enabled" = false;
+      "breadcrumbs.symbolPath" = "off";
       "terminal.integrated.shellIntegration.decorationsEnabled" = "never";
     };
     extensions = with pkgs.vscode-marketplace; [
