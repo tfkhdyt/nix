@@ -119,8 +119,8 @@
       exec-once = [ "lxqt-policykit-agent" ];
       general = {
         gaps_in = 5;
-        gaps_out = "2,15,10,15";
-        border_size = 5;
+        gaps_out = "2,20,10,20";
+        border_size = 3;
         # "col.active_border" = "rgb(E4C1F9) rgb(B5EAD7) 45deg";
         # "col.inactive_border" = "rgb(1f2335)";
         layout = "dwindle";
