@@ -2,8 +2,8 @@
 {
   stylix = {
     enable = true;
-    image = ../../wallpapers/animeskull.png;
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml";
+    image = ../../wallpapers/nixos-wallpaper-catppuccin-mocha.png;
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
     fonts = {
       sizes = {
         applications = 10;
@@ -40,7 +40,7 @@
       name = "macOS";
       size = 32;
     };
-    opacity.terminal = 0.85;
+    opacity.terminal = 0.9;
     targets = {
       nixvim.enable = lib.mkForce false;
     };

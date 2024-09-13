@@ -150,15 +150,15 @@
       padding-right: 10px;
       border-radius: 10px;
       transition: none;
-      color: #EBDBB2;
-      background-color: #D65D0E;
+      color: #cdd6f4;
+      background-color: #1e1e2e;
     }
 
     tooltip {
-      background: #24283b;
+      background: #313244;
       border-width: 2px;
       border-style: solid;
-      border-color: #565f89;
+      border-color: #6c7086;
     }
 
     #workspaces {
@@ -167,12 +167,12 @@
       margin-left: 8px;
       font-size: 4px;
       margin-bottom: 0px;
-      background: #282828;
+      background: #1e1e2e;
     }
 
     #workspaces button {
-      background: #282828;
-      color: #EBDBB2;
+      background: #1e1e2e;
+      color: #cdd6f4;
       font-size: 16px;
       border-radius: 10px;
       padding-left: 10px;
@@ -180,18 +180,18 @@
     }
 
     #workspaces button.active {
-      background: #458588;
-      color: #EBDBB2;
+      background: #89dceb;
+      color: #1e1e2e;
     }
 
     #workspaces button.urgent {
-      background-color: #EBDBB2;
-      color: #756D59;
+      background-color: #f38ba8;
+      color: #1e1e2e;
     }
 
     #workspaces button:hover {
-      background-color: #EBDBB2;
-      color: #282828;
+      background-color: #b4befe;
+      color: #1e1e2e;
     }
 
     #cpu {
@@ -226,8 +226,8 @@
       padding-right: 10px;
       border-radius: 10px;
       transition: none;
-      color: #EBDBB2;
-      background: #282828;
+      color: #cdd6f4;
+      background: #1e1e2e;
     }
 
     #battery {
@@ -239,19 +239,19 @@
       margin-bottom: 0px;
       border-radius: 10px;
       transition: none;
-      color: #EBDBB2;
-      background: #CC241D;
+      color: #1e1e2e;
+      background: #a6e3a1;
     }
 
     #battery.charging,
     #battery.plugged {
-      color: #EBDBB2;
-      background: #CC241D;
+      color: #1e1e2e;
+      background: #f9e2af;
     }
 
     #battery.critical:not(.charging) {
-      background-color: #FFB6C1;
-      color: #1f2335;
+      background-color: #f38ba8;
+      color: #1e1e2e;
       animation-name: blink;
       animation-duration: 0.5s;
       animation-timing-function: linear;
@@ -261,8 +261,8 @@
 
     @keyframes blink {
       to {
-        background-color: #F5F5DC;
-        color: #FFB6C1;
+        background-color: #1e1e2e;
+        color: #eba0ac;
       }
     }
 
@@ -274,8 +274,8 @@
       margin-bottom: 0px;
       border-radius: 10px;
       transition: none;
-      color: #EBDBB2;
-      background: #B16286;
+      color: #1e1e2e;
+      background: #74c7ec;
     }
 
     #backlight {
@@ -286,8 +286,8 @@
       margin-bottom: 0px;
       border-radius: 10px;
       transition: none;
-      color: #282828;
-      background: #D79921;
+      color: #1e1e2e;
+      background: #fab387;
     }
 
     #network {
@@ -298,8 +298,8 @@
       margin-bottom: 0px;
       border-radius: 10px;
       transition: none;
-      color: #282828;
-      background: #689D6A;
+      color: #1e1e2e;
+      background: #94e2d5;
     }
 
     #tray {
@@ -310,8 +310,8 @@
       padding-right: 10px;
       border-radius: 10px;
       transition: none;
-      color: #949494;
-      background: #282828;
+      color: #cdd6f4;
+      background: #1e1e2e;
     }
 
     #clock {
@@ -322,8 +322,8 @@
       margin-bottom: 0px;
       border-radius: 10px;
       transition: none;
-      color: #282828;
-      background: #EBDBB2;
+      color: #cdd6f4;
+      background: #1e1e2e;
     }
   '';
 }
