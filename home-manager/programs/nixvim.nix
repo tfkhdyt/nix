@@ -17,7 +17,24 @@
       vim.fn.sign_define('DiagnosticSignInfo', { text = '', texthl = 'DiagnosticSignInfo' })
       vim.fn.sign_define('DiagnosticSignHint', { text = '', texthl = 'DiagnosticSignHint' })
     '';
-    colorschemes.gruvbox.enable = true;
+    # colorschemes.gruvbox.enable = true;
+    colorschemes.catppuccin = {
+      enable = true;
+      settings = {
+        flavour = "mocha";
+        term_colors = true;
+        integrations = {
+          native_lsp = {
+            underlines = {
+              errors = [ "undercurl" ];
+              hints = [ "undercurl" ];
+              warnings = [ "undercurl" ];
+              information = [ "undercurl" ];
+            };
+          };
+        };
+      };
+    };
     globals.mapleader = " ";
     extraPlugins = with pkgs; [ vimPlugins.vim-move ];
     keymaps = [
@@ -306,13 +323,6 @@
           };
           performance = {
             maxViewEntries = 10;
-          };
-          formatting = {
-            fields = [
-              "kind"
-              "abbr"
-              "menu"
-            ];
           };
           snippet = {
             expand = ''
