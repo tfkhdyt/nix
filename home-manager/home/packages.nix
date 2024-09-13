@@ -23,13 +23,13 @@
     # gleam
     gnumake
     gobang
-    # gofumpt
-    # goimports-reviser
-    # golangci-lint
-    # golines
-    # gomodifytags
-    # gopls
-    # go-tools
+    gofumpt
+    goimports-reviser
+    golangci-lint
+    golines
+    gomodifytags
+    gopls
+    go-tools
     gping
     grimblast
 
