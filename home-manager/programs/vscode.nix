@@ -97,12 +97,12 @@
       "[css]" = {
         "editor.defaultFormatter" = "esbenp.prettier-vscode";
       };
-      "[go]" = {
-        "editor.tabSize" = 4;
-      };
-      "[java]" = {
-        "editor.tabSize" = 4;
-      };
+      # "[go]" = {
+      #   "editor.tabSize" = 4;
+      # };
+      # "[java]" = {
+      #   "editor.tabSize" = 4;
+      # };
       "redhat.telemetry.enabled" = false;
       "search.exclude" = {
         "**/bower_components" = true;
