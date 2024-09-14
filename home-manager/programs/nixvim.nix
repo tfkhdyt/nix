@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, lib, ... }:
 {
   programs.nixvim = {
     enable = true;
@@ -126,6 +126,10 @@
         action = "<cmd>lua vim.lsp.buf.code_action()<CR>";
       }
       {
+        key = "<leader>cA";
+        action = "<cmd>lua vim.lsp.buf.code_action({ apply = true, context = { only = { 'source' }, diagnostics = {} }})<CR>";
+      }
+      {
         key = "<leader>cr";
         action = "<cmd>lua vim.lsp.buf.rename()<CR>";
       }
@@ -197,7 +201,7 @@
       breakindentopt = "shift:2";
       signcolumn = "yes";
       numberwidth = 4;
-      pumheight = 7;
+      pumheight = 5;
       ignorecase = true;
       smartcase = true;
       linebreak = true;
@@ -220,7 +224,9 @@
         git.enable = true;
         updateFocusedFile.enable = true;
       };
-      neo-tree.enable = true;
+      neo-tree = {
+        enable = true;
+      };
       surround.enable = true;
       lsp = {
         enable = true;
@@ -263,6 +269,7 @@
             ];
           };
           jdt-language-server.enable = true;
+          # java-language-server.enable = true;
         };
       };
       treesitter = {
@@ -344,6 +351,16 @@
             # { name = "buffer"; }
             # { name = "luasnip"; }
           ];
+          formatting = {
+            format = lib.mkForce ''
+              require('lspkind').cmp_format({
+                maxwidth = function() 
+                  return math.floor(0.45 * vim.o.columns) 
+                end,
+                ellipsis_char = '…', 
+              })
+            '';
+          };
           mapping = {
             "<C-Space>" = "cmp.mapping.complete()";
             "<C-d>" = "cmp.mapping.scroll_docs(-4)";
@@ -544,6 +561,16 @@
         ];
       };
       nvim-colorizer.enable = true;
+      nvim-jdtls = {
+        enable = false;
+        cmd = [
+          (lib.getExe pkgs.jdt-language-server)
+          "-data"
+          "/home/tfkhdyt/projects/java"
+          "-foo"
+          "bar"
+        ];
+      };
     };
     performance = {
       combinePlugins = {
