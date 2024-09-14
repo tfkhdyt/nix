@@ -119,7 +119,7 @@
         "**/venv/**" = true;
         "env-*" = true;
       };
-      "workbench.colorTheme" = "Gruvbox Dark Hard";
+      "workbench.colorTheme" = "Catppuccin Noctis Mocha";
       "workbench.iconTheme" = "vscode-jetbrains-icon-theme-2023-dark";
       "workbench.startupEditor" = "none";
       "errorLens.gutterIconsEnabled" = true;
@@ -144,6 +144,10 @@
       "java.jdt.ls.java.home" = "${pkgs.jdk.home}";
       "breadcrumbs.symbolPath" = "off";
       "terminal.integrated.shellIntegration.decorationsEnabled" = "never";
+      # "workbench.list.smoothScrolling" = true;
+      # "editor.smoothScrolling" = true;
+      # "terminal.integrated.smoothScrolling" = true;
+      "editor.guides.bracketPairs" = "active";
     };
     extensions = with pkgs.vscode-marketplace; [
       jripouteau.adonis-vscode-extension
@@ -169,12 +173,12 @@
       tamasfe.even-better-toml
       moalamri.inline-fold
       yzhang.markdown-all-in-one
-      yoavbls.pretty-ts-errors
+      # yoavbls.pretty-ts-errors
       ttoowa.in-your-face-incredible
       emeraldwalk.runonsave
       # haskell.haskell
       # justusadam.language-haskell
-      oderwat.indent-rainbow
+      # oderwat.indent-rainbow
       renesaarsoo.sql-formatter-vsc
       bmewburn.vscode-intelephense-client
       # gleam.gleam
@@ -185,6 +189,7 @@
       chadalen.vscode-jetbrains-icon-theme
       vscjava.vscode-maven
       thoughtsdump.custom-xml-formatter
+      alexdauenhauer.catppuccin-noctis
     ];
   };
 }
