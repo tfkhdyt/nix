@@ -46,6 +46,7 @@
 
     lazydocker
     lefthook
+    lutris
 
     maven
     mdformat
