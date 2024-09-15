@@ -136,19 +136,19 @@
       device = [
         {
           name = "inno-x2-v2-1-mouse";
-          sensitivity = -0.95;
+          sensitivity = 0;
         }
         {
           name = "inno-x2-v2-2-mouse";
-          sensitivity = -0.95;
+          sensitivity = 0;
         }
         {
           name = "beken-2.4g-wireless-device-1";
-          sensitivity = -0.95;
+          sensitivity = 0;
         }
         {
           name = "beken-2.4g-wireless-device-2";
-          sensitivity = -0.95;
+          sensitivity = 0;
         }
       ];
       dwindle = {
