@@ -148,6 +148,7 @@
       # "editor.smoothScrolling" = true;
       # "terminal.integrated.smoothScrolling" = true;
       "editor.guides.bracketPairs" = "active";
+      "workbench.activityBar.location" = "top";
     };
     extensions = with pkgs.vscode-marketplace; [
       jripouteau.adonis-vscode-extension
