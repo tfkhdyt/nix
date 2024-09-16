@@ -78,6 +78,7 @@
     urban-cli
 
     watchexec
+    wf-recorder
     wl-screenrec
 
     xfce.ristretto
