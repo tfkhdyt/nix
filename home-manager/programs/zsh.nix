@@ -39,5 +39,7 @@
     _fzf_compgen_dir() {
       fd --type d --follow . "$1"
     }
+
+    bindkey '^k' kill-line
   '';
 }
