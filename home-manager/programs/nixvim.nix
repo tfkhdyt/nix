@@ -238,7 +238,7 @@
             };
           };
           nil-ls.enable = true;
-          tsserver.enable = true;
+          ts-ls.enable = true;
           emmet-ls = {
             enable = true;
             filetypes = [ "html" ];
