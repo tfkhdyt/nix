@@ -385,30 +385,34 @@
             "<C-d>" = "cmp.mapping.scroll_docs(-4)";
             "<C-e>" = "cmp.mapping.close()";
             "<C-f>" = "cmp.mapping.scroll_docs(4)";
-            # "<CR>" = "cmp.config.disable";
+            "<CR>" = "cmp.config.disable";
             "<Up>" = "cmp.mapping(cmp.mapping.select_prev_item(), {'i', 's'})";
             "<Down>" = "cmp.mapping(cmp.mapping.select_next_item(), {'i', 's'})";
-            "<CR>" = ''
-              cmp.mapping(function(fallback)
-                local luasnip = require('luasnip')
-                if cmp.visible() then
-                  if luasnip.expandable() then
-                    luasnip.expand()
-                  else
-                    cmp.confirm({
-                      select = true,
-                    })
-                  end
-                else
-                  fallback()
-                end
-              end)
-            '';
+            # "<CR>" = ''
+            #   cmp.mapping(function(fallback)
+            #     local luasnip = require('luasnip')
+            #     if cmp.visible() then
+            #       if luasnip.expandable() then
+            #         luasnip.expand()
+            #       else
+            #         cmp.confirm({
+            #           select = true,
+            #         })
+            #       end
+            #     else
+            #       fallback()
+            #     end
+            #   end)
+            # '';
             "<Tab>" = ''
               cmp.mapping(function(fallback)
                 local luasnip = require('luasnip')
                 if cmp.visible() then
-                  cmp.select_next_item()
+                  local entry = cmp.get_selected_entry()
+                  if not entry then
+                    cmp.select_next_item({ behavior = cmp.SelectBehavior.Select })
+                  end
+                  cmp.confirm()
                 elseif luasnip.locally_jumpable(1) then
                   luasnip.jump(1)
                 else
