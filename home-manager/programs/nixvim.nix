@@ -205,6 +205,7 @@
       ignorecase = true;
       smartcase = true;
       linebreak = true;
+      scrolloff = 10;
     };
     plugins = {
       lualine = {
