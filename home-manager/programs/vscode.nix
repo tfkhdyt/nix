@@ -47,6 +47,8 @@
         "formatting.gofumpt" = true;
         "ui.semanticTokens" = true;
       };
+      "editor.semanticHighlighting.enabled" = true;
+      "terminal.integrated.minimumContrastRatio" = 1;
       # "go.formatTool" = "gofumpt";
       "typescript.preferGoToSourceDefinition" = true;
       "typescript.inlayHints.functionLikeReturnTypes.enabled" = true;
@@ -68,7 +70,7 @@
         "svelte"
       ];
       "prettier.jsxSingleQuote" = true;
-      "svelte.enable-ts-plugin" = true;
+      "svelte.enable-ts-plugin" = false;
       "git.openRepositoryInParentFolders" = "always";
       "git.confirmSync" = false;
       "git.autofetch" = true;
@@ -89,7 +91,8 @@
         "editor.defaultFormatter" = "esbenp.prettier-vscode";
       };
       "[svelte]" = {
-        "editor.defaultFormatter" = "svelte.svelte-vscode";
+        # "editor.defaultFormatter" = "svelte.svelte-vscode";
+        "editor.defaultFormatter" = "esbenp.prettier-vscode";
       };
       "[markdown]" = {
         "editor.defaultFormatter" = "esbenp.prettier-vscode";
@@ -119,7 +122,7 @@
         "**/venv/**" = true;
         "env-*" = true;
       };
-      "workbench.colorTheme" = "Catppuccin Noctis Mocha";
+      "workbench.colorTheme" = "Catppuccin Mocha";
       "workbench.iconTheme" = "vscode-jetbrains-icon-theme-2023-dark";
       "workbench.startupEditor" = "none";
       "errorLens.gutterIconsEnabled" = true;
@@ -149,6 +152,7 @@
       # "terminal.integrated.smoothScrolling" = true;
       "editor.guides.bracketPairs" = "active";
       "workbench.activityBar.location" = "top";
+      "editor.guides.bracketPairsHorizontal" = false;
     };
     extensions = with pkgs.vscode-marketplace; [
       jripouteau.adonis-vscode-extension
@@ -173,7 +177,7 @@
       redhat.vscode-yaml
       tamasfe.even-better-toml
       moalamri.inline-fold
-      yzhang.markdown-all-in-one
+      # yzhang.markdown-all-in-one
       # yoavbls.pretty-ts-errors
       ttoowa.in-your-face-incredible
       emeraldwalk.runonsave
@@ -190,7 +194,8 @@
       chadalen.vscode-jetbrains-icon-theme
       vscjava.vscode-maven
       thoughtsdump.custom-xml-formatter
-      alexdauenhauer.catppuccin-noctis
+      catppuccin.catppuccin-vsc
+      vscjava.vscode-spring-initializr
     ];
   };
 }
