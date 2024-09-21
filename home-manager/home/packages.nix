@@ -66,6 +66,7 @@
     prettierd
 
     scc
+    shc
     slack
     speedtest-cli
     syncthing
