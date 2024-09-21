@@ -153,6 +153,8 @@
       "editor.guides.bracketPairs" = "active";
       "workbench.activityBar.location" = "top";
       "editor.guides.bracketPairsHorizontal" = false;
+      "java.compile.nullAnalysis.mode" = "automatic";
+      "prettier.requireConfig" = true;
     };
     extensions = with pkgs.vscode-marketplace; [
       jripouteau.adonis-vscode-extension
@@ -196,6 +198,7 @@
       thoughtsdump.custom-xml-formatter
       catppuccin.catppuccin-vsc
       vscjava.vscode-spring-initializr
+      vscjava.vscode-java-test
     ];
   };
 }
