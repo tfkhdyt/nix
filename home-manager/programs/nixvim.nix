@@ -228,7 +228,7 @@
       neo-tree = {
         enable = true;
       };
-      surround.enable = true;
+      vim-surround.enable = true;
       lsp = {
         enable = true;
         servers = {
