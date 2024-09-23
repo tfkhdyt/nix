@@ -1,3 +1,4 @@
+{ pkgs, ... }:
 {
   imports = [
     ./tmux.nix
@@ -30,7 +31,7 @@
     obs-studio.enable = true;
     java = {
       enable = true;
-      # package = pkgs.jdk17;
+      package = pkgs.graalvm-ce;
     };
     zathura.enable = true;
   };
