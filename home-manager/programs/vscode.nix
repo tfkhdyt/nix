@@ -158,6 +158,8 @@
       "editor.guides.bracketPairsHorizontal" = false;
       "java.compile.nullAnalysis.mode" = "automatic";
       "prettier.requireConfig" = true;
+      "eslint.run" = "onSave";
+      "eslint.problems.shortenToSingleLine" = true;
     };
     extensions = with pkgs.vscode-marketplace; [
       jripouteau.adonis-vscode-extension
