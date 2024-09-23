@@ -122,8 +122,10 @@
         "**/venv/**" = true;
         "env-*" = true;
       };
+      # "workbench.colorTheme" = "Catppuccin Latte";
       "workbench.colorTheme" = "Catppuccin Mocha";
-      "workbench.iconTheme" = "vscode-jetbrains-icon-theme-2023-dark";
+      # "workbench.iconTheme" = "catppuccin-latte";
+      "workbench.iconTheme" = "catppuccin-mocha";
       "workbench.startupEditor" = "none";
       "errorLens.gutterIconsEnabled" = true;
       "errorLens.gutterIconSet" = "defaultOutline";
@@ -144,7 +146,8 @@
       "gitblame.inlineMessageFormat" = "\${author.name} (\${time.ago}) - \${commit.summary}";
       # "gleam.path" = "${pkgs.gleam}/bin/gleam";
       "workbench.sideBar.location" = "right";
-      "java.jdt.ls.java.home" = "${pkgs.jdk.home}";
+      "java.jdt.ls.java.home" = "${pkgs.graalvm-ce.home}";
+      "spring-boot.ls.java.home" = "${pkgs.graalvm-ce.home}";
       "breadcrumbs.symbolPath" = "off";
       "terminal.integrated.shellIntegration.decorationsEnabled" = "never";
       # "workbench.list.smoothScrolling" = true;
@@ -199,6 +202,9 @@
       catppuccin.catppuccin-vsc
       vscjava.vscode-spring-initializr
       vscjava.vscode-java-test
+      catppuccin.catppuccin-vsc-icons
+      vmware.vscode-spring-boot
+      vscjava.vscode-spring-boot-dashboard
     ];
   };
 }
