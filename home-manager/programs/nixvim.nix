@@ -595,6 +595,7 @@
           "bar"
         ];
       };
+      web-devicons.enable = true;
     };
     performance = {
       combinePlugins = {
