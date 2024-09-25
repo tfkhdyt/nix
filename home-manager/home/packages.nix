@@ -53,7 +53,7 @@
 
     nil
     nixfmt-rfc-style
-    nodejs_20
+    nodejs_22
 
     oha
 
