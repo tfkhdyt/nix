@@ -148,7 +148,6 @@
       "workbench.sideBar.location" = "right";
       "java.jdt.ls.java.home" = "${pkgs.graalvm-ce.home}";
       "spring-boot.ls.java.home" = "${pkgs.graalvm-ce.home}";
-      "breadcrumbs.symbolPath" = "off";
       "terminal.integrated.shellIntegration.decorationsEnabled" = "never";
       # "workbench.list.smoothScrolling" = true;
       # "editor.smoothScrolling" = true;
@@ -160,6 +159,14 @@
       "prettier.requireConfig" = true;
       "eslint.run" = "onSave";
       "eslint.problems.shortenToSingleLine" = true;
+      "workbench.editor.showTabs" = "single";
+      "workbench.tree.indent" = 16;
+      "workbench.editor.empty.hint" = "hidden";
+      "breadcrumbs.enabled" = false;
+      "breadcrumbs.symbolPath" = "off";
+      "breadcrumbs.filePath" = "on";
+      "editor.guides.indentation" = false;
+      "editor.stickyScroll.enabled" = true;
     };
     extensions = with pkgs.vscode-marketplace; [
       jripouteau.adonis-vscode-extension
@@ -186,7 +193,7 @@
       moalamri.inline-fold
       # yzhang.markdown-all-in-one
       # yoavbls.pretty-ts-errors
-      ttoowa.in-your-face-incredible
+      # ttoowa.in-your-face-incredible
       emeraldwalk.runonsave
       # haskell.haskell
       # justusadam.language-haskell
