@@ -1,6 +1,8 @@
 { pkgs, ... }:
 {
   home.packages = with pkgs; [
+    audacity
+
     # beekeeper-studio
     bc
     bemenu
