@@ -167,6 +167,8 @@
       "breadcrumbs.filePath" = "on";
       "editor.guides.indentation" = false;
       "editor.stickyScroll.enabled" = true;
+      "typescript.suggest.completeFunctionCalls" = true;
+      "javascript.suggest.completeFunctionCalls" = true;
     };
     extensions = with pkgs.vscode-marketplace; [
       jripouteau.adonis-vscode-extension
