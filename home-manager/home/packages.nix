@@ -43,6 +43,7 @@
     impl
 
     j4-dmenu-desktop
+    joplin-desktop
 
     kondo
 
