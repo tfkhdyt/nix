@@ -38,6 +38,7 @@
     handbrake
     # haskell-language-server
     hyperfine
+    hyprpicker
 
     imagemagick
     impl
