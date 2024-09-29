@@ -134,7 +134,10 @@
         repeat_rate = 63;
         follow_mouse = 1;
         accel_profile = "flat";
-        sensitivity = -0.2;
+        sensitivity = 0;
+      };
+      gestures = {
+        workspace_swipe = true;
       };
       device = [
         {
