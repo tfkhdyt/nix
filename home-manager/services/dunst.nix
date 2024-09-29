@@ -39,16 +39,16 @@
         hide_duplicate_count = false;
         show_indicators = "yes";
       };
-      # urgency_low = {
-      #   background = "#1e1e2e";
-      #   foreground = "#cdd6f4";
-      #   highlight = "#cdd6f4";
-      # };
-      # urgency_normal = {
-      #   background = "#1e1e2e";
-      #   foreground = "#cdd6f4";
-      #   highlight = "#cdd6f4";
-      # };
+      urgency_low = {
+        #   background = "#1e1e2e";
+        #   foreground = "#cdd6f4";
+        highlight = "#89B4FA";
+      };
+      urgency_normal = {
+        #   background = "#1e1e2e";
+        #   foreground = "#cdd6f4";
+        highlight = "#89B4FA";
+      };
       # urgency_critical = {
       #   background = "#1e1e2e";
       #   foreground = "#cdd6f4";
