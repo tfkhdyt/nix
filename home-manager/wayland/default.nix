@@ -58,7 +58,7 @@
           "$mainMod SHIFT, down, movewindow, d"
           "$mainMod, mouse_down, workspace, e+1"
           "$mainMod, mouse_up, workspace, e-1"
-          "$mainMod, F, fullscreen, 1"
+          "$mainMod, F, fullscreen"
           ", xf86audiomicmute, exec, $scriptDir/mic.sh"
           ", xf86audioraisevolume, exec, $scriptDir/volume.sh up"
           ", xf86audiolowervolume, exec, $scriptDir/volume.sh down"
