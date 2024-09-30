@@ -7,7 +7,7 @@
     dconf.enable = true;
     starship.enable = true;
     nm-applet.enable = true;
-    steam.enable = false;
+    steam.enable = true;
     adb.enable = true;
     zsh.enable = true;
     evince.enable = false;
