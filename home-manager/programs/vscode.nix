@@ -70,7 +70,7 @@
         "svelte"
       ];
       "prettier.jsxSingleQuote" = true;
-      "svelte.enable-ts-plugin" = false;
+      "svelte.enable-ts-plugin" = true;
       "git.openRepositoryInParentFolders" = "always";
       "git.confirmSync" = false;
       "git.autofetch" = true;
@@ -91,8 +91,7 @@
         "editor.defaultFormatter" = "esbenp.prettier-vscode";
       };
       "[svelte]" = {
-        # "editor.defaultFormatter" = "svelte.svelte-vscode";
-        "editor.defaultFormatter" = "esbenp.prettier-vscode";
+        "editor.defaultFormatter" = "svelte.svelte-vscode";
       };
       "[markdown]" = {
         "editor.defaultFormatter" = "esbenp.prettier-vscode";
