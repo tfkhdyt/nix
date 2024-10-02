@@ -156,7 +156,7 @@
       "editor.guides.bracketPairsHorizontal" = false;
       "java.compile.nullAnalysis.mode" = "automatic";
       "prettier.requireConfig" = true;
-      "eslint.run" = "onSave";
+      # "eslint.run" = "onSave";
       "eslint.problems.shortenToSingleLine" = true;
       "workbench.editor.showTabs" = "single";
       "workbench.tree.indent" = 16;
@@ -164,7 +164,7 @@
       "breadcrumbs.enabled" = false;
       "breadcrumbs.symbolPath" = "off";
       "breadcrumbs.filePath" = "on";
-      "editor.guides.indentation" = false;
+      # "editor.guides.indentation" = false;
       "editor.stickyScroll.enabled" = true;
       "typescript.suggest.completeFunctionCalls" = true;
       "javascript.suggest.completeFunctionCalls" = true;
