@@ -11,5 +11,6 @@
     adb.enable = true;
     zsh.enable = true;
     evince.enable = false;
+    gamescope.enable = true;
   };
 }
