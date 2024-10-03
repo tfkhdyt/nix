@@ -13,5 +13,9 @@
     fwupd.enable = true;
     httpd.enable = true;
     tumbler.enable = true;
+    earlyoom = {
+      enable = true;
+      enableNotifications = true;
+    };
   };
 }
