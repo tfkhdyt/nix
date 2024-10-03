@@ -70,6 +70,7 @@
     prettierd
 
     scc
+    scrcpy
     shc
     slack
     speedtest-cli
