@@ -1,5 +1,5 @@
 let
-  lockCmd = "pgrep hyprlock || hyprlock";
+  lockCmd = "hyprlock";
 in
 {
   enable = true;
