@@ -55,7 +55,10 @@
               {
                 nixpkgs.overlays = [ inputs.rust-overlay.overlays.default ];
                 environment.systemPackages = [
-                  pkgs.rust-bin.stable.latest.default
+                  (pkgs.rust-bin.stable.latest.default.override {
+                    extensions = [ "rust-src" ];
+                  })
+
                   # inputs.zen-browser.packages."${system}".default
                 ];
               }
