@@ -215,6 +215,7 @@
       catppuccin.catppuccin-vsc-icons
       vmware.vscode-spring-boot
       vscjava.vscode-spring-boot-dashboard
+      rust-lang.rust-analyzer
     ];
   };
 }
