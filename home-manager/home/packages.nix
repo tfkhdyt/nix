@@ -8,6 +8,7 @@
     bemenu
     brave
 
+    cargo-watch
     cloudflared
 
     dbmate
@@ -71,6 +72,7 @@
 
     scc
     scrcpy
+    sea-orm-cli
     shc
     slack
     speedtest-cli
