@@ -188,7 +188,7 @@
       bradlc.vscode-tailwindcss
       meganrogge.template-string-converter
       rangav.vscode-thunder-client
-      wakatime.vscode-wakatime
+      # wakatime.vscode-wakatime
       redhat.vscode-yaml
       tamasfe.even-better-toml
       moalamri.inline-fold

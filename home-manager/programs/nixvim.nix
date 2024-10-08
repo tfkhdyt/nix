@@ -472,7 +472,7 @@
         settings.auto_close = true;
       };
       ts-autotag.enable = true;
-      wakatime.enable = true;
+      wakatime.enable = false;
       flash.enable = true;
       twilight.enable = true;
       indent-blankline = {
