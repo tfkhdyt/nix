@@ -51,6 +51,7 @@
 
     lazydocker
     lefthook
+    localsend
     lutris
 
     maven
