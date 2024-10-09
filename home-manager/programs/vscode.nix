@@ -155,7 +155,6 @@
       "workbench.activityBar.location" = "top";
       "editor.guides.bracketPairsHorizontal" = false;
       "java.compile.nullAnalysis.mode" = "automatic";
-      "prettier.requireConfig" = true;
       # "eslint.run" = "onSave";
       "eslint.problems.shortenToSingleLine" = true;
       "workbench.editor.showTabs" = "single";
