@@ -14,7 +14,7 @@
       "editor.fontLigatures" = true;
       "editor.wordWrap" = "on";
       "editor.wrappingIndent" = "indent";
-      "editor.formatOnSave" = true;
+      "editor.formatOnSave" = false;
       "editor.tabSize" = 2;
       "editor.mouseWheelScrollSensitivity" = 2;
       "editor.cursorSmoothCaretAnimation" = "on";
