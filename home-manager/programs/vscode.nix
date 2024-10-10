@@ -14,7 +14,8 @@
       "editor.fontLigatures" = true;
       "editor.wordWrap" = "on";
       "editor.wrappingIndent" = "indent";
-      "editor.formatOnSave" = false;
+      "editor.formatOnSave" = true;
+      # "editor.formatOnSaveMode" = "modificationsIfAvailable";
       "editor.tabSize" = 2;
       "editor.mouseWheelScrollSensitivity" = 2;
       "editor.cursorSmoothCaretAnimation" = "on";
@@ -215,6 +216,13 @@
       vmware.vscode-spring-boot
       vscjava.vscode-spring-boot-dashboard
       rust-lang.rust-analyzer
+    ];
+    keybindings = [
+      {
+        "key" = "alt+f";
+        "command" = "editor.action.formatDocument";
+        "when" = "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor";
+      }
     ];
   };
 }
