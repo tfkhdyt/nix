@@ -13,6 +13,7 @@
 
     dbmate
     discord
+    distrobox
     duckstation
 
     erlang
