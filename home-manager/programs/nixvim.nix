@@ -238,9 +238,9 @@
               gopls.semanticTokens = true;
             };
           };
-          nil-ls.enable = true;
-          ts-ls.enable = true;
-          emmet-ls = {
+          nil_ls.enable = true;
+          ts_ls.enable = true;
+          emmet_ls = {
             enable = true;
             filetypes = [ "html" ];
           };
@@ -269,7 +269,7 @@
               "html"
             ];
           };
-          jdt-language-server.enable = true;
+          jdtls.enable = true;
           # java-language-server.enable = true;
         };
       };
