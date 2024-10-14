@@ -3,7 +3,7 @@
   home.packages = with pkgs; [
     audacity
 
-    # beekeeper-studio
+    beekeeper-studio
     bc
     bemenu
     brave
