@@ -22,6 +22,7 @@
     go = import ./go.nix;
     kitty = import ./kitty.nix;
     firefox = import ./firefox.nix;
+    ssh = import ./ssh.nix;
 
     home-manager.enable = true;
     fastfetch.enable = true;
