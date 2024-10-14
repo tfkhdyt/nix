@@ -216,6 +216,7 @@
       vmware.vscode-spring-boot
       vscjava.vscode-spring-boot-dashboard
       rust-lang.rust-analyzer
+      alefragnani.project-manager
     ];
     keybindings = [
       {
