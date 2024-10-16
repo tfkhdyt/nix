@@ -134,7 +134,7 @@
         repeat_rate = 63;
         follow_mouse = 1;
         accel_profile = "flat";
-        sensitivity = 0;
+        sensitivity = -0.2;
       };
       gestures = {
         workspace_swipe = true;
@@ -187,7 +187,8 @@
       windowrulev2 = [
         "float,title:(Authentication Required|Picture-in-Picture)"
         "pin,title:(Authentication Required|Picture-in-Picture)"
-        "float,title:^(Open Files?|All Files|Open Folder|Install from VSIX|Bitwarden)$"
+        "float,title:^(Open Files?|All Files|Open Folder|Install from VSIX)$"
+        "float,title:(Bitwarden),class:(brave-nngceckbapebfimnlniiiahkandclblb-Default)"
       ];
       debug.disable_logs = true;
       env = [
