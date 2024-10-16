@@ -62,7 +62,7 @@
     nixfmt-rfc-style
     nodejs_22
 
-    oha
+    # oha
 
     pcsx2
     pdftk
@@ -90,6 +90,7 @@
     watchexec
     wf-recorder
     wl-screenrec
+    wrk
 
     xfce.ristretto
     xh
