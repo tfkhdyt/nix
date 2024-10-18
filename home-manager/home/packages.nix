@@ -16,13 +16,10 @@
     distrobox
     duckstation
 
-    erlang
-
     ffmpeg-full
     file-roller
 
     genact
-    ghc
     gimp
     # gleam
     gnumake
