@@ -12,6 +12,7 @@
     cloudflared
 
     dbmate
+    deno
     discord
     distrobox
     duckstation
