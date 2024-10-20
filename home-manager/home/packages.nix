@@ -12,7 +12,6 @@
     cloudflared
 
     dbmate
-    deno
     discord
     distrobox
     duckstation
@@ -20,6 +19,7 @@
     ffmpeg-full
     file-roller
 
+    gamemode
     genact
     gimp
     # gleam
