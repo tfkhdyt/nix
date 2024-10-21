@@ -87,6 +87,7 @@
 
     watchexec
     wf-recorder
+    winbox4
     wl-screenrec
     wrk
 
