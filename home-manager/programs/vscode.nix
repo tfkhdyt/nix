@@ -158,7 +158,7 @@
       "java.compile.nullAnalysis.mode" = "automatic";
       # "eslint.run" = "onSave";
       "eslint.problems.shortenToSingleLine" = true;
-      "workbench.editor.showTabs" = "single";
+      # "workbench.editor.showTabs" = "single";
       "workbench.tree.indent" = 16;
       "workbench.editor.empty.hint" = "hidden";
       "breadcrumbs.enabled" = false;
