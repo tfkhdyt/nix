@@ -7,6 +7,8 @@
       "networkmanager"
       "wheel"
       "adbusers"
+      "scanner"
+      "lp"
     ];
     shell = pkgs.zsh;
   };

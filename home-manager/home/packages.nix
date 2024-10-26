@@ -21,8 +21,8 @@
 
     gamemode
     genact
+    ghostscript
     gimp
-    # gleam
     gnumake
     gobang
     gofumpt
@@ -36,7 +36,6 @@
     grimblast
 
     handbrake
-    # haskell-language-server
     hyperfine
     hyprpicker
 
@@ -67,6 +66,7 @@
     pm2
     pnpm
     pocketbase
+    poppler_utils
     postman
     prettierd
 
@@ -74,6 +74,7 @@
     scrcpy
     sea-orm-cli
     shc
+    simple-scan
     slack
     speedtest-cli
     syncthing

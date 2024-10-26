@@ -16,5 +16,9 @@
     pulseaudio.enable = false;
     bluetooth.enable = true;
     bluetooth.powerOnBoot = true;
+    sane = {
+      enable = true;
+      extraBackends = [ pkgs.hplipWithPlugin ];
+    };
   };
 }
