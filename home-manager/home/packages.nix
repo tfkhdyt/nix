@@ -31,6 +31,7 @@
     golines
     gomodifytags
     gopls
+    gowall
     go-tools
     gping
     grimblast
