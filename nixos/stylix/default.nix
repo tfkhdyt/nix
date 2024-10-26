@@ -2,7 +2,7 @@
 {
   stylix = {
     enable = true;
-    image = ../../wallpapers/dandadan-1080p.png;
+    image = ../../wallpapers/nixos-wallpaper-catppuccin-mocha.png;
     base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
     fonts = {
       sizes = {
