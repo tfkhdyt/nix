@@ -709,15 +709,15 @@
         "nixpkgs": "nixpkgs_3"
       },
       "locked": {
-        "lastModified": 1729903226,
-        "narHash": "sha256-osT3czlWUsRQq0Tz2HCGcQqJ1bwuLtpp8Fmb2qNJPLo=",
-        "owner": "youwen5",
+        "lastModified": 1730049238,
+        "narHash": "sha256-fnaS18y+s2FVjblomGAb74fPFI/2KOJELFzfUk1QHpw=",
+        "owner": "omarcresp",
         "repo": "zen-browser-flake",
-        "rev": "a673e3204ab425bd427bd5b6e310fd89e9b682f7",
+        "rev": "41e0f5c32b78489f2bbc60fd138ad1666e826c6f",
         "type": "github"
       },
       "original": {
-        "owner": "youwen5",
+        "owner": "omarcresp",
         "repo": "zen-browser-flake",
         "type": "github"
       }
