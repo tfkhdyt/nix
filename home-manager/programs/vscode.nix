@@ -28,6 +28,9 @@
       "editor.codeActionsOnSave" = {
         "source.fixAll" = "always";
         "source.organizeImports" = "always";
+        "source.addMissingImports" = "always";
+        "source.removeUnusedImports" = "always";
+        "source.sortImports" = "always";
       };
       # "editor.detectIndentation" = false;
       "go.inlayHints.assignVariableTypes" = true;
