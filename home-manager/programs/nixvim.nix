@@ -566,7 +566,7 @@
       notify.enable = false;
       noice = {
         enable = true;
-        routes = [
+        settings.routes = [
           {
             filter = {
               event = "notify";
