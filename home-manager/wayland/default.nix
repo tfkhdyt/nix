@@ -189,6 +189,7 @@
         "pin,title:(Authentication Required|Picture-in-Picture)"
         "float,title:^(Open Files?|All Files|Open Folder|Install from VSIX)$"
         "float,title:(Bitwarden),class:(brave-nngceckbapebfimnlniiiahkandclblb-Default)"
+        "float,class:(xdg-desktop-portal-gtk)"
       ];
       debug.disable_logs = true;
       env = [
