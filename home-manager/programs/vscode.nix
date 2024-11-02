@@ -149,8 +149,8 @@
       "gitblame.inlineMessageFormat" = "\${author.name} (\${time.ago}) - \${commit.summary}";
       # "gleam.path" = "${pkgs.gleam}/bin/gleam";
       "workbench.sideBar.location" = "right";
-      "java.jdt.ls.java.home" = "${pkgs.graalvm-ce.home}";
-      "spring-boot.ls.java.home" = "${pkgs.graalvm-ce.home}";
+      # "java.jdt.ls.java.home" = "${pkgs.graalvm-ce.home}";
+      # "spring-boot.ls.java.home" = "${pkgs.graalvm-ce.home}";
       "terminal.integrated.shellIntegration.decorationsEnabled" = "never";
       # "workbench.list.smoothScrolling" = true;
       # "editor.smoothScrolling" = true;
@@ -208,19 +208,19 @@
       renesaarsoo.sql-formatter-vsc
       bmewburn.vscode-intelephense-client
       # gleam.gleam
-      redhat.java
-      vscjava.vscode-java-dependency
-      vscjava.vscode-java-debug
+      # redhat.java
+      # vscjava.vscode-java-dependency
+      # vscjava.vscode-java-debug
       ms-azuretools.vscode-docker
       chadalen.vscode-jetbrains-icon-theme
-      vscjava.vscode-maven
+      # vscjava.vscode-maven
       thoughtsdump.custom-xml-formatter
       catppuccin.catppuccin-vsc
-      vscjava.vscode-spring-initializr
-      vscjava.vscode-java-test
+      # vscjava.vscode-spring-initializr
+      # vscjava.vscode-java-test
       catppuccin.catppuccin-vsc-icons
-      vmware.vscode-spring-boot
-      vscjava.vscode-spring-boot-dashboard
+      # vmware.vscode-spring-boot
+      # vscjava.vscode-spring-boot-dashboard
       rust-lang.rust-analyzer
       alefragnani.project-manager
       myriad-dreamin.tinymist

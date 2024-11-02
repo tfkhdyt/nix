@@ -31,7 +31,7 @@
     bun.enable = true;
     obs-studio.enable = true;
     java = {
-      enable = true;
+      enable = false;
       package = pkgs.graalvm-ce;
     };
     zathura.enable = true;

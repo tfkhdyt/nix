@@ -585,16 +585,16 @@
         ];
       };
       nvim-colorizer.enable = true;
-      nvim-jdtls = {
-        enable = false;
-        cmd = [
-          (lib.getExe pkgs.jdt-language-server)
-          "-data"
-          "/home/tfkhdyt/projects/java"
-          "-foo"
-          "bar"
-        ];
-      };
+      # nvim-jdtls = {
+      #   enable = false;
+      #   cmd = [
+      #     (lib.getExe pkgs.jdt-language-server)
+      #     "-data"
+      #     "/home/tfkhdyt/projects/java"
+      #     "-foo"
+      #     "bar"
+      #   ];
+      # };
       web-devicons.enable = true;
     };
     performance = {
