@@ -171,6 +171,9 @@
       "editor.stickyScroll.enabled" = true;
       "typescript.suggest.completeFunctionCalls" = true;
       "javascript.suggest.completeFunctionCalls" = true;
+      "tinymist.serverPath" = "${pkgs.tinymist}/bin/tinymist";
+      "tinymist.formatterMode" = "typstyle";
+      "tinymist.fontPaths" = [ "\${workspaceFolder}/fonts" ];
     };
     extensions = with pkgs.vscode-marketplace; [
       jripouteau.adonis-vscode-extension
@@ -220,6 +223,7 @@
       vscjava.vscode-spring-boot-dashboard
       rust-lang.rust-analyzer
       alefragnani.project-manager
+      myriad-dreamin.tinymist
     ];
     keybindings = [
       {
