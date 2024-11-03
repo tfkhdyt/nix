@@ -12,7 +12,6 @@
     cloudflared
 
     dbmate
-    discord
     distrobox
     duckstation
 
@@ -50,6 +49,7 @@
 
     lazydocker
     lefthook
+    legcord
     localsend
     lutris
 
