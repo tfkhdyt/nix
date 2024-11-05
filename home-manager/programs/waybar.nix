@@ -180,8 +180,8 @@
     }
 
     #workspaces button.active {
-      background: #89dceb;
-      color: #1e1e2e;
+      background: #45475a;
+      color: #cdd6f4;
     }
 
     #workspaces button.urgent {
