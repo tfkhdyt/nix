@@ -29,7 +29,15 @@
     aria2.enable = true;
     bottom.enable = true;
     bun.enable = true;
-    obs-studio.enable = true;
+    obs-studio = {
+      enable = true;
+      plugins = with pkgs; [
+        obs-studio-plugins.droidcam-obs
+        obs-studio-plugins.obs-gstreamer
+        obs-studio-plugins.obs-vaapi
+        obs-studio-plugins.obs-backgroundremoval
+      ];
+    };
     java = {
       enable = false;
       package = pkgs.graalvm-ce;
