@@ -90,7 +90,7 @@
     watchexec
     wf-recorder
     winbox4
-    wl-screenrec
+    # wl-screenrec # wait for fix
     wrk
 
     xfce.ristretto
