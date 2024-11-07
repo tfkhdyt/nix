@@ -31,6 +31,6 @@
 
     sd
 
-    wl-clipboard-rs
+    wl-clipboard
   ];
 }
