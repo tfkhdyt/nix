@@ -36,6 +36,7 @@
     grimblast
 
     handbrake
+    hoppscotch
     hyperfine
     hyprpicker
 
