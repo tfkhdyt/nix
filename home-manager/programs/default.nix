@@ -6,6 +6,7 @@
     ./mpv.nix
     ./vscode.nix
     ./lazygit.nix
+    ./zsh.nix
   ];
   programs = {
     git = import ./git.nix;
@@ -18,7 +19,7 @@
     alacritty = import ./alacritty.nix;
     waybar = import ./waybar.nix;
     hyprlock = import ./hyprlock.nix;
-    zsh = import ./zsh.nix;
+    # zsh = import ./zsh.nix;
     go = import ./go.nix;
     kitty = import ./kitty.nix;
     firefox = import ./firefox.nix;
