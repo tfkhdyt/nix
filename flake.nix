@@ -21,7 +21,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    stylix.url = "github:danth/stylix?rev=04afcfc0684d9bbb24bb1dc77afda7c1843ec93b";
+    stylix.url = "github:danth/stylix";
 
     nix-vscode-extensions = {
       url = "github:nix-community/nix-vscode-extensions";
