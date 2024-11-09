@@ -11,5 +11,6 @@
       "${pkgs.gtk3}/share/gsettings-schemas/${pkgs.gtk3.name}"
     ];
     PATH = "$PATH:/home/tfkhdyt/.cargo/bin";
+    PKG_CONFIG_PATH = "${pkgs.openssl.dev}/lib/pkgconfig";
   };
 }
