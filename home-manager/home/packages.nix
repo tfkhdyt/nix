@@ -65,12 +65,14 @@
 
     pcsx2
     pdftk
+    pipes
     pm2
     pnpm
     pocketbase
     poppler_utils
     postman
     prettierd
+    protonup-qt
 
     scc
     scrcpy
