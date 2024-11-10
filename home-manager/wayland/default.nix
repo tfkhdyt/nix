@@ -1,3 +1,4 @@
+{ pkgs, ... }:
 {
   wayland.windowManager.hyprland = {
     enable = true;
@@ -9,6 +10,10 @@
       ];
     };
     xwayland.enable = true;
+    plugins = with pkgs; [
+      hyprlandPlugins.hyprspace
+      hyprlandPlugins.hypr-dynamic-cursors
+    ];
     settings = {
       animations = {
         enabled = true;
@@ -89,6 +94,7 @@
           "$mainMod SHIFT, S, movetoworkspace, special:magic"
           "$mainMod, comma, movecurrentworkspacetomonitor, -1"
           "$mainMod, period, movecurrentworkspacetomonitor, +1"
+          "$mainMod, grave, overview:toggle"
         ]
         ++ (
           # workspaces
@@ -201,6 +207,14 @@
         "QT_QPA_PLATFORM,wayland;xcb"
         "QT_WAYLAND_DISABLE_WINDOWDECORATION,1"
       ];
+      plugin = {
+        dynamic-cursors = {
+          mode = "tilt";
+          shake.nearest = false;
+          timeout = 1000;
+          limit = 1.0;
+        };
+      };
     };
     extraConfig = ''
       # submap
