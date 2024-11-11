@@ -239,7 +239,10 @@
             };
           };
           nil_ls.enable = true;
-          ts_ls.enable = true;
+          vtsls = {
+            enable = true;
+            package = null;
+          };
           emmet_ls = {
             enable = true;
             filetypes = [ "html" ];
