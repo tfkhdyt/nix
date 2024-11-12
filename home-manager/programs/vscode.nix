@@ -9,6 +9,7 @@
       "editor.fontSize" = 16;
       "editor.minimap.autohide" = true;
       "editor.minimap.renderCharacters" = false;
+      "editor.inlayHints.enabled" = false;
       "editor.inlayHints.fontSize" = 12;
       "editor.inlayHints.padding" = true;
       "editor.fontLigatures" = true;
@@ -25,13 +26,13 @@
       "editor.quickSuggestionsDelay" = 300;
       "editor.linkedEditing" = true;
       "editor.fontFamily" = "'JetBrainsMono NFP', 'Droid Sans Mono', 'monospace', monospace";
-      "editor.codeActionsOnSave" = {
-        "source.fixAll" = "always";
-        "source.organizeImports" = "always";
-        "source.addMissingImports" = "always";
-        "source.removeUnusedImports" = "always";
-        "source.sortImports" = "always";
-      };
+      # "editor.codeActionsOnSave" = {
+      #   "source.fixAll" = "always";
+      #   "source.organizeImports" = "always";
+      #   "source.addMissingImports" = "always";
+      #   "source.removeUnusedImports" = "always";
+      #   "source.sortImports" = "always";
+      # };
       # "editor.detectIndentation" = false;
       "go.inlayHints.assignVariableTypes" = true;
       "go.inlayHints.constantValues" = true;
@@ -230,6 +231,10 @@
         "key" = "alt+f";
         "command" = "editor.action.formatDocument";
         "when" = "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor";
+      }
+      {
+        "key" = "ctrl+shift+a";
+        "command" = "editor.action.sourceAction";
       }
     ];
   };
