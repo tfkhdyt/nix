@@ -1,4 +1,4 @@
-{ pkgs, lib, ... }:
+{ pkgs, ... }:
 {
   programs.nixvim = {
     enable = true;
@@ -239,10 +239,7 @@
             };
           };
           nil_ls.enable = true;
-          vtsls = {
-            enable = true;
-            package = null;
-          };
+          ts_ls.enable = true;
           emmet_ls = {
             enable = true;
             filetypes = [ "html" ];
@@ -355,35 +352,6 @@
             # { name = "buffer"; }
             # { name = "luasnip"; }
           ];
-          formatting = {
-            fields = [
-              "kind"
-              "abbr"
-              "menu"
-            ];
-            format = lib.mkForce ''
-              require('lspkind').cmp_format({
-                mode = 'symbol',
-                before = function(entry, item)
-                  local content = item.abbr
-                  local ELLIPSIS_CHAR = '…'
-                  local MAX_LABEL_WIDTH = 25
-                  local MAX_KIND_WIDTH = 14
-                  local get_ws = function (max, len)
-                    return (" "):rep(max - len)
-                  end
-
-                  if #content > MAX_LABEL_WIDTH then
-                    item.abbr = vim.fn.strcharpart(content, 0, MAX_LABEL_WIDTH) .. ELLIPSIS_CHAR
-                  else 
-                    item.abbr = content .. get_ws(MAX_LABEL_WIDTH, #content)
-                  end
-
-                  return item
-                end
-              })
-            '';
-          };
           mapping = {
             "<C-Space>" = "cmp.mapping.complete()";
             "<C-d>" = "cmp.mapping.scroll_docs(-4)";
