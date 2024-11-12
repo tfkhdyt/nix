@@ -101,6 +101,7 @@
       "hyprland/window" = {
         format = "{title}";
         icon = true;
+        icon-size = 20;
         separate-outputs = true;
       };
       cpu = {
@@ -132,26 +133,15 @@
       font-family: 'JetBrainsMono NFP';
       font-weight: 600;
       font-size: 15px;
-      min-height: 10px;
     }
 
     window#waybar {
       background: transparent;
+      padding-bottom: 5px;  /* Ensure there's room for shadows */
     }
 
     window#waybar.hidden {
       opacity: 0.2;
-    }
-
-    #window {
-      margin-top: 6px;
-      margin-left: 8px;
-      padding-left: 10px;
-      padding-right: 10px;
-      border-radius: 10px;
-      transition: none;
-      color: #cdd6f4;
-      background-color: #1e1e2e;
     }
 
     tooltip {
@@ -162,36 +152,35 @@
     }
 
     #workspaces {
-      padding: 0;
-      margin-top: 6px;
-      margin-left: 8px;
-      font-size: 4px;
-      margin-bottom: 0px;
-      background: #1e1e2e;
+        padding: 0;
+        margin: 6px 8px 6px 8px;  /* Match the other widgets' margins */
+        background: transparent;   /* Remove background since buttons have their own */
     }
 
     #workspaces button {
-      background: #1e1e2e;
-      color: #cdd6f4;
-      font-size: 16px;
-      border-radius: 10px;
-      padding-left: 10px;
-      padding-right: 10px;
+        background: #94e2d5;      /* Match the other widgets' background */
+        color: #1e1e2e;          /* Match the other widgets' text color */
+        font-size: 16px;
+        border-radius: 5px;      /* Match the other widgets' border-radius */
+        padding: 5px 10px;       /* Match the other widgets' padding */
+        margin: 0 4px;           /* Add some space between workspace buttons */
+        box-shadow: 5px 5px #1e1e2e;  /* Match the other widgets' shadow */
+        border: none;
     }
 
     #workspaces button.active {
-      background: #45475a;
-      color: #cdd6f4;
+        background: #76b5aa;     /* Use the darker version for active */
+        color: #1e1e2e;
     }
 
     #workspaces button.urgent {
-      background-color: #f38ba8;
-      color: #1e1e2e;
+        background: #f38ba8;     /* Keep the urgent color */
+        color: #1e1e2e;
     }
 
     #workspaces button:hover {
-      background-color: #b4befe;
-      color: #1e1e2e;
+        background: #76b5aa;     /* Match the other widgets' hover state */
+        color: #1e1e2e;
     }
 
     #cpu {
@@ -218,35 +207,58 @@
       background: #BFE2FF;
     }
 
-    #idle_inhibitor {
-      font-size: 24px;
-      margin-top: 6px;
-      margin-left: 8px;
+    #tray {
+      margin: 6px 8px 6px 8px;  /* Consistent margins all around */
       padding-left: 10px;
       padding-right: 10px;
-      border-radius: 10px;
-      transition: none;
-      color: #cdd6f4;
-      background: #1e1e2e;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 5px 5px #1e1e2e;
+      background: #76b5aa;
     }
 
+    #idle_inhibitor {
+      margin: 6px 8px 6px 8px;  /* Consistent margins all around */
+      padding-left: 5px;
+      padding-right: 5px;
+      border: none;
+      color: #1e1e2e;
+      border-radius: 5px;
+      box-shadow: 5px 5px #1e1e2e;
+      background: #94e2d5;
+    }
+
+    #window,
+    #idle_inhibitor,
+    #clock,
+    #network,
+    #backlight,
+    #wireplumber,
     #battery {
-      margin-top: 6px;
-      margin-left: 8px;
-      margin-right: 8px;
+      margin: 6px 8px 6px 8px;  /* Consistent margins all around */
       padding-left: 10px;
       padding-right: 10px;
-      margin-bottom: 0px;
-      border-radius: 10px;
-      transition: none;
+      border: none;
       color: #1e1e2e;
-      background: #a6e3a1;
+      border-radius: 5px;
+      box-shadow: 5px 5px #1e1e2e;
+      background: #94e2d5;
+    }
+
+    #window:hover,
+    #idle_inhibitor:hover,
+    #clock:hover,
+    #network:hover,
+    #backlight:hover,
+    #wireplumber:hover,
+    #battery:hover {
+      background: #76b5aa;
     }
 
     #battery.charging,
     #battery.plugged {
       color: #1e1e2e;
-      background: #f9e2af;
+      background: #94e2d5;
     }
 
     #battery.critical:not(.charging) {
@@ -264,66 +276,6 @@
         background-color: #1e1e2e;
         color: #eba0ac;
       }
-    }
-
-    #wireplumber {
-      margin-top: 6px;
-      margin-left: 8px;
-      padding-left: 10px;
-      padding-right: 10px;
-      margin-bottom: 0px;
-      border-radius: 10px;
-      transition: none;
-      color: #1e1e2e;
-      background: #74c7ec;
-    }
-
-    #backlight {
-      margin-top: 6px;
-      margin-left: 8px;
-      padding-left: 10px;
-      padding-right: 10px;
-      margin-bottom: 0px;
-      border-radius: 10px;
-      transition: none;
-      color: #1e1e2e;
-      background: #fab387;
-    }
-
-    #network {
-      margin-top: 6px;
-      margin-left: 8px;
-      padding-left: 10px;
-      padding-right: 10px;
-      margin-bottom: 0px;
-      border-radius: 10px;
-      transition: none;
-      color: #1e1e2e;
-      background: #94e2d5;
-    }
-
-    #tray {
-      margin-top: 6px;
-      margin-left: 8px;
-      padding-left: 10px;
-      margin-bottom: 0px;
-      padding-right: 10px;
-      border-radius: 10px;
-      transition: none;
-      color: #cdd6f4;
-      background: #1e1e2e;
-    }
-
-    #clock {
-      margin-top: 6px;
-      margin-left: 8px;
-      padding-left: 10px;
-      padding-right: 10px;
-      margin-bottom: 0px;
-      border-radius: 10px;
-      transition: none;
-      color: #cdd6f4;
-      background: #1e1e2e;
     }
   '';
 }
