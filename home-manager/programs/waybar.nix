@@ -207,16 +207,6 @@
       background: #BFE2FF;
     }
 
-    #tray {
-      margin: 6px 8px 6px 8px;  /* Consistent margins all around */
-      padding-left: 10px;
-      padding-right: 10px;
-      border: none;
-      border-radius: 5px;
-      box-shadow: 5px 5px #1e1e2e;
-      background: #76b5aa;
-    }
-
     #idle_inhibitor {
       margin: 6px 8px 6px 8px;  /* Consistent margins all around */
       padding-left: 5px;
@@ -228,6 +218,7 @@
       background: #94e2d5;
     }
 
+    #tray,
     #window,
     #idle_inhibitor,
     #clock,
