@@ -152,35 +152,39 @@
     }
 
     #workspaces {
-        padding: 0;
-        margin: 6px 8px 6px 8px;  /* Match the other widgets' margins */
-        background: transparent;   /* Remove background since buttons have their own */
+      padding: 0;
+      margin: 6px 8px 6px 8px;  /* Match the other widgets' margins */
+      background: transparent;   /* Remove background since buttons have their own */
     }
 
     #workspaces button {
-        background: #94e2d5;      /* Match the other widgets' background */
-        color: #1e1e2e;          /* Match the other widgets' text color */
-        font-size: 16px;
-        border-radius: 5px;      /* Match the other widgets' border-radius */
-        padding: 5px 10px;       /* Match the other widgets' padding */
-        margin: 0 4px;           /* Add some space between workspace buttons */
-        box-shadow: 5px 5px #1e1e2e;  /* Match the other widgets' shadow */
-        border: none;
+      background: #94e2d5;      /* Match the other widgets' background */
+      color: #1e1e2e;          /* Match the other widgets' text color */
+      font-size: 16px;
+      border-radius: 5px;      /* Match the other widgets' border-radius */
+      padding: 5px 10px;       /* Match the other widgets' padding */
+      margin: 0 4px;           /* Add some space between workspace buttons */
+      box-shadow: 5px 5px #1e1e2e;  /* Match the other widgets' shadow */
+      border: none;
+      transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 150ms;
     }
 
     #workspaces button.active {
-        background: #76b5aa;     /* Use the darker version for active */
-        color: #1e1e2e;
+      background: #76b5aa;     /* Use the darker version for active */
+      color: #1e1e2e;
     }
 
     #workspaces button.urgent {
-        background: #f38ba8;     /* Keep the urgent color */
-        color: #1e1e2e;
+      background: #f38ba8;     /* Keep the urgent color */
+      color: #1e1e2e;
     }
 
     #workspaces button:hover {
-        background: #76b5aa;     /* Match the other widgets' hover state */
-        color: #1e1e2e;
+      background: #76b5aa;     /* Match the other widgets' hover state */
+      color: #1e1e2e;
+      box-shadow: 3px 3px #1e1e2e;
     }
 
     #cpu {
@@ -234,6 +238,9 @@
       border-radius: 5px;
       box-shadow: 5px 5px #1e1e2e;
       background: #94e2d5;
+      transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 150ms;
     }
 
     #window:hover,
@@ -242,8 +249,11 @@
     #network:hover,
     #backlight:hover,
     #wireplumber:hover,
-    #battery:hover {
+    #battery:hover,
+    #battery.charging:hover,
+    #battery.plugged:hover {
       background: #76b5aa;
+      box-shadow: 3px 3px #1e1e2e;
     }
 
     #battery.charging,
