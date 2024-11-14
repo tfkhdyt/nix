@@ -18,7 +18,6 @@
     ffmpeg-full
     file-roller
 
-    gamemode
     genact
     ghostscript
     gimp
@@ -54,7 +53,6 @@
     localsend
     lutris
 
-    maven
     mdformat
 
     nil
@@ -77,7 +75,6 @@
     scc
     scrcpy
     sea-orm-cli
-    shc
     simple-scan
     slack
     speedtest-cli
