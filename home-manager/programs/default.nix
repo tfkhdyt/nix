@@ -24,9 +24,9 @@
     kitty = import ./kitty.nix;
     firefox = import ./firefox.nix;
     ssh = import ./ssh.nix;
+    fastfetch = import ./fastfetch.nix;
 
     home-manager.enable = true;
-    fastfetch.enable = true;
     aria2.enable = true;
     bottom.enable = true;
     bun.enable = true;
