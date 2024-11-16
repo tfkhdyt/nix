@@ -11,8 +11,7 @@
     };
     xwayland.enable = true;
     plugins = with pkgs; [
-      hyprlandPlugins.hyprspace
-      hyprlandPlugins.hypr-dynamic-cursors
+      # hyprlandPlugins.hypr-dynamic-cursors
     ];
     settings = {
       animations = {
@@ -94,7 +93,7 @@
           "$mainMod SHIFT, S, movetoworkspace, special:magic"
           "$mainMod, comma, movecurrentworkspacetomonitor, -1"
           "$mainMod, period, movecurrentworkspacetomonitor, +1"
-          "$mainMod, grave, overview:toggle"
+          # "$mainMod, grave, overview:toggle"
         ]
         ++ (
           # workspaces
@@ -123,7 +122,10 @@
       decoration = {
         rounding = 8;
         blur.enabled = false;
-        drop_shadow = false;
+        shadow = {
+          enabled = false;
+          # offset = "[2, 2]";
+        };
       };
       exec-once = [ "lxqt-policykit-agent" ];
       general = {
@@ -166,7 +168,7 @@
       dwindle = {
         pseudotile = true; # master switch for pseudotiling. Enabling is bound to mainMod + P in the keybinds section below
         preserve_split = true; # you probably want this
-        no_gaps_when_only = true;
+        # no_gaps_when_only = true;
         smart_split = false;
       };
       misc = {
@@ -189,6 +191,8 @@
         "8,monitor:eDP-1"
         "9,monitor:eDP-1"
         "10,monitor:eDP-1"
+        "w[tv1], gapsout:0, gapsin:0"
+        "f[1], gapsout:0, gapsin:0"
       ];
       windowrulev2 = [
         "float,title:(Authentication Required|Picture-in-Picture)"
@@ -196,6 +200,10 @@
         "float,title:^(Open Files?|All Files|Open Folder|Install from VSIX)$"
         "float,title:(Bitwarden),class:(brave-nngceckbapebfimnlniiiahkandclblb-Default)"
         "float,class:(xdg-desktop-portal-gtk)"
+        "bordersize 0, floating:0, onworkspace:w[tv1]"
+        "rounding 0, floating:0, onworkspace:w[tv1]"
+        "bordersize 0, floating:0, onworkspace:f[1]"
+        "rounding 0, floating:0, onworkspace:f[1]"
       ];
       debug.disable_logs = true;
       env = [
