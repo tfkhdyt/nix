@@ -7,6 +7,7 @@
     ./vscode.nix
     ./lazygit.nix
     ./zsh.nix
+    ./hyprlock.nix
   ];
   programs = {
     git = import ./git.nix;
@@ -18,7 +19,7 @@
     zoxide = import ./zoxide.nix;
     alacritty = import ./alacritty.nix;
     waybar = import ./waybar.nix;
-    hyprlock = import ./hyprlock.nix;
+    # hyprlock = import ./hyprlock.nix;
     # zsh = import ./zsh.nix;
     go = import ./go.nix;
     kitty = import ./kitty.nix;
