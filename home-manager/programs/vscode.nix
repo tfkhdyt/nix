@@ -104,6 +104,9 @@
       "[css]" = {
         "editor.defaultFormatter" = "esbenp.prettier-vscode";
       };
+      "[html]" = {
+        "editor.defaultFormatter" = "esbenp.prettier-vscode";
+      };
       # "[go]" = {
       #   "editor.tabSize" = 4;
       # };
@@ -225,6 +228,7 @@
       rust-lang.rust-analyzer
       alefragnani.project-manager
       myriad-dreamin.tinymist
+      sebsojeda.vscode-svx
     ];
     keybindings = [
       {
