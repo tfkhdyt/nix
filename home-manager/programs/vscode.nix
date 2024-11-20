@@ -26,13 +26,13 @@
       "editor.quickSuggestionsDelay" = 300;
       "editor.linkedEditing" = true;
       "editor.fontFamily" = "'JetBrainsMono NFP', 'Droid Sans Mono', 'monospace', monospace";
-      # "editor.codeActionsOnSave" = {
-      #   "source.fixAll" = "always";
-      #   "source.organizeImports" = "always";
-      #   "source.addMissingImports" = "always";
-      #   "source.removeUnusedImports" = "always";
-      #   "source.sortImports" = "always";
-      # };
+      "editor.codeActionsOnSave" = {
+        "source.fixAll" = "always";
+        "source.organizeImports" = "always";
+        "source.addMissingImports" = "always";
+        # "source.removeUnusedImports" = "always";
+        # "source.sortImports" = "always";
+      };
       # "editor.detectIndentation" = false;
       "go.inlayHints.assignVariableTypes" = true;
       "go.inlayHints.constantValues" = true;
