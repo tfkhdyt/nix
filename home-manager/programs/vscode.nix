@@ -28,7 +28,7 @@
       "editor.fontFamily" = "'JetBrainsMono NFP', 'Droid Sans Mono', 'monospace', monospace";
       "editor.codeActionsOnSave" = {
         "source.fixAll" = "always";
-        "source.organizeImports" = "always";
+        # "source.organizeImports" = "always";
         "source.addMissingImports" = "always";
         # "source.removeUnusedImports" = "always";
         # "source.sortImports" = "always";
