@@ -239,7 +239,7 @@
             };
           };
           nil_ls.enable = true;
-          ts_ls.enable = true;
+          ts_ls.enable = false;
           emmet_ls = {
             enable = true;
             filetypes = [ "html" ];
@@ -568,6 +568,23 @@
       # };
       web-devicons.enable = true;
     };
+
+    # config dari r17x
+    plugins.typescript-tools.enable = true;
+    plugins.typescript-tools.settings.code_lens = "references_only";
+    plugins.typescript-tools.settings.complete_function_calls = true;
+    plugins.typescript-tools.settings.expose_as_code_action = "all";
+    plugins.typescript-tools.settings.handlers = {
+      "textDocument/publishDiagnostics" =
+        # lua
+        ''
+          require("typescript-tools.api").filter_diagnostics(
+            -- Ignore 'This may be converted to an async function' diagnostics.
+            { 80006 }
+          )
+        '';
+    };
+
     performance = {
       combinePlugins = {
         enable = true;
