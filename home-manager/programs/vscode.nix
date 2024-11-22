@@ -29,7 +29,7 @@
       "editor.codeActionsOnSave" = {
         "source.fixAll" = "always";
         # "source.organizeImports" = "always";
-        "source.addMissingImports" = "always";
+        # "source.addMissingImports" = "always";
         # "source.removeUnusedImports" = "always";
         # "source.sortImports" = "always";
       };
@@ -178,6 +178,8 @@
       "tinymist.serverPath" = "${pkgs.tinymist}/bin/tinymist";
       "tinymist.formatterMode" = "typstyle";
       "tinymist.fontPaths" = [ "\${workspaceFolder}/fonts" ];
+      "window.titleBarStyle" = "custom";
+      "window.dialogStyle" = "custom";
     };
     extensions = with pkgs.vscode-marketplace; [
       jripouteau.adonis-vscode-extension
