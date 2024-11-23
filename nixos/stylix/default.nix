@@ -24,11 +24,11 @@
           pkgs.nerdfonts.override {
             fonts = [
               "JetBrainsMono"
-              "RobotoMono"
+              "GeistMono"
             ];
           }
         );
-        name = "JetBrainsMono NF";
+        name = "GeistMono NF";
       };
       emoji = {
         package = pkgs.noto-fonts-emoji;

@@ -25,7 +25,7 @@
       };
       "editor.quickSuggestionsDelay" = 300;
       "editor.linkedEditing" = true;
-      "editor.fontFamily" = "'JetBrainsMono NFP', 'Droid Sans Mono', 'monospace', monospace";
+      "editor.fontFamily" = "'GeistMono NF', 'JetBrainsMono NFP', 'Droid Sans Mono', 'monospace', monospace";
       "editor.codeActionsOnSave" = {
         "source.fixAll" = "always";
         # "source.organizeImports" = "always";

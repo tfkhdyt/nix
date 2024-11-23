@@ -32,7 +32,7 @@
       };
       backlight = {
         device = "intel_backlight";
-        format = "{icon} {percent}%";
+        format = "{icon}  {percent}%";
         format-icons = [
           "󰃞"
           "󰃟"
@@ -49,8 +49,8 @@
           critical = 20;
         };
         format = "{icon} {capacity}%";
-        format-charging = " {capacity}%";
-        format-plugged = " {capacity}%";
+        format-charging = "  {capacity}%";
+        format-plugged = "  {capacity}%";
         format-alt = "{time} {icon}";
         format-icons = [
           "󰂎"
@@ -67,7 +67,7 @@
         ];
       };
       clock = {
-        format = "󰃭 {:%a, %e %b  %H:%M}";
+        format = "󰃭  {:%a, %e %b   %H:%M}";
         tooltip-format = "<tt><small>{calendar}</small></tt>";
         calendar = {
           mode = "month";
@@ -83,7 +83,7 @@
         };
       };
       network = {
-        format-wifi = "󰖩 {signalStrength}%";
+        format-wifi = "   {signalStrength}%";
         format-ethernet = " {signalStrength}%";
         format-linked = "{ifname} (No IP) ";
         format-disconnected = "󰖪  Disconnected";
@@ -116,12 +116,12 @@
       };
       wireplumber = {
         format = "{icon} {volume}%";
-        format-muted = " Muted";
+        format-muted = "  Muted";
         on-click = "pwvucontrol";
         format-icons = [
-          ""
-          ""
-          ""
+          "󰕿"
+          "󰖀"
+          "󰕾"
         ];
       };
     };
@@ -130,8 +130,8 @@
     * {
       border: none;
       border-radius: 10;
-      font-family: 'JetBrainsMono NFP';
-      font-weight: 600;
+      font-family: 'GeistMono NFP';
+      font-weight: 500;
       font-size: 15px;
     }
 
@@ -158,7 +158,7 @@
     }
 
     #workspaces button {
-      background: #94e2d5;      /* Match the other widgets' background */
+      background: #fab387;      /* Match the other widgets' background */
       color: #1e1e2e;          /* Match the other widgets' text color */
       font-size: 16px;
       border-radius: 5px;      /* Match the other widgets' border-radius */
@@ -172,8 +172,9 @@
     }
 
     #workspaces button.active {
-      background: #76b5aa;     /* Use the darker version for active */
+      background: #e5966d;     /* Use the darker version for active */
       color: #1e1e2e;
+      box-shadow: 3px 3px #1e1e2e;
     }
 
     #workspaces button.urgent {
@@ -182,7 +183,7 @@
     }
 
     #workspaces button:hover {
-      background: #76b5aa;     /* Match the other widgets' hover state */
+      background: #e5966d;     /* Match the other widgets' hover state */
       color: #1e1e2e;
       box-shadow: 3px 3px #1e1e2e;
     }
@@ -219,7 +220,7 @@
       color: #1e1e2e;
       border-radius: 5px;
       box-shadow: 5px 5px #1e1e2e;
-      background: #94e2d5;
+      background: #fab387;
     }
 
     #tray,
@@ -237,7 +238,7 @@
       color: #1e1e2e;
       border-radius: 5px;
       box-shadow: 5px 5px #1e1e2e;
-      background: #94e2d5;
+      background: #fab387;
       transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
       transition-duration: 150ms;
@@ -252,14 +253,14 @@
     #battery:hover,
     #battery.charging:hover,
     #battery.plugged:hover {
-      background: #76b5aa;
+      background: #e5966d;
       box-shadow: 3px 3px #1e1e2e;
     }
 
     #battery.charging,
     #battery.plugged {
       color: #1e1e2e;
-      background: #94e2d5;
+      background: #fab387;
     }
 
     #battery.critical:not(.charging) {
