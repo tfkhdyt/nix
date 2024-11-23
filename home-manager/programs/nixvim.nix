@@ -591,7 +591,7 @@
         standalonePlugins = [ "nvim-treesitter-textobjects" ];
       };
       byteCompileLua = {
-        enable = true;
+        enable = false;
         nvimRuntime = true;
         plugins = false;
       };
