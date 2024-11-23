@@ -32,7 +32,7 @@
       };
       backlight = {
         device = "intel_backlight";
-        format = "{icon}  {percent}%";
+        format = "{icon} {percent}%";
         format-icons = [
           "󰃞"
           "󰃟"
@@ -49,8 +49,8 @@
           critical = 20;
         };
         format = "{icon} {capacity}%";
-        format-charging = "  {capacity}%";
-        format-plugged = "  {capacity}%";
+        format-charging = " {capacity}%";
+        format-plugged = " {capacity}%";
         format-alt = "{time} {icon}";
         format-icons = [
           "󰂎"
@@ -67,7 +67,7 @@
         ];
       };
       clock = {
-        format = "󰃭  {:%a, %e %b   %H:%M}";
+        format = "󰃭 {:%a, %e %b  %H:%M}";
         tooltip-format = "<tt><small>{calendar}</small></tt>";
         calendar = {
           mode = "month";
@@ -83,7 +83,7 @@
         };
       };
       network = {
-        format-wifi = "   {signalStrength}%";
+        format-wifi = "󰖩 {signalStrength}%";
         format-ethernet = " {signalStrength}%";
         format-linked = "{ifname} (No IP) ";
         format-disconnected = "󰖪  Disconnected";
