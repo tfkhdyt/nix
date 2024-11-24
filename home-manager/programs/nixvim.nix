@@ -235,7 +235,14 @@
           gopls = {
             enable = true;
             extraOptions = {
-              gopls.semanticTokens = true;
+              settings.gopls = {
+                gofumpt = true;
+                semanticTokens = false;
+                analyses = {
+                  unusedvariable = true;
+                  useany = true;
+                };
+              };
             };
           };
           nil_ls.enable = true;
@@ -582,7 +589,6 @@
 
     # config dari r17x
     plugins.typescript-tools.enable = true;
-    plugins.typescript-tools.settings.code_lens = "references_only";
     plugins.typescript-tools.settings.complete_function_calls = true;
     plugins.typescript-tools.settings.expose_as_code_action = "all";
     plugins.typescript-tools.settings.handlers = {
