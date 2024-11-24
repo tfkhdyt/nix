@@ -271,6 +271,17 @@
           };
           jdtls.enable = true;
           # java-language-server.enable = true;
+          tinymist = {
+            enable = true;
+            extraOptions = {
+              offset_encoding = "utf-8";
+              settings = {
+                formatterMode = "typstyle";
+                exportPdf = "onSave";
+                fontPaths = [ "./fonts" ];
+              };
+            };
+          };
         };
       };
       treesitter = {

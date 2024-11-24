@@ -82,6 +82,7 @@
 
     trash-cli
     turso-cli
+    typst
 
     unzip
     upscayl
