@@ -15,7 +15,9 @@
     distrobox
     duckstation
 
+    ffmpegthumbnailer
     ffmpeg-full
+    file
     file-roller
 
     genact
@@ -44,6 +46,7 @@
 
     j4-dmenu-desktop
     joplin-desktop
+    jq
 
     kondo
 
@@ -59,7 +62,7 @@
     nixfmt-rfc-style
     nodejs_22
 
-    # oha
+    ouch
 
     pcsx2
     pdftk
