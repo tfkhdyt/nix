@@ -15,5 +15,6 @@
     fwupd.enable = true;
     httpd.enable = true;
     tumbler.enable = true;
+    zram-generator.enable = true;
   };
 }

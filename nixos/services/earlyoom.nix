@@ -1,4 +1,4 @@
 {
-  enable = false;
-  enableNotifications = true;
+  enable = true;
+  enableNotifications = false;
 }
