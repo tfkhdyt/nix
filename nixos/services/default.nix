@@ -15,6 +15,13 @@
     fwupd.enable = true;
     httpd.enable = true;
     tumbler.enable = true;
-    zram-generator.enable = true;
+    zram-generator = {
+      enable = true;
+      settings = {
+        zram0 = {
+          zram-size = "min(ram / 2, 4096)";
+        };
+      };
+    };
   };
 }
