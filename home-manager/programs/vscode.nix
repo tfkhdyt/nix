@@ -180,6 +180,8 @@
       "tinymist.fontPaths" = [ "\${workspaceFolder}/fonts" ];
       "window.titleBarStyle" = "custom";
       "window.dialogStyle" = "custom";
+      "editor.lineHeight" = 1.6;
+      "terminal.integrated.lineHeight" = 0;
     };
     extensions = with pkgs.vscode-marketplace; [
       jripouteau.adonis-vscode-extension
