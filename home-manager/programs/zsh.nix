@@ -18,7 +18,7 @@
       enable = true;
       abbreviations = {
         v = "nvim";
-        vs = "sudoedit";
+        vs = "codium";
         lg = "lazygit";
         g = "git";
         t = "tmux";
@@ -27,6 +27,7 @@
         scu = "systemctl --user";
         ar2 = "aria2c";
         p = "pnpm";
+        n = "node";
       };
     };
     initExtra = ''
