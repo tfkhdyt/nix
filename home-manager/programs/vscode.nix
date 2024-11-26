@@ -15,7 +15,7 @@
       "editor.fontLigatures" = true;
       "editor.wordWrap" = "on";
       "editor.wrappingIndent" = "indent";
-      "editor.formatOnSave" = true;
+      "editor.formatOnSave" = false;
       # "editor.formatOnSaveMode" = "modificationsIfAvailable";
       "editor.tabSize" = 2;
       "editor.mouseWheelScrollSensitivity" = 2;
@@ -27,7 +27,7 @@
       "editor.linkedEditing" = true;
       "editor.fontFamily" = "'GeistMono NF', 'JetBrainsMono NFP', 'Droid Sans Mono', 'monospace', monospace";
       "editor.codeActionsOnSave" = {
-        "source.fixAll" = "always";
+        # "source.fixAll" = "always";
         # "source.organizeImports" = "always";
         # "source.addMissingImports" = "always";
         # "source.removeUnusedImports" = "always";
@@ -105,6 +105,9 @@
         "editor.defaultFormatter" = "esbenp.prettier-vscode";
       };
       "[html]" = {
+        "editor.defaultFormatter" = "esbenp.prettier-vscode";
+      };
+      "[json]" = {
         "editor.defaultFormatter" = "esbenp.prettier-vscode";
       };
       # "[go]" = {
