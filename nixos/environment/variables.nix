@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, lib, ... }:
 let
   tauriDeps = with pkgs; [
     gobject-introspection
@@ -11,13 +11,10 @@ let
     harfbuzz
     librsvg
     libsoup_3
-    libsoup
     pango
     webkitgtk_4_1
-    webkitgtk_4_0
     openssl
     alsa-lib
-    zlib
   ];
   pkgConfigPath = map (pkg: "${pkg.dev}/lib/pkgconfig") tauriDeps;
 in
@@ -34,5 +31,6 @@ in
     ];
     PATH = "$PATH:/home/tfkhdyt/.cargo/bin:/home/tfkhdyt/.bun/bin";
     PKG_CONFIG_PATH = pkgConfigPath;
+    LD_LIBRARY_PATH = lib.mkForce "${pkgs.lib.makeLibraryPath [ pkgs.zlib ]}:$LD_LIBRARY_PATH";
   };
 }
