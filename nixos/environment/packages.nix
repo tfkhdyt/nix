@@ -22,6 +22,7 @@
     openssl
 
     php
+    pkg-config
     podman-compose
     procs
     pwvucontrol

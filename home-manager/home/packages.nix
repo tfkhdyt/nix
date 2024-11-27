@@ -8,6 +8,7 @@
     bemenu
     brave
 
+    cargo-tauri
     cargo-watch
     cloudflared
 

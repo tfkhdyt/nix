@@ -1,4 +1,26 @@
 { pkgs, ... }:
+let
+  tauriDeps = with pkgs; [
+    gobject-introspection
+    at-spi2-atk
+    atkmm
+    cairo
+    gdk-pixbuf
+    glib
+    gtk3
+    harfbuzz
+    librsvg
+    libsoup_3
+    libsoup
+    pango
+    webkitgtk_4_1
+    webkitgtk_4_0
+    openssl
+    alsa-lib
+    zlib
+  ];
+  pkgConfigPath = map (pkg: "${pkg.dev}/lib/pkgconfig") tauriDeps;
+in
 {
   environment.variables = {
     NIXOS_OZONE_WL = "1";
@@ -11,6 +33,6 @@
       "${pkgs.gtk3}/share/gsettings-schemas/${pkgs.gtk3.name}"
     ];
     PATH = "$PATH:/home/tfkhdyt/.cargo/bin:/home/tfkhdyt/.bun/bin";
-    PKG_CONFIG_PATH = "${pkgs.openssl.dev}/lib/pkgconfig";
+    PKG_CONFIG_PATH = pkgConfigPath;
   };
 }
