@@ -185,6 +185,9 @@
       "window.dialogStyle" = "custom";
       "editor.lineHeight" = 1.6;
       "terminal.integrated.lineHeight" = 0;
+      "nix.formatterPath" = "${pkgs.nixfmt-rfc-style}/bin/nixfmt";
+      "nix.enableLanguageServer" = true;
+      "nix.serverPath" = "${pkgs.nil}/bin/nil";
     };
     extensions = with pkgs.vscode-marketplace; [
       jripouteau.adonis-vscode-extension
@@ -236,6 +239,7 @@
       alefragnani.project-manager
       myriad-dreamin.tinymist
       sebsojeda.vscode-svx
+      jnoortheen.nix-ide
     ];
     keybindings = [
       {
