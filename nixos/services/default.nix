@@ -23,5 +23,6 @@
         };
       };
     };
+    flatpak.enable = true;
   };
 }

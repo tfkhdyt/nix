@@ -20,6 +20,7 @@
     ffmpeg-full
     file
     file-roller
+    flatpak-builder
 
     genact
     ghostscript

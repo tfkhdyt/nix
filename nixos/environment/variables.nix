@@ -15,6 +15,7 @@ let
     webkitgtk_4_1
     openssl
     alsa-lib
+    zlib
   ];
   pkgConfigPath = map (pkg: "${pkg.dev}/lib/pkgconfig") tauriDeps;
 in
@@ -28,6 +29,8 @@ in
     XDG_DATA_DIRS = [
       "${pkgs.gsettings-desktop-schemas}/share/gsettings-schemas/${pkgs.gsettings-desktop-schemas.name}"
       "${pkgs.gtk3}/share/gsettings-schemas/${pkgs.gtk3.name}"
+      "/var/lib/flatpak/exports/share"
+      "$HOME/.local/share/flatpak/exports/share"
     ];
     PATH = "$PATH:/home/tfkhdyt/.cargo/bin:/home/tfkhdyt/.bun/bin";
     PKG_CONFIG_PATH = pkgConfigPath;
