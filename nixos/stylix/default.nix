@@ -20,14 +20,7 @@
         name = "Inter Variable";
       };
       monospace = {
-        package = (
-          pkgs.nerdfonts.override {
-            fonts = [
-              "JetBrainsMono"
-              "GeistMono"
-            ];
-          }
-        );
+        package = pkgs.nerd-fonts.geist-mono;
         name = "GeistMono NF";
       };
       emoji = {
