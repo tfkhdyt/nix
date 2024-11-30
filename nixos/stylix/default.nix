@@ -16,7 +16,7 @@
         name = "Noto Serif";
       };
       sansSerif = {
-        package = pkgs.inter;
+        package = pkgs.inter-nerdfont;
         name = "Inter Variable";
       };
       monospace = {
