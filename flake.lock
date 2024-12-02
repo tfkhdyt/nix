@@ -402,6 +402,7 @@
       },
       "original": {
         "owner": "tfkhdyt",
+        "ref": "v0.9.3",
         "repo": "minipom",
         "type": "github"
       }
