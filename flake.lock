@@ -386,6 +386,26 @@
         "type": "github"
       }
     },
+    "minipom": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1733127656,
+        "narHash": "sha256-qrb4IPKgpRoJ54RskavQmgiO5rqOP4IROmhQVutzcXA=",
+        "owner": "tfkhdyt",
+        "repo": "minipom",
+        "rev": "38d724790f5816fb3fa9adda9e04a9cfc5aac17d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "tfkhdyt",
+        "repo": "minipom",
+        "type": "github"
+      }
+    },
     "nix-darwin": {
       "inputs": {
         "nixpkgs": [
@@ -515,6 +535,7 @@
     "root": {
       "inputs": {
         "home-manager": "home-manager",
+        "minipom": "minipom",
         "nix-vscode-extensions": "nix-vscode-extensions",
         "nixpkgs": "nixpkgs",
         "nixvim": "nixvim",

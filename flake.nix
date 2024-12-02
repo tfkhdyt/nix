@@ -29,6 +29,11 @@
     };
 
     # zen-browser.url = "github:omarcresp/zen-browser-flake";
+
+    minipom = {
+      url = "github:tfkhdyt/minipom";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =

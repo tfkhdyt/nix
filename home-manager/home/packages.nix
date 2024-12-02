@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 {
   home.packages = with pkgs; [
     audacity
@@ -59,6 +59,7 @@
     lutris
 
     mdformat
+    inputs.minipom.packages.${pkgs.system}.default
 
     nil
     nixfmt-rfc-style
