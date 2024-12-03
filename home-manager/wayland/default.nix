@@ -127,7 +127,7 @@
           # offset = "[2, 2]";
         };
       };
-      exec-once = [ "lxqt-policykit-agent" ];
+      exec-once = [ "systemctl --user start hyprpolkitagent" ];
       general = {
         gaps_in = 5;
         gaps_out = "2,20,10,20";

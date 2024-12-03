@@ -42,6 +42,7 @@
     hoppscotch
     hyperfine
     hyprpicker
+    hyprpolkitagent
 
     imagemagick
     impl

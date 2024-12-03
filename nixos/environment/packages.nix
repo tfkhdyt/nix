@@ -17,7 +17,7 @@
     gnome-disk-utility
 
     libnotify
-    lxqt.lxqt-policykit
+    # lxqt.lxqt-policykit
 
     openssl
 
