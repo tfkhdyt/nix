@@ -19,13 +19,13 @@
       # "editor.formatOnSaveMode" = "modificationsIfAvailable";
       "editor.tabSize" = 2;
       "editor.mouseWheelScrollSensitivity" = 2;
-      "editor.cursorSmoothCaretAnimation" = "on";
+      # "editor.cursorSmoothCaretAnimation" = "on";
       "editor.quickSuggestions" = {
         "strings" = "on";
       };
       "editor.quickSuggestionsDelay" = 300;
       "editor.linkedEditing" = true;
-      "editor.fontFamily" = "'GeistMono NF', 'Droid Sans Mono', 'monospace', monospace";
+      "editor.fontFamily" = "'JetBrainsMono NF', 'Droid Sans Mono', 'monospace', monospace";
       "editor.codeActionsOnSave" = {
         # "source.fixAll" = "always";
         # "source.organizeImports" = "always";

@@ -130,7 +130,7 @@
     * {
       border: none;
       border-radius: 10;
-      font-family: 'GeistMono NFP';
+      font-family: 'JetBrainsMono NFP';
       font-weight: 500;
       font-size: 15px;
     }

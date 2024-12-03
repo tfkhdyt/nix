@@ -16,12 +16,12 @@
         name = "Noto Serif";
       };
       sansSerif = {
-        package = pkgs.inter-nerdfont;
+        package = pkgs.inter;
         name = "Inter Variable";
       };
       monospace = {
-        package = pkgs.nerd-fonts.geist-mono;
-        name = "GeistMono NF";
+        package = pkgs.nerd-fonts.jetbrains-mono;
+        name = "JetBrainsMono NF";
       };
       emoji = {
         package = pkgs.noto-fonts-emoji;
