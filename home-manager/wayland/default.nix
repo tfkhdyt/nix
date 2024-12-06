@@ -199,7 +199,7 @@
         "pin,title:(Authentication Required|Picture-in-Picture)"
         "float,title:^(Open Files?|All Files|Open Folder|Install from VSIX)$"
         "float,title:(Bitwarden),class:(brave-nngceckbapebfimnlniiiahkandclblb-Default)"
-        "float,class:(xdg-desktop-portal-gtk)"
+        "float,class:(xdg-desktop-portal-gtk|minipom)"
         "bordersize 0, floating:0, onworkspace:w[tv1]"
         "rounding 0, floating:0, onworkspace:w[tv1]"
         "bordersize 0, floating:0, onworkspace:f[1]"
