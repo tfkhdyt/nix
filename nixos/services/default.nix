@@ -1,3 +1,4 @@
+{ pkgs, ... }:
 {
   imports = [
     ./postgresql.nix
@@ -9,7 +10,10 @@
     earlyoom = import ./earlyoom.nix;
     dnscrypt-proxy2 = import ./dnscrypt-proxy2.nix;
 
-    printing.enable = true; # Enable CUPS to print documents.
+    printing = {
+      enable = true; # Enable CUPS to print documents.
+      drivers = [ pkgs.hplipWithPlugin ];
+    };
     blueman.enable = true;
     openssh.enable = true;
     fwupd.enable = true;

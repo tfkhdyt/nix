@@ -31,6 +31,7 @@
     ripgrep
 
     sd
+    system-config-printer
 
     wl-clipboard
   ];
