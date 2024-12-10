@@ -573,7 +573,7 @@
           }
         ];
       };
-      nvim-colorizer.enable = true;
+      colorizer.enable = true;
       # nvim-jdtls = {
       #   enable = false;
       #   cmd = [
