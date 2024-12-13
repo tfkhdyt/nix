@@ -336,7 +336,12 @@
           "<leader>/" = "live_grep";
         };
       };
-      treesitter-context.enable = true;
+      treesitter-context = {
+        enable = true;
+        settings = {
+          multiline_threshold = 4;
+        };
+      };
       treesitter-refactor.enable = true;
       treesitter-textobjects.enable = true;
       lspkind.enable = true;
