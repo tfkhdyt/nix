@@ -19,8 +19,7 @@
     ffmpegthumbnailer
     ffmpeg-full
     file
-    file-roller
-    flatpak-builder
+    # flatpak-builder
 
     genact
     ghostscript
@@ -83,7 +82,7 @@
     scc
     scrcpy
     sea-orm-cli
-    simple-scan
+    # simple-scan
     slack
     speedtest-cli
     syncthing

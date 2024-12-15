@@ -44,6 +44,6 @@
       enable = false;
       package = pkgs.graalvm-ce;
     };
-    zathura.enable = true;
+    zathura.enable = false;
   };
 }

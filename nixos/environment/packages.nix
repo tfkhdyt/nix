@@ -14,7 +14,6 @@
     fd
 
     gcc13
-    gnome-disk-utility
 
     libnotify
     # lxqt.lxqt-policykit
