@@ -5,7 +5,7 @@
 
     beekeeper-studio
     bc
-    bemenu
+    # bemenu
     brave
 
     cargo-tauri
@@ -40,13 +40,13 @@
     handbrake
     hoppscotch
     hyperfine
-    hyprpicker
-    hyprpolkitagent
+    # hyprpicker
+    # hyprpolkitagent
 
     imagemagick
     impl
 
-    j4-dmenu-desktop
+    # j4-dmenu-desktop
     joplin-desktop
     jq
 
@@ -64,7 +64,7 @@
     nil
     nixfmt-rfc-style
     nix-init
-    nodejs
+    nodejs_22
 
     ouch
 
@@ -101,7 +101,7 @@
     # wl-screenrec # wait for fix
     wrk
 
-    xfce.ristretto
+    # xfce.ristretto
     xh
   ];
 }

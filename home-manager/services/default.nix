@@ -6,6 +6,6 @@
     # hyprpaper = import ./hyprpaper.nix;
 
     ssh-agent.enable = true;
-    udiskie.enable = true;
+    udiskie.enable = false;
   };
 }

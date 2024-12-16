@@ -6,11 +6,10 @@
 
     dconf.enable = true;
     starship.enable = true;
-    nm-applet.enable = true;
+    nm-applet.enable = false;
     steam.enable = true;
     adb.enable = true;
     zsh.enable = true;
-    evince.enable = false;
     gamescope.enable = true;
   };
 }

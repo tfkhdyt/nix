@@ -1,5 +1,5 @@
 {
-  enable = true;
+  enable = false;
   latitude = -6.905977;
   longitude = 107.613144;
   systemdTarget = "hyprland-session.target";

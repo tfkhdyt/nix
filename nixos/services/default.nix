@@ -18,7 +18,7 @@
     openssh.enable = true;
     fwupd.enable = true;
     httpd.enable = true;
-    tumbler.enable = true;
+    tumbler.enable = false;
     zram-generator = {
       enable = true;
       settings = {

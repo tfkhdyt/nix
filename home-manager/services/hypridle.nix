@@ -2,7 +2,7 @@ let
   lockCmd = "hyprlock";
 in
 {
-  enable = true;
+  enable = false;
   settings = {
     general = {
       before_sleep_cmd = lockCmd;

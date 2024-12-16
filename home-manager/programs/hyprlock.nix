@@ -1,7 +1,7 @@
 { lib, ... }:
 {
   programs.hyprlock = {
-    enable = true;
+    enable = false;
     settings = {
       background = lib.mkForce {
         path = "screenshot";

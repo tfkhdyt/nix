@@ -1,5 +1,5 @@
 {
-  enable = true;
+  enable = false;
   systemd = {
     enable = true;
     target = "hyprland-session.target";

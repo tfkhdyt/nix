@@ -1,5 +1,5 @@
 {
-  enable = true;
+  enable = false;
   settings = {
     ipc = "off";
     splash = false;
