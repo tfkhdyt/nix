@@ -7,7 +7,7 @@
     # waydroid-container.wantedBy = lib.mkForce [ ];
     # blueman.wantedBy = lib.mkForce [ ];
     charging-threshold = {
-      enable = true;
+      enable = false;
       path = with pkgs; [ bash ];
       description = "Set the battery charge threshold";
       after = [ "multi-user.target" ];
