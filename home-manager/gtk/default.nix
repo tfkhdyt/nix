@@ -10,7 +10,7 @@
 
     iconTheme = {
       package = pkgs.papirus-icon-theme;
-      name = "Papirus-Light";
+      name = "Papirus-Dark";
     };
 
     # font = {
