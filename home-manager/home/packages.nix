@@ -10,6 +10,7 @@
 
     cargo-tauri
     cargo-watch
+    celluloid
     cloudflared
 
     dbmate
