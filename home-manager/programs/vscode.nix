@@ -142,7 +142,8 @@
       "emeraldwalk.runonsave" = {
         "commands" = [
           {
-            "cmd" = "${pkgs.goimports-reviser}/bin/goimports-reviser -rm-unused -set-alias -format -use-cache -output write \${file}";
+            "cmd" =
+              "${pkgs.goimports-reviser}/bin/goimports-reviser -rm-unused -set-alias -format -use-cache -output write \${file}";
             "match" = "\\.go$";
           }
           {
@@ -245,11 +246,22 @@
       {
         "key" = "alt+f";
         "command" = "editor.action.formatDocument";
-        "when" = "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor";
+        "when" =
+          "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor";
       }
       {
         "key" = "ctrl+shift+a";
         "command" = "editor.action.sourceAction";
+      }
+      {
+        "key" = "shift+alt+down";
+        "command" = "editor.action.copyLinesDownAction";
+        "when" = "editorTextFocus && !editorReadonly";
+      }
+      {
+        "key" = "shift+alt+up";
+        "command" = "editor.action.copyLinesUpAction";
+        "when" = "editorTextFocus && !editorReadonly";
       }
     ];
   };
