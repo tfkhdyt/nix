@@ -36,6 +36,8 @@
     opacity.terminal = 0.9;
     targets = {
       nixvim.enable = lib.mkForce false;
+      gnome.enable = false;
+      gtk.enable = false;
     };
   };
 }

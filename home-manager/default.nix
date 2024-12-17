@@ -16,6 +16,8 @@
     vscode.enable = false;
     kitty.variant256Colors = true;
     nixvim.enable = false;
+    gnome.enable = false;
+    gtk.enable = false;
   };
   systemd.user.sessionVariables = {
     QT_QPA_PLATFORMTHEME = lib.mkForce "gtk3";
