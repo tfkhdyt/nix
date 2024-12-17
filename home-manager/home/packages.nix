@@ -1,6 +1,7 @@
 { pkgs, inputs, ... }:
 {
   home.packages = with pkgs; [
+    amberol
     audacity
 
     beekeeper-studio
