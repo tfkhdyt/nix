@@ -14,6 +14,7 @@
     fd
 
     gcc13
+    gnome-tweaks
 
     libnotify
     # lxqt.lxqt-policykit
