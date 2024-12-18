@@ -18,7 +18,7 @@
       enable = true;
       abbreviations = {
         v = "nvim";
-        vs = "codium";
+        vs = "code";
         lg = "lazygit";
         g = "git";
         t = "tmux";
