@@ -11,7 +11,6 @@
     gnome.excludePackages = with pkgs; [
       orca
       geary
-      gnome-backgrounds
       gnome-tour
       gnome-user-docs
       epiphany
