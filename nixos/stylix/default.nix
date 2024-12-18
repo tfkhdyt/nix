@@ -33,7 +33,7 @@
       name = "macOS";
       size = 32;
     };
-    opacity.terminal = 0.95;
+    opacity.terminal = 0.9;
     targets = {
       nixvim.enable = lib.mkForce false;
       gnome.enable = false;
