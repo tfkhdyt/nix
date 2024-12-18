@@ -1,9 +1,9 @@
 { pkgs, ... }:
 {
   xdg.portal = {
-    enable = true;
-    extraPortals = with pkgs; [
-      xdg-desktop-portal-gtk
-    ];
+    enable = false;
+    # extraPortals = with pkgs; [
+    #   xdg-desktop-portal-gtk
+    # ];
   };
 }

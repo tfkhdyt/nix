@@ -7,7 +7,7 @@
     ./programs
     ./services
     ./wayland
-    ./xdg
+    # ./xdg
     ./qt
     inputs.nixvim.homeManagerModules.nixvim
   ];

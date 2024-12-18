@@ -20,6 +20,6 @@
     ./systemd
     ./virtualization
     ./stylix
-    ./xdg
+    # ./xdg
   ];
 }
