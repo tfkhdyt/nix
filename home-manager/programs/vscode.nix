@@ -2,7 +2,7 @@
 {
   programs.vscode = {
     enable = true;
-    package = pkgs.vscodium;
+    # package = pkgs.vscodium;
     userSettings = {
       "terminal.integrated.fontSize" = 16;
       "terminal.integrated.gpuAcceleration" = "on";
@@ -132,10 +132,8 @@
         "**/venv/**" = true;
         "env-*" = true;
       };
-      # "workbench.colorTheme" = "Catppuccin Latte";
-      "workbench.colorTheme" = "Catppuccin Mocha";
-      # "workbench.iconTheme" = "catppuccin-latte";
-      "workbench.iconTheme" = "catppuccin-mocha";
+      "workbench.colorTheme" = "Atom One Dark";
+      "workbench.iconTheme" = "icons";
       "workbench.startupEditor" = "none";
       "errorLens.gutterIconsEnabled" = true;
       "errorLens.gutterIconSet" = "defaultOutline";
@@ -172,7 +170,7 @@
       # "workbench.editor.showTabs" = "single";
       "workbench.tree.indent" = 16;
       "workbench.editor.empty.hint" = "hidden";
-      "breadcrumbs.enabled" = false;
+      "breadcrumbs.enabled" = true;
       "breadcrumbs.symbolPath" = "off";
       "breadcrumbs.filePath" = "on";
       # "editor.guides.indentation" = false;
@@ -189,8 +187,14 @@
       "nix.formatterPath" = "${pkgs.nixfmt-rfc-style}/bin/nixfmt";
       "nix.enableLanguageServer" = true;
       "nix.serverPath" = "${pkgs.nil}/bin/nil";
+      # "workbench.colorCustomizations" = {
+      #   "editorStickyScroll.background" = "#000000";
+      #   "editorStickyScrollHover.background" = "#272930";
+      # };
     };
     extensions = with pkgs.vscode-marketplace; [
+      akamud.vscode-theme-onedark
+      tal7aouy.icons
       jripouteau.adonis-vscode-extension
       astro-build.astro-vscode
       formulahendry.auto-complete-tag
@@ -198,8 +202,6 @@
       dbaeumer.vscode-eslint
       waderyan.gitblame
       golang.go
-      jdinhlife.gruvbox
-      pkief.material-icon-theme
       cardinal90.multi-cursor-case-preserve
       christian-kohler.npm-intellisense
       christian-kohler.path-intellisense
@@ -209,33 +211,15 @@
       bradlc.vscode-tailwindcss
       meganrogge.template-string-converter
       rangav.vscode-thunder-client
-      # wakatime.vscode-wakatime
       redhat.vscode-yaml
       tamasfe.even-better-toml
       moalamri.inline-fold
-      # yzhang.markdown-all-in-one
-      # yoavbls.pretty-ts-errors
-      # ttoowa.in-your-face-incredible
       emeraldwalk.runonsave
-      # haskell.haskell
-      # justusadam.language-haskell
-      # oderwat.indent-rainbow
       renesaarsoo.sql-formatter-vsc
       bmewburn.vscode-intelephense-client
-      # gleam.gleam
-      # redhat.java
-      # vscjava.vscode-java-dependency
-      # vscjava.vscode-java-debug
       ms-azuretools.vscode-docker
       chadalen.vscode-jetbrains-icon-theme
-      # vscjava.vscode-maven
       thoughtsdump.custom-xml-formatter
-      catppuccin.catppuccin-vsc
-      # vscjava.vscode-spring-initializr
-      # vscjava.vscode-java-test
-      catppuccin.catppuccin-vsc-icons
-      # vmware.vscode-spring-boot
-      # vscjava.vscode-spring-boot-dashboard
       rust-lang.rust-analyzer
       alefragnani.project-manager
       myriad-dreamin.tinymist
