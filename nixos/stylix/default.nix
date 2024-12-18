@@ -3,7 +3,7 @@
   stylix = {
     enable = true;
     image = ../../wallpapers/marek-piwnicki-oaZltoEJ2fo-unsplash.jpg;
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/material-darker.yaml";
     fonts = {
       sizes = {
         applications = 10;
@@ -33,11 +33,12 @@
       name = "macOS";
       size = 32;
     };
-    opacity.terminal = 0.9;
+    opacity.terminal = 0.95;
     targets = {
       nixvim.enable = lib.mkForce false;
       gnome.enable = false;
       gtk.enable = false;
+      chromium.enable = false;
     };
   };
 }

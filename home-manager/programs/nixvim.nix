@@ -18,22 +18,22 @@
       vim.fn.sign_define('DiagnosticSignHint', { text = '', texthl = 'DiagnosticSignHint' })
     '';
     # colorschemes.gruvbox.enable = true;
-    colorschemes.catppuccin = {
+    colorschemes.oxocarbon = {
       enable = true;
-      settings = {
-        flavour = "mocha";
-        term_colors = true;
-        integrations = {
-          native_lsp = {
-            underlines = {
-              errors = [ "undercurl" ];
-              hints = [ "undercurl" ];
-              warnings = [ "undercurl" ];
-              information = [ "undercurl" ];
-            };
-          };
-        };
-      };
+      # settings = {
+      #   # flavour = "mocha";
+      #   term_colors = true;
+      #   integrations = {
+      #     native_lsp = {
+      #       underlines = {
+      #         errors = [ "undercurl" ];
+      #         hints = [ "undercurl" ];
+      #         warnings = [ "undercurl" ];
+      #         information = [ "undercurl" ];
+      #       };
+      #     };
+      #   };
+      # };
     };
     globals.mapleader = " ";
     extraPlugins = with pkgs; [ vimPlugins.vim-move ];
