@@ -191,6 +191,7 @@
       #   "editorStickyScroll.background" = "#000000";
       #   "editorStickyScrollHover.background" = "#272930";
       # };
+      "extensions.autoUpdate" = false;
     };
     extensions = with pkgs.vscode-marketplace; [
       akamud.vscode-theme-onedark
@@ -206,7 +207,7 @@
       christian-kohler.npm-intellisense
       christian-kohler.path-intellisense
       esbenp.prettier-vscode
-      supermaven.supermaven
+      # supermaven.supermaven
       svelte.svelte-vscode
       bradlc.vscode-tailwindcss
       meganrogge.template-string-converter
@@ -225,6 +226,7 @@
       myriad-dreamin.tinymist
       sebsojeda.vscode-svx
       jnoortheen.nix-ide
+      github.copilot
     ];
     keybindings = [
       {
