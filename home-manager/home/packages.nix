@@ -97,6 +97,8 @@
     upscayl
     urban-cli
 
+    varia
+
     watchexec
     wf-recorder
     winbox4
