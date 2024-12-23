@@ -6,7 +6,7 @@
     ./gtk
     ./programs
     ./services
-    ./wayland
+    # ./wayland
     # ./xdg
     ./qt
     inputs.nixvim.homeManagerModules.nixvim
@@ -19,8 +19,8 @@
     gnome.enable = false;
     gtk.enable = false;
   };
-  systemd.user.sessionVariables = {
-    QT_QPA_PLATFORMTHEME = lib.mkForce "gtk3";
-    QT_STYLE_OVERRIDE = lib.mkForce "adwaita-dark";
-  };
+  # systemd.user.sessionVariables = {
+  #   QT_QPA_PLATFORMTHEME = lib.mkForce "gtk3";
+  #   QT_STYLE_OVERRIDE = lib.mkForce "adwaita-dark";
+  # };
 }
