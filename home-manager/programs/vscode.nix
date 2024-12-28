@@ -132,8 +132,8 @@
         "**/venv/**" = true;
         "env-*" = true;
       };
-      "workbench.colorTheme" = "Atom One Dark";
-      "workbench.iconTheme" = "icons";
+      # "workbench.colorTheme" = "poimandres";
+      "workbench.iconTheme" = "vscode-jetbrains-icon-theme-2023-auto";
       "workbench.startupEditor" = "none";
       "errorLens.gutterIconsEnabled" = true;
       "errorLens.gutterIconSet" = "defaultOutline";
@@ -168,7 +168,7 @@
       # "eslint.run" = "onSave";
       "eslint.problems.shortenToSingleLine" = true;
       # "workbench.editor.showTabs" = "single";
-      "workbench.tree.indent" = 16;
+      "workbench.tree.indent" = 20;
       "workbench.editor.empty.hint" = "hidden";
       "breadcrumbs.enabled" = true;
       "breadcrumbs.symbolPath" = "off";
@@ -192,6 +192,10 @@
       #   "editorStickyScrollHover.background" = "#272930";
       # };
       "extensions.autoUpdate" = false;
+      "window.autoDetectColorScheme" = true;
+      "window.autoDetectHighContrast" = false;
+      "workbench.preferredDarkColorTheme" = "poimandres";
+      "workbench.preferredLightColorTheme" = "Atom One Light";
     };
     extensions = with pkgs.vscode-marketplace; [
       akamud.vscode-theme-onedark
@@ -226,7 +230,11 @@
       myriad-dreamin.tinymist
       sebsojeda.vscode-svx
       jnoortheen.nix-ide
+      pmndrs.pmndrs
       # github.copilot
+      imagio.vscode-dimmer-block
+      akamud.vscode-theme-onelight
+      pkief.material-icon-theme
     ];
     keybindings = [
       {
