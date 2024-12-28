@@ -18,7 +18,7 @@
       vim.fn.sign_define('DiagnosticSignHint', { text = '', texthl = 'DiagnosticSignHint' })
     '';
     # colorschemes.gruvbox.enable = true;
-    colorschemes.oxocarbon = {
+    colorschemes.poimandres = {
       enable = true;
       # settings = {
       #   # flavour = "mocha";
