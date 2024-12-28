@@ -14,7 +14,7 @@
       enable = true; # Enable CUPS to print documents.
       drivers = [ pkgs.hplipWithPlugin ];
     };
-    blueman.enable = true;
+    blueman.enable = false;
     openssh.enable = true;
     fwupd.enable = true;
     httpd.enable = true;
