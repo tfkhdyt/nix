@@ -1,12 +1,12 @@
 { pkgs, ... }:
 {
   programs.lazygit = {
-    enable = true;
+    enable = false;
     settings = {
-      git.paging = {
-        colorArg = "always";
-        pager = "${pkgs.delta}/bin/delta --dark --paging=never";
-      };
+      # git.paging = {
+      #   colorArg = "always";
+      #   pager = "${pkgs.delta}/bin/delta --paging=never";
+      # };
     };
   };
 }
