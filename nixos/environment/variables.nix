@@ -35,5 +35,6 @@ in
     PATH = "$PATH:/home/tfkhdyt/.cargo/bin:/home/tfkhdyt/.bun/bin";
     PKG_CONFIG_PATH = pkgConfigPath;
     LD_LIBRARY_PATH = lib.mkForce "${pkgs.lib.makeLibraryPath [ pkgs.zlib ]}:$LD_LIBRARY_PATH";
+    EDITOR = "${pkgs.neovim}/bin/nvim";
   };
 }
