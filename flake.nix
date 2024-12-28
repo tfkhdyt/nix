@@ -34,6 +34,11 @@
       url = "github:tfkhdyt/minipom?rev=19ce5af49752ef9dd339fc7d31f9d1c9e52d9952";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    ghostty = {
+      url = "github:ghostty-org/ghostty";
+      # inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =

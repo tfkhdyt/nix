@@ -61,7 +61,8 @@
     lutris
 
     mdformat
-    inputs.minipom.packages.${pkgs.system}.default
+    # inputs.minipom.packages.${pkgs.system}.default
+    inputs.ghostty.packages.x86_64-linux.default
 
     nil
     nixfmt-rfc-style
