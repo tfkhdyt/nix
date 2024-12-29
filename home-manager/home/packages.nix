@@ -67,7 +67,7 @@
     nil
     nixfmt-rfc-style
     nix-init
-    nodejs_22
+    nodejs_23
 
     ouch
 
