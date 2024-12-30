@@ -235,6 +235,7 @@
       imagio.vscode-dimmer-block
       akamud.vscode-theme-onelight
       pkief.material-icon-theme
+      ziglang.vscode-zig
     ];
     keybindings = [
       {

@@ -5,7 +5,7 @@
     audacity
 
     beekeeper-studio
-    bc
+    # bc
     # bemenu
     brave
 
@@ -34,10 +34,10 @@
     golines
     gomodifytags
     gopls
-    gowall
+    # gowall
     go-tools
     gping
-    grimblast
+    # grimblast
 
     handbrake
     hoppscotch
@@ -108,5 +108,7 @@
 
     # xfce.ristretto
     xh
+
+    zig
   ];
 }
