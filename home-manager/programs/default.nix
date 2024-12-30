@@ -1,13 +1,13 @@
 { pkgs, ... }:
 {
   imports = [
-    ./tmux.nix
+    # ./tmux.nix
     ./nixvim.nix
     ./mpv.nix
     ./vscode.nix
     ./lazygit.nix
     ./zsh.nix
-    ./hyprlock.nix
+    # ./hyprlock.nix
   ];
   programs = {
     git = import ./git.nix;
@@ -17,8 +17,8 @@
     yt-dlp = import ./yt-dlp.nix;
     fzf = import ./fzf.nix;
     zoxide = import ./zoxide.nix;
-    alacritty = import ./alacritty.nix;
-    waybar = import ./waybar.nix;
+    # alacritty = import ./alacritty.nix;
+    # waybar = import ./waybar.nix;
     # hyprlock = import ./hyprlock.nix;
     # zsh = import ./zsh.nix;
     go = import ./go.nix;
@@ -40,10 +40,10 @@
         obs-studio-plugins.obs-backgroundremoval
       ];
     };
-    java = {
-      enable = false;
-      package = pkgs.graalvm-ce;
-    };
+    # java = {
+    #   enable = false;
+    #   package = pkgs.graalvm-ce;
+    # };
     zathura.enable = false;
     gitui.enable = true;
   };
