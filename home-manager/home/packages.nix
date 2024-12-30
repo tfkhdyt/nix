@@ -62,7 +62,7 @@
 
     mdformat
     # inputs.minipom.packages.${pkgs.system}.default
-    inputs.ghostty.packages.x86_64-linux.default
+    ghostty
 
     nil
     nixfmt-rfc-style
