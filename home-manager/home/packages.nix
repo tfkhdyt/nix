@@ -98,7 +98,7 @@
     upscayl
     urban-cli
 
-    varia
+    # varia
 
     watchexec
     wf-recorder
