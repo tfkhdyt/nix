@@ -196,6 +196,11 @@
       "window.autoDetectHighContrast" = false;
       "workbench.preferredDarkColorTheme" = "poimandres";
       "workbench.preferredLightColorTheme" = "Atom One Light";
+      "zig.path" = "${pkgs.zig}/bin/zig";
+      "zig.zls.path" = "${pkgs.zls}/bin/zls";
+      "zig.zls.enabled" = "on";
+      "zig.buildOnSave" = true;
+      "zig.zls.enableBuildOnSave" = true;
     };
     extensions = with pkgs.vscode-marketplace; [
       akamud.vscode-theme-onedark
