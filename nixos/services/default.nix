@@ -7,7 +7,7 @@
   services = {
     pipewire = import ./pipewire.nix;
     # tlp = import ./tlp.nix;
-    earlyoom = import ./earlyoom.nix;
+    # earlyoom = import ./earlyoom.nix;
     # dnscrypt-proxy2 = import ./dnscrypt-proxy2.nix;
 
     printing = {
