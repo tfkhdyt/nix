@@ -45,15 +45,15 @@
       "browser.download.useDownloadDir" = false;
       "font.name.serif.x-western" = "Inter Variable";
     };
-    search = {
-      engines = {
-        "Bukan Google" = {
-          urls = [ { template = "https://search.tfkhdyt.my.id/search?q={searchTerms}"; } ];
-          definedAliases = [ "@bg" ];
-        };
-      };
-      default = "Bukan Google";
-      force = true;
-    };
+    # search = {
+    #   engines = {
+    #     "Bukan Google" = {
+    #       urls = [ { template = "https://search.tfkhdyt.my.id/search?q={searchTerms}"; } ];
+    #       definedAliases = [ "@bg" ];
+    #     };
+    #   };
+    #   # default = "Bukan Google";
+    #   force = true;
+    # };
   };
 }
