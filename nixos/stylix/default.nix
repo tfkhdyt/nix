@@ -29,8 +29,11 @@
       };
     };
     cursor = {
-      package = pkgs.apple-cursor;
-      name = "macOS";
+      # package = pkgs.apple-cursor;
+      package = pkgs.banana-cursor;
+      # name = "macOS";
+      # name = "Bibata-Modern-Ice";
+      name = "Banana";
       size = 32;
     };
     opacity.terminal = 0.9;
