@@ -38,6 +38,8 @@
     go-tools
     gping
     # grimblast
+    ghostty
+    gpu-screen-recorder-gtk
 
     handbrake
     hoppscotch
@@ -62,7 +64,6 @@
 
     mdformat
     # inputs.minipom.packages.${pkgs.system}.default
-    ghostty
 
     nil
     nixfmt-rfc-style
