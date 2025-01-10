@@ -1,4 +1,4 @@
-{ pkgs, inputs, ... }:
+{ pkgs, ... }:
 {
   home.packages = with pkgs; [
     amberol
@@ -70,6 +70,7 @@
     nix-init
     nodejs
 
+    obsidian
     ouch
 
     pcsx2
