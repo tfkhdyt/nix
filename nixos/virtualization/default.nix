@@ -1,6 +1,6 @@
 {
   virtualisation = {
-    waydroid.enable = true;
+    waydroid.enable = false;
     containers.enable = true;
     podman = {
       enable = true;
