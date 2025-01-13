@@ -30,11 +30,11 @@
     };
     cursor = {
       # package = pkgs.apple-cursor;
-      package = pkgs.banana-cursor;
+      package = pkgs.bibata-cursors;
       # name = "macOS";
-      # name = "Bibata-Modern-Ice";
-      name = "Banana";
-      size = 32;
+      name = "Bibata-Modern-Classic";
+      # name = "Banana";
+      size = 24;
     };
     opacity.terminal = 0.9;
     targets = {
