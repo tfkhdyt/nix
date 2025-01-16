@@ -27,7 +27,7 @@
         };
       };
     };
-    flatpak.enable = false;
+    flatpak.enable = true;
     xserver = {
       enable = true;
       displayManager.gdm.enable = true;

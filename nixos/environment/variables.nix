@@ -27,10 +27,10 @@ in
     '';
     ANDROID_HOME = "/home/tfkhdyt/Android/Sdk";
     # XDG_DATA_DIRS = [
-    #   "${pkgs.gsettings-desktop-schemas}/share/gsettings-schemas/${pkgs.gsettings-desktop-schemas.name}"
-    #   "${pkgs.gtk3}/share/gsettings-schemas/${pkgs.gtk3.name}"
-    #   # "/var/lib/flatpak/exports/share"
-    #   # "$HOME/.local/share/flatpak/exports/share"
+    #   # "${pkgs.gsettings-desktop-schemas}/share/gsettings-schemas/${pkgs.gsettings-desktop-schemas.name}"
+    #   # "${pkgs.gtk3}/share/gsettings-schemas/${pkgs.gtk3.name}"
+    #   "/var/lib/flatpak/exports/share"
+    #   "$HOME/.local/share/flatpak/exports/share"
     # ];
     PATH = "$PATH:/home/tfkhdyt/.cargo/bin:/home/tfkhdyt/.bun/bin";
     PKG_CONFIG_PATH = pkgConfigPath;
