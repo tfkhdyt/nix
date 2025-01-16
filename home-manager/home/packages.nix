@@ -64,6 +64,7 @@
 
     mdformat
     # inputs.minipom.packages.${pkgs.system}.default
+    mcpelauncher-ui-qt
 
     nil
     nixfmt-rfc-style
