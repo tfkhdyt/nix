@@ -42,7 +42,7 @@
     gpu-screen-recorder-gtk
 
     handbrake
-    hoppscotch
+    # hoppscotch
     hyperfine
     # hyprpicker
     # hyprpolkitagent
@@ -51,7 +51,7 @@
     impl
 
     # j4-dmenu-desktop
-    joplin-desktop
+    # joplin-desktop
     jq
 
     kondo
