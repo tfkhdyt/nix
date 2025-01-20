@@ -83,6 +83,7 @@
     poppler_utils
     postman
     prettierd
+    process-compose
     protonup-qt
 
     scc
