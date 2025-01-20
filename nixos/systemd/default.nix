@@ -5,6 +5,7 @@
     mysql.wantedBy = lib.mkForce [ ];
     httpd.wantedBy = lib.mkForce [ ];
     waydroid-container.wantedBy = lib.mkForce [ ];
+    nginx.wantedBy = lib.mkForce [ ];
     charging-threshold = {
       enable = false;
       path = with pkgs; [ bash ];
