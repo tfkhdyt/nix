@@ -203,6 +203,7 @@
       "zig.zls.enableBuildOnSave" = true;
       "window.openFoldersInNewWindow" = "off";
       "window.openWithoutArgumentsInNewWindow" = "off";
+      "extensions.autoCheckUpdates" = false;
     };
     extensions = with pkgs.vscode-marketplace; [
       akamud.vscode-theme-onedark
@@ -218,7 +219,7 @@
       christian-kohler.npm-intellisense
       christian-kohler.path-intellisense
       esbenp.prettier-vscode
-      supermaven.supermaven
+      # supermaven.supermaven
       svelte.svelte-vscode
       bradlc.vscode-tailwindcss
       meganrogge.template-string-converter
@@ -244,6 +245,7 @@
       pkief.material-icon-theme
       ziglang.vscode-zig
       mkhl.direnv
+      continue.continue
     ];
     keybindings = [
       {
