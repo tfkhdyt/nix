@@ -69,7 +69,7 @@
     nil
     nixfmt-rfc-style
     nix-init
-    nodejs
+    # nodejs
 
     obsidian
     ouch
@@ -78,7 +78,7 @@
     pdftk
     pipes
     pm2
-    pnpm
+    # pnpm
     pocketbase
     poppler_utils
     postman
