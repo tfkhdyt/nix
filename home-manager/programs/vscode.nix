@@ -184,7 +184,7 @@
       "window.dialogStyle" = "custom";
       "editor.lineHeight" = 1.6;
       "terminal.integrated.lineHeight" = 0;
-      "nix.formatterPath" = "${pkgs.nixfmt-rfc-style}/bin/nixfmt";
+      # "nix.formatterPath" = "${pkgs.nixfmt-rfc-style}/bin/nixfmt";
       "nix.enableLanguageServer" = true;
       "nix.serverPath" = "${pkgs.nil}/bin/nil";
       # "workbench.colorCustomizations" = {
@@ -201,6 +201,8 @@
       "zig.zls.enabled" = "on";
       "zig.buildOnSave" = true;
       "zig.zls.enableBuildOnSave" = true;
+      "window.openFoldersInNewWindow" = "off";
+      "window.openWithoutArgumentsInNewWindow" = "off";
     };
     extensions = with pkgs.vscode-marketplace; [
       akamud.vscode-theme-onedark
@@ -241,6 +243,7 @@
       akamud.vscode-theme-onelight
       pkief.material-icon-theme
       ziglang.vscode-zig
+      mkhl.direnv
     ];
     keybindings = [
       {

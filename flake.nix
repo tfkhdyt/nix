@@ -16,10 +16,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    rust-overlay = {
-      url = "github:oxalica/rust-overlay";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    # rust-overlay = {
+    #   url = "github:oxalica/rust-overlay";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
 
     stylix.url = "github:danth/stylix";
 
@@ -59,19 +59,19 @@
           modules = [
             ./nixos/configuration.nix
             inputs.home-manager.nixosModules.home-manager
-            (
-              { pkgs, ... }:
-              {
-                nixpkgs.overlays = [ inputs.rust-overlay.overlays.default ];
-                environment.systemPackages = [
-                  (pkgs.rust-bin.stable.latest.default.override {
-                    extensions = [ "rust-src" ];
-                  })
-
-                  # inputs.zen-browser.packages."${system}".default
-                ];
-              }
-            )
+            # (
+            #   { pkgs, ... }:
+            #   {
+            #     nixpkgs.overlays = [ inputs.rust-overlay.overlays.default ];
+            #     environment.systemPackages = [
+            #       (pkgs.rust-bin.stable.latest.default.override {
+            #         extensions = [ "rust-src" ];
+            #       })
+            #
+            #       # inputs.zen-browser.packages."${system}".default
+            #     ];
+            #   }
+            # )
             {
               home-manager = {
                 users.tfkhdyt = import ./home-manager;
