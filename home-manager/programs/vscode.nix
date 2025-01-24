@@ -245,6 +245,7 @@
       pkief.material-icon-theme
       ziglang.vscode-zig
       mkhl.direnv
+      prisma.prisma
     ];
     keybindings = [
       {
