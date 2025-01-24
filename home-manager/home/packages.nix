@@ -18,6 +18,8 @@
     distrobox
     duckstation
 
+    electron-mail
+
     ffmpegthumbnailer
     ffmpeg-full
     file
