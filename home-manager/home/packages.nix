@@ -18,8 +18,6 @@
     distrobox
     duckstation
 
-    electron-mail
-
     ffmpegthumbnailer
     ffmpeg-full
     file
@@ -30,14 +28,14 @@
     gimp
     gnumake
     gobang
-    gofumpt
-    goimports-reviser
-    golangci-lint
-    golines
-    gomodifytags
-    gopls
+    # gofumpt
+    # goimports-reviser
+    # golangci-lint
+    # golines
+    # gomodifytags
+    # gopls
     # gowall
-    go-tools
+    # go-tools
     gping
     # grimblast
     ghostty
@@ -50,7 +48,7 @@
     # hyprpolkitagent
 
     imagemagick
-    impl
+    # impl
 
     # j4-dmenu-desktop
     # joplin-desktop
